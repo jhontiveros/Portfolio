@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    border: solid 2px blue;
+
+    display: flex;
+}
+
+.navbar {
+    border: solid 2px orange;
+    height: 100px;
+    color: blueviolet;
+    font-size: 50px;
+
+    display: flex;
+}
+
+h1 {
+    font-size: 70px;
+}
