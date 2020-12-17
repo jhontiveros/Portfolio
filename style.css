@@ -2,6 +2,18 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    background-color: #f3f3f3;
+}
+
+@font-face {
+    src: url(fonts/BluuNext-Titling.ttf);
+    font-family: bluu;
+}
+
+@font-face {
+    src: url(fonts/Montserrat-Medium.otf);
+    font-family: mont;
 }
 
 .container {
@@ -17,8 +29,6 @@
     border: solid 2px orange;
     height: 10vh;
     width: 100vw;
-    color: blueviolet;
-    font-size: 50px;
 
     display: flex;
     justify-content: space-between;
@@ -26,18 +36,14 @@
 }
 
 .navlinks {
-    border: solid 2px red;
-    margin-right: 30px;
-    
+    margin-right: 30px; 
 }
 
 .navlogo {
-    border: solid 2px olivedrab;
     margin-left: 30px;
-    
 }
 
-.homebody {
+.bodycontainer {
     border: solid 2px purple;
     height: 100vh;
     width: 100vw;
@@ -45,8 +51,15 @@
 
 h1 {
     font-size: 50px;
+    font-family: bluu;
+    letter-spacing: .1em;
+
+    color: #95a48d;
 }
 
 li {
+    list-style-type: none;
     font-size: 25px;
+    font-family: mont;
+    color: rgb(29, 29, 29);
 }
