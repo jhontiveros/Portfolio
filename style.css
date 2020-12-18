@@ -49,17 +49,10 @@
     background-color: transparent;
 }
 
-.bodycont {
-    display: relative;
-}
-
 .desc {
-    position: fixed;
-    left: 43vw;
-    padding-left: 14px;
-    margin-top: 275px;
-
     color: wheat;
+    margin-top: 36vh;
+    margin-left: 45vw;
 }
 
 ul {
@@ -75,7 +68,7 @@ li {
     margin: 1vw;
     margin-right: 3vw;
     margin-bottom: 5vh;
-    
+
     color: #e67a69;
 }
 
@@ -98,4 +91,5 @@ img {
 p {
     font-family: monti;
     font-size: 1.9vw;
+
 }
