@@ -98,3 +98,11 @@ a{
     text-decoration: none;
     color: #e67a69;
 }
+
+a:hover {
+    font-family: monti;
+}
+
+a:visited {
+    color: wheat;
+}
