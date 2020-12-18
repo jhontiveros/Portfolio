@@ -75,6 +75,10 @@ a{
     color: #e67a69;
 }
 
+a:hover {
+    color: wheat;
+}
+
 li:hover {
     font-family: monti;
 }
