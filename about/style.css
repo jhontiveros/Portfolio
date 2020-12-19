@@ -57,6 +57,7 @@
 .greeting {
     margin-left: 4vw;
     background-color: transparent;
+    z-index: 100;
 }
 
 .demo {
@@ -134,6 +135,8 @@ p {
     color: rgb(26, 26, 26);
     font-family: bluu;
     font-size: 7vw;
+
+    background-color: transparent;
 }
 
 h2 {

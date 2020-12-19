@@ -83,6 +83,14 @@ li:hover {
     font-family: monti;
 }
 
+/* marquee code help from 
+
+https://github.com/codegridweb/Menu-Hover-Effect-CSS 
+
+and 
+
+https://www.w3schools.in/css3/css-marquee/#Scrolling_Text_Using_CSS */
+
 .menu {
     font-family: bluu;
     padding: 10vh 0 25vh;
