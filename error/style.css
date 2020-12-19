@@ -45,6 +45,44 @@
     font-size: 2vw;
 }
 
+.error {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 10vh;
+    background: #17815c;
+}
+
+.numbers {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: mont;
+    font-size: 1.3vw;
+    color: #e67a69;
+
+}
+
+.mes {
+    font-family: bluu;
+    position: relative;
+    display: inline-block;
+    color: wheat;
+    font-size: 13vw;
+}
+
+
 ul {
     font-family: mont;
     font-size: 1.7vw;

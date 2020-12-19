@@ -57,7 +57,6 @@
 .greeting {
     margin-left: 4vw;
     background-color: transparent;
-    z-index: 100;
 }
 
 .demo {
