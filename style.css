@@ -3,6 +3,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 :root {
@@ -10,8 +11,7 @@
     --color-sec: #a1a1a1;
     --color-acc: #803ee8;
 
-    --font-header1: 'Noto Serif Display', serif;;
-    --font-header2: 'Noto Sans', sans-serif;
+    --font-header: 'Noto Serif Display', serif;;
     --font-paragraph: 'Noto Sans', sans-serif;
 
     --size-h1: 1.5rem;
@@ -19,4 +19,51 @@
     --size-h3: 1rem;
     --size-h4: .75rem;
     --size-p: 1rem;
+}
+
+h1, h2 {
+    font-family: var(--font-header);
+}
+
+h3, h4, p {
+    font-family: var(--font-paragraph);
+}
+
+header {
+    border: 1px solid orange;
+    padding: 5rem 14rem 5rem 14rem;
+}
+
+.nav-bar {
+    border: 1px solid green;
+    display: flex;
+    align-items: center;
+    font-size: var(--size-h3);
+    justify-content: space-between;
+}
+
+.nav-bar h3 {
+    font-style: italic;
+    font-size: var(--size-h2);
+    font-weight: 600;
+
+    letter-spacing: -1px;
+    color: var(--color-pri);
+}
+
+.nav-bar a {
+    font-family: var(--font-paragraph);
+    font-size: var(--size-h4);
+    font-weight: 300;
+
+    text-decoration: none;
+    letter-spacing: .5px;
+    color: var(--color-sec);
+
+    padding: 0rem 0rem 0rem 2rem;
+}
+
+#current {
+    font-weight: 500;
+    color: var(--color-pri);
 }
