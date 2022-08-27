@@ -14,7 +14,7 @@
     --font-header: 'Noto Serif Display', serif;;
     --font-paragraph: 'Noto Sans', sans-serif;
 
-    --size-h1: 1.5rem;
+    --size-h1: 1.75rem;
     --size-h2: 1.25rem;
     --size-h3: 1rem;
     --size-h4: .75rem;
@@ -29,17 +29,24 @@ h3, h4, p {
     font-family: var(--font-paragraph);
 }
 
+.accent {
+    color: var(--color-acc);
+    font-style: italic;
+}
+
+
+/* HEADER: NAVBAR */
+
 header {
-    border: 1px solid orange;
     padding: 5rem 14rem 5rem 14rem;
 }
 
 .nav-bar {
-    border: 1px solid green;
     display: flex;
     align-items: center;
-    font-size: var(--size-h3);
     justify-content: space-between;
+
+    font-size: var(--size-h3);
 }
 
 .nav-bar h3 {
@@ -66,4 +73,97 @@ header {
 #current {
     font-weight: 500;
     color: var(--color-pri);
+}
+
+
+/* MAIN: INTRODUCTION, FILTER, PROJECTS */
+
+main {
+    padding: 5rem 14rem 5rem 14rem;
+}
+
+.intro h1 {
+    font-size: var(--size-h1);
+    font-weight: 300;
+
+    line-height: 2rem;
+    color: var(--color-pri);
+}
+
+.work {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    padding-top: 7rem;
+}
+
+.filter h3 {
+    font-size: var(--size-h3);
+
+    color: var(--color-pri);
+    padding-bottom: 1rem;
+}
+
+.filter li {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    list-style-type: none;
+    gap: .75rem;
+}
+
+button {
+    border: none;
+    background: transparent;
+    color: var(--color-sec);
+
+    font-family: var(--font-paragraph);
+    font-size: var(--size-h3);
+    font-weight: 300;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.project-card {
+    border: 1px solid purple;
+    width: 50vw;
+}
+
+img {
+    width: 100%;
+}
+
+.project-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    padding-top: 1rem;
+    gap: .5rem;
+}
+
+.project-content a {
+    font-family: var(--font-paragraph);
+
+    text-decoration: none;
+}
+
+.title {
+    font-size: var(--size-h2);
+    font-weight: 700;
+
+    color: var(--color-pri);
+}
+
+.desc {
+    font-size: var(--font-paragraph);
+    font-weight: 400;
+
+    color: var(--color-sec);
 }
