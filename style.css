@@ -13,7 +13,7 @@ html {
 :root {
     --color-pri: #2e2e2e;
     --color-sec: #a1a1a1;
-    --color-acc: #803ee8;
+    --color-acc: #c6b81a;
 
     --font-header: 'Noto Sans', sans-serif;
     --font-paragraph: 'Source Sans Pro', sans-serif;
@@ -63,10 +63,12 @@ nav {
 .nav-bar a {
     font-size: var(--size-s);
     color: var(--color-sec);
+    letter-spacing: 1px;
 }
 
 .nav-bar a:hover {
     color: var(--color-acc);
+    letter-spacing: 1px;
     text-decoration: line-through;
 }
 
@@ -115,7 +117,7 @@ a {
     justify-content: space-between;
     align-items: flex-start;
 
-    padding: 4rem 18vw 2rem 18vw;
+    padding: 4rem 18vw 6rem 18vw;
 }
 
 .filter {
@@ -151,6 +153,11 @@ button {
     font-weight: 300;
 }
 
+button:hover {
+    color: var(--color-acc);
+    text-decoration: line-through;
+}
+
 .projects {
     display: flex;
     flex-direction: column;
@@ -160,6 +167,10 @@ button {
 .project-card img {
     width: 45vw;
     padding-top: 1.25rem;
+}
+
+.project-image {
+    transition: 0.3s;
 }
 
 .project-content {
@@ -185,4 +196,53 @@ button {
     font-weight: 300;
 
     color: var(--color-sec);
+}
+
+.project-card:hover > .project-content > * {
+    color: var(--color-acc);
+}
+
+.project-card:hover > .project-image {
+    transform: translateY(-5px);
+}
+
+/* FOOTER - CREDITS, LINKS */
+
+
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 4rem 18vw 4rem 18vw;
+
+    font-family: var(--font-header);
+    font-size: var(--size-s);
+    font-weight: 400;
+    color: var(--color-sec);
+}
+
+footer h4 {
+    font-weight: 400;
+    font-style: italic;
+}
+
+footer li {
+    list-style: none;
+
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+
+footer a {
+    color: var(--color-sec);
+    letter-spacing: 1px;
+}
+
+footer a:hover {
+    color: var(--color-acc);
+    letter-spacing: 1px;
+    text-decoration: line-through;
 }
