@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap');
 
 * {
     margin: 0px;
@@ -12,12 +12,91 @@
     --color-acc: #803ee8;
 
     --font-header: 'Noto Sans', sans-serif;
-    --font-paragraph: 'Noto Sans', sans-serif;
+    --font-paragraph: 'Source Sans Pro', sans-serif;
 
-    --size-h1: 1.75rem;
-    --size-h2: 1.25rem;
-    --size-h3: 1rem;
-    --size-h4: .75rem;
+    --size-xl: 1.75rem;
+    --size-l: 1.25rem;
+    --size-m: 1rem;
+    --size-s: .75rem;
     --size-p: 1rem;
 }
 
+body {
+    color: var(--color-pri);
+}
+
+/* HEADER - NAVBAR */
+
+
+.nav-bar {
+    border: solid 2px green;
+    font-family: var(--font-header);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 4rem 12vw 2rem 12vw;
+}
+
+.nav-bar h3 {
+    font-size: var(--size-l);
+    font-style: italic;
+    font-weight: 600;
+}
+
+
+nav {
+    display: flex;
+    gap: 2vw;
+}
+
+#current {
+    font-weight: 600;
+    color: var(--color-pri);
+}
+
+.nav-bar a {
+    font-size: var(--size-s);
+    color: var(--color-sec);
+}
+
+.nav-bar a:hover {
+    color: var(--color-acc);
+    text-decoration: line-through;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* MAIN - INTRO, FILTER, PROJECTS */
+
+
+.intro {
+    border: solid 2px orange;
+    font-family: var(--font-paragraph);
+    text-align: center;
+    padding: 6rem 23vw 2rem 23vw;
+}
+
+.intro h1 {
+    font-size: var(--size-l);
+    font-weight: 400;
+}
+
+#accent {
+    font-family: var(--font-header);
+    font-style: italic;
+    font-weight: 600;
+    color: var(--color-acc);
+}
+
+#link a {
+    color: var(--color-pri);
+}
+
+#link a:hover {
+    color: #ED0000;
+}
