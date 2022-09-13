@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -29,20 +33,20 @@ body {
 
 
 .nav-bar {
-    border: solid 2px green;
     font-family: var(--font-header);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 
-    padding: 4rem 12vw 2rem 12vw;
+    padding: 4rem 18vw 2rem 18vw;
 }
 
 .nav-bar h3 {
     font-size: var(--size-l);
     font-style: italic;
-    font-weight: 600;
+    font-weight: 500;
+    letter-spacing: -1px;
 }
 
 
@@ -71,25 +75,25 @@ a {
 }
 
 
-/* MAIN - INTRO, FILTER, PROJECTS */
+/* MAIN - INTRO */
 
 
 .intro {
-    border: solid 2px orange;
     font-family: var(--font-paragraph);
     text-align: center;
-    padding: 6rem 23vw 2rem 23vw;
+    padding: 6rem 22vw 4rem 22vw;
 }
 
 .intro h1 {
-    font-size: var(--size-l);
-    font-weight: 400;
+    font-size: var(--size-xl);
+    font-weight: 300;
+    letter-spacing: -.75px;
 }
 
 #accent {
     font-family: var(--font-header);
     font-style: italic;
-    font-weight: 600;
+    font-weight: 500;
     color: var(--color-acc);
 }
 
@@ -99,4 +103,86 @@ a {
 
 #link a:hover {
     color: #ED0000;
+}
+
+
+/* MAIN - FILTER, PROJECTS */
+
+
+.work {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    padding: 4rem 18vw 2rem 18vw;
+}
+
+.filter {
+    font-family: var(--font-header);
+    position: sticky;
+    top: 0;
+}
+
+.filter h3 {
+    font-size: var(--size-m);
+    font-weight: 600;
+    padding-top: 1rem;
+}
+
+.filter li {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: .5rem;
+
+    list-style: none;
+    padding-top: 1.25rem;
+}
+
+button {
+    background: none;
+	color: var(--color-sec);
+	border: none;
+	padding: 0;
+
+    font-family: var(--font-header);
+    font-size: var(--size-p);
+    font-weight: 300;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.project-card img {
+    width: 45vw;
+    padding-top: 1.25rem;
+}
+
+.project-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .5rem;
+
+    padding: 1rem 0rem 1rem 0rem;
+}
+
+.project-content .title {
+    font-family: var(--font-header);
+    font-size: var(--size-l);
+    font-weight: 500;
+
+    color: var(--color-pri);
+}
+
+.project-content .desc {
+    font-family: var(--font-header);
+    font-size: var(--size-p);
+    font-weight: 300;
+
+    color: var(--color-sec);
 }
