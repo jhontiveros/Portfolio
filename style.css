@@ -112,7 +112,6 @@ a {
 
 
 .work {
-    border: 2px solid salmon;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
