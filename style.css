@@ -53,3 +53,22 @@ html {
 h2 {
     font-size: var(--h1-size);
 }
+
+body {
+    border: solid 2px blue;
+    padding-left: clamp(.5rem, 4vw, 140px);
+    padding-right: clamp(.5rem, 4vw, 140px);
+    padding-top: 5.5rem;
+    padding-bottom: 10rem;
+
+    max-width: 1280px;
+    margin: auto;
+}
+
+header {
+    border: solid 2px orange;
+}
+
+.topnav {
+    border: solid 2px green;
+}
