@@ -169,3 +169,16 @@ main {
     font-style: italic;
 }
 
+#link {
+    text-decoration: none;
+    color: var(--black-pri);
+}
+
+#link:after {
+    content: 'Costco';
+}
+
+#link:hover:after {
+    content: 'Costco→';
+    color: #005DAA;
+}
