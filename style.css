@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+/* DESIGN SETTINGS */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@1,600&display=swap');
 
 html {
     scroll-behavior: smooth;
@@ -20,7 +22,7 @@ html {
     --p1-size: clamp(1rem, 2vw, 1.125rem);
     --p2-size: clamp(0.875rem, 2vw, 1rem);
     
-    --nav-size: clamp(0.75rem, 2vw, 0.875rem);
+    --nav-size: 0.875rem;
     --sub-size: clamp(0.75rem, 2vw, 0.875rem);
     --tag-size: clamp(0.75rem, 2vw, 0.875rem);
 
@@ -31,8 +33,7 @@ html {
     --paragraph-semi: 600;
     --paragraph-reg: 400;
 
-    --nav-active: 600;
-    --nav-link: 400;
+    --nav-link: 500;
     --sub-semi: 600;
     --tag-semi: 600;
 
@@ -51,9 +52,33 @@ html {
     --tags-green: #3E8F4E;
 }
 
-h2 {
+h1 {
     font-size: var(--h1-size);
 }
+
+h2 {
+    font-size: var(--h2-size);
+}
+
+h3 {
+    font-size: var(--h3-size);
+}
+
+h4 {
+    font-size: var(--h4-size);
+}
+
+p1 {
+    font-size: var(--p1-size);
+    font-weight: var(--paragraph-reg);
+}
+
+p2 {
+    font-size: var(--p2-size);
+}
+
+
+/* START OF PAGE */
 
 body {
     display: flex;
@@ -68,6 +93,9 @@ body {
     padding: 5.5rem 150px 10rem 150px;
 }
 
+
+/* NAVIGATION */
+
 .topnav {
     display: flex;
     flex-direction: row;
@@ -76,27 +104,29 @@ body {
 }
 
 .topnav img {
-    max-height: 3.5em;
+    max-height: 3.75em;
 }
 
 nav {
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
+    gap: 6px;
 
-    border: solid 2px var(--grey-active);
+    background-color: var(--lgrey-container);
     border-radius: 30px;
     padding: 8px;
 }
 
 nav a {
     border-radius: 20px;
-    padding: 10px 14px;
-
-    text-decoration: none;
-    color: var(--black-pri);
+    padding: 12px 16px;
 
     font-size: var(--nav-size);
+    font-weight: var(--nav-link);
+    text-decoration: none;
+    color: var(--black-pri);
 }
 
 nav a:hover {
@@ -105,5 +135,37 @@ nav a:hover {
 
 .active {
     background-color: var(--grey-active);
-    font-weight: var(--nav-active);
 }
+
+
+/* INTRO SECTION & PROJECTS */
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 160px;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+
+    margin: auto;
+    max-width: 820px;
+
+    color: var(--black-pri);
+}
+
+.intro h2 {
+    font-weight: var(--heading-reg);
+}
+
+.emphasize {
+    font-size: 2rem;
+    font-weight: var(--heading-bold);
+    font-style: italic;
+}
+
