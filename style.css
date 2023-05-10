@@ -154,7 +154,7 @@ main {
     gap: 40px;
 
     margin: auto;
-    max-width: 820px;
+    max-width: 830px;
 
     color: var(--black-pri);
 }
@@ -163,10 +163,12 @@ main {
     font-weight: var(--heading-reg);
 }
 
-.emphasize {
-    font-size: 2rem;
-    font-weight: var(--heading-bold);
-    font-style: italic;
+.gif {
+    display: inline-block;
+    height: 60px;
+    
+    position: relative;
+    top: 16px;
 }
 
 #link {
