@@ -77,6 +77,10 @@ p2 {
     font-size: var(--p2-size);
 }
 
+p3 {
+    font-size: var(--tag-size);
+}
+
 
 /* START OF PAGE */
 
@@ -183,4 +187,51 @@ main {
 #link:hover:after {
     content: 'Costco→';
     color: #005DAA;
+}
+
+.project_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.project .image {
+    background-color: var(--lgrey-container);
+    width: 561px;
+    height: 388px;
+    border-radius: 30px;
+}
+
+.project .tags {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+
+    padding: 24px 0 8px 0;
+}
+
+.tags p3 {
+    border: solid 2px var(--tags-blue);
+    border-radius: 20px;
+    padding: 6px 12px;
+    
+    font-weight: var(--tag-semi);
+    color: var(--tags-blue);
+}
+
+.project a {
+    text-decoration: none;
+    font-size: var(--h3-size);
+    font-weight: var(--paragraph-semi);
+    color: var(--black-pri);
+
+    padding-bottom: 32px;
 }
