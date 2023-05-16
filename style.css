@@ -45,11 +45,12 @@ html {
     --lgrey-container: #F5F5F5;
 
     --tags-red: #F92E17;
-    --tags-pink: #E69ABF;
+    --tags-pink: #FF7ABB;
     --tags-purple: #9A5CEA; 
     --tags-blue: #1947FF;
     --tags-yellow: #FCC825;
     --tags-green: #3E8F4E;
+    --tags-orange: #f66e29;
 }
 
 h1 {
@@ -89,8 +90,6 @@ body {
     flex-direction: column;
     justify-content: center;
     gap: 160px;
-
-    border: solid 2px blue;
 
     margin: auto;
     max-width: 1500px;
@@ -219,12 +218,45 @@ main {
 }
 
 .tags p3 {
-    border: solid 2px var(--tags-blue);
     border-radius: 20px;
     padding: 6px 12px;
     
     font-weight: var(--tag-semi);
+}
+
+.tags .year {
+    border: solid 2px var(--black-pri);
+    color: var(--black-pri);
+}
+
+.tags .focus1 {
+    border: solid 2px var(--tags-pink);
+    color: var(--tags-pink);
+}
+
+.tags .focus2 {
+    border: solid 2px var(--tags-purple);
+    color: var(--tags-purple);
+}
+
+.tags .focus3 {
+    border: solid 2px var(--tags-green);
+    color: var(--tags-green);
+}
+
+.tags .exp1 {
+    border: solid 2px var(--tags-blue);
     color: var(--tags-blue);
+}
+
+.tags .exp2 {
+    border: solid 2px var(--tags-red);
+    color: var(--tags-red);
+}
+
+.tags .exp3 {
+    border: solid 2px var(--tags-yellow);
+    color: var(--tags-yellow);
 }
 
 .project a {
@@ -233,5 +265,5 @@ main {
     font-weight: var(--paragraph-semi);
     color: var(--black-pri);
 
-    padding-bottom: 32px;
+    padding-bottom: 40px;
 }
