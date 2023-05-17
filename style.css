@@ -192,19 +192,29 @@ main {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    gap: 1.6vw;
+
+    border: solid 2px red;
 }
 
 .project {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+
+    border: solid 2px orange;
+    width: 100%;
+    min-width: 570px;
 }
 
 .project .image {
+    border: solid 2px blue;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+
     background-color: var(--lgrey-container);
-    width: 561px;
-    height: 388px;
     border-radius: 30px;
 }
 
@@ -265,5 +275,5 @@ main {
     font-weight: var(--paragraph-semi);
     color: var(--black-pri);
 
-    padding-bottom: 40px;
+    padding-bottom: 8px;
 }
