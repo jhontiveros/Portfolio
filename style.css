@@ -1,6 +1,6 @@
 /* DESIGN SETTINGS */
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
 
 html {
     scroll-behavior: smooth;
@@ -11,6 +11,7 @@ html {
     padding: 0px;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
+    letter-spacing: .2px;
 }
 
 :root {
@@ -44,13 +45,11 @@ html {
     --grey-active: #D9D9D9;
     --lgrey-container: #F5F5F5;
 
-    --tags-red: #F92E17;
-    --tags-pink: #FF7ABB;
-    --tags-purple: #9A5CEA; 
-    --tags-blue: #1947FF;
-    --tags-yellow: #FCC825;
-    --tags-green: #3E8F4E;
-    --tags-orange: #f66e29;
+    --tags-1: #f0807e;
+    --tags-2: #b29cc8;
+    --tags-3: #f6c053; 
+    --tags-4: #f39b73;
+    --tags-5: #d394a6;
 }
 
 h1 {
@@ -107,7 +106,7 @@ body {
 }
 
 .topnav img {
-    max-height: 3.75em;
+    max-height: 2.7em;
 }
 
 nav {
@@ -137,7 +136,7 @@ nav a:hover {
 }
 
 .active {
-    background-color: var(--grey-active);
+    background-color: #FFFFFF;
 }
 
 
@@ -166,12 +165,11 @@ main {
     font-weight: var(--heading-reg);
 }
 
-.gif {
-    display: inline-block;
-    height: 60px;
-    
-    position: relative;
-    top: 16px;
+.emphasis {
+    font-family: 'Epilogue', 'Inter', sans-serif;
+    font-weight: var(--heading-bold);
+    font-style: italic;
+    font-size: 2.4rem;
 }
 
 #link {
@@ -186,6 +184,7 @@ main {
 #link:hover:after {
     content: 'Costco→';
     color: #005DAA;
+    font-weight: 600;
 }
 
 .project_container {
@@ -194,8 +193,6 @@ main {
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 1.6vw;
-
-    border: solid 2px red;
 }
 
 .project {
@@ -203,12 +200,27 @@ main {
     flex-direction: column;
     justify-content: flex-start;
 
-    border: solid 2px orange;
-    width: calc(50% - 0.8vw)
+    width: calc(50% - 0.8vw);
 }
 
+.project:hover .link {
+    color: #005DAA;
+
+    animation: move 5s linear infinite;
+	background-image: linear-gradient(to right, var(--tags-1), var(--tags-2), var(--tags-3), var(--tags-4), var(--tags-5));
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+
+    -webkit-transition: 10s ease;
+    -moz-transition: 10s ease;
+    -o-transition: 10s ease;
+    transition: 10s ease;
+}
+
+@keyframes move { to { background-position: 200% center; } }
+
 .project .image {
-    border: solid 2px blue;
     width: 100%;
     height: auto;
     aspect-ratio: 16/9;
@@ -239,40 +251,37 @@ main {
 }
 
 .tags .focus1 {
-    border: solid 2px var(--tags-pink);
-    color: var(--tags-pink);
+    border: solid 2px var(--tags-1);
+    color: var(--tags-1);
 }
 
 .tags .focus2 {
-    border: solid 2px var(--tags-purple);
-    color: var(--tags-purple);
+    border: solid 2px var(--tags-2);
+    color: var(--tags-2);
 }
 
 .tags .focus3 {
-    border: solid 2px var(--tags-green);
-    color: var(--tags-green);
+    border: solid 2px var(--tags-4);
+    color: var(--tags-4);
 }
 
 .tags .exp1 {
-    border: solid 2px var(--tags-blue);
-    color: var(--tags-blue);
+    border: solid 2px var(--tags-3);
+    color: var(--tags-3);
 }
 
 .tags .exp2 {
-    border: solid 2px var(--tags-red);
-    color: var(--tags-red);
-}
-
-.tags .exp3 {
-    border: solid 2px var(--tags-yellow);
-    color: var(--tags-yellow);
+    border: solid 2px var(--tags-5);
+    color: var(--tags-5);
 }
 
 .project a {
     text-decoration: none;
     font-size: var(--h3-size);
     font-weight: var(--paragraph-semi);
+    font-family: 'Epilogue', 'Inter', sans-serif;
+    letter-spacing: -0.5px;
     color: var(--black-pri);
 
-    padding-bottom: 8px;
+    padding-bottom: 16px;
 }
