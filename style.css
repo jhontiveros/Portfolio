@@ -135,7 +135,7 @@ nav a:hover {
     color: var(--dgrey-button);
 }
 
-.active {
+.current {
     background-color: #FFFFFF;
 }
 
@@ -209,6 +209,7 @@ main {
     justify-content: flex-start;
 
     width: calc(50% - 0.8vw);
+    transition: 0.3s ease-in-out;
 }
 
 
@@ -222,6 +223,9 @@ main {
 
 @keyframes move { to { background-position: 200% center; } }
 
+.active:hover {
+    transform: translateY(-12px);
+}
 
 .project .image {
     width: 100%;
@@ -342,3 +346,8 @@ footer a:hover {
     -webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
+
+
+
+
+/* MEDIA QUERIES - TABLET */
