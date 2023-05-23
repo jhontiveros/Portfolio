@@ -1,6 +1,6 @@
 /* DESIGN SETTINGS */
 
-@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700&family=Wix+Madefor+Text:wght@400;500;600;700&display=swap');
 
 html {
     scroll-behavior: smooth;
@@ -10,8 +10,8 @@ html {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
-    letter-spacing: .2px;
+    font-family: 'Wix Madefor Text', sans-serif;
+    letter-spacing: -.3px;
 }
 
 :root {
@@ -206,7 +206,7 @@ main {
 .project:hover .link {
     color: #005DAA;
 
-    animation: move 5s linear infinite;
+    animation: move 2s linear infinite;
 	background-image: linear-gradient(to right, var(--tags-1), var(--tags-2), var(--tags-3), var(--tags-4), var(--tags-5));
     background-size: 200% auto;
     -webkit-background-clip: text;
