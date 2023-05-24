@@ -333,7 +333,7 @@ hr {
 }
 
 footer a {
-    font-size: var(--h1-size);
+    font-size: var(--h2-size);
     font-weight: var(--heading-bold);
     text-decoration: none;
     color: var(--black-pri);
@@ -354,12 +354,10 @@ footer a:hover {
 
 @media screen and (min-width: 806px) and (max-width: 1150px) {
     body {
-        background-color: white;
         padding: 5.5rem 6rem 0px 6rem;
     }
 
     .project_container {
-        border: solid 2px blue;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -379,8 +377,7 @@ footer a:hover {
 
 @media screen and (min-width: 645px) and (max-width: 805px) {
     body {
-        background-color: aliceblue;
-        padding: 4.5rem 2rem 0px 2rem;
+        padding: 4.5rem 1.7rem 0px 1.7rem;
         gap: 80px;
     }
 
@@ -397,7 +394,6 @@ footer a:hover {
     }
 
     .project_container {
-        border: solid 2px blue;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -417,7 +413,7 @@ footer a:hover {
 
 @media screen and (max-width: 644px) {
     body {
-        padding: 4.5rem 2rem 0px 2rem;
+        padding: 4.5rem 1.7rem 0px 1.7rem;
         gap: 80px;
     }
 
@@ -434,7 +430,7 @@ footer a:hover {
     }
 
     .emphasis {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     .project_container {
@@ -456,6 +452,7 @@ footer a:hover {
 
     .tags p3 {
         padding: 4px 8px;
+        letter-spacing: -0.5px;
     }
 
     .socials_container {
