@@ -212,7 +212,6 @@ main {
     transition: 0.3s ease-in-out;
 }
 
-
 .project:hover .link {
     animation: move 3s linear infinite;
 	background-image: linear-gradient(to right, var(--tags-1), var(--tags-2), var(--tags-3), var(--tags-4), var(--tags-5));
@@ -300,6 +299,21 @@ main {
     padding-bottom: 2.2rem;
 }
 
+/* INACTIVE PROPERTIES */
+
+#inactive_img {
+    filter: grayscale(100%);
+}
+
+#inactive_title {
+    color: var(--dgrey-sub);
+}
+
+.tags .grey {
+    border: solid 2px var(--dgrey-sub);
+    color: var(--dgrey-sub);
+}
+
 
 
 
@@ -354,7 +368,7 @@ footer a:hover {
 
 @media screen and (min-width: 806px) and (max-width: 1150px) {
     body {
-        padding: 5.5rem clamp(1.7rem, 20vw, 9rem) 0px clamp(1.7rem, 20vw, 9rem);
+        padding: 5.5rem 12.5vw 0px 12.5vw;
     }
 
     .project_container {
@@ -377,7 +391,7 @@ footer a:hover {
 
 @media screen and (min-width: 645px) and (max-width: 805px) {
     body {
-        padding: 4.5rem 1.7rem 0px 1.7rem;
+        padding: 3.5rem 1.7rem 0px 1.7rem;
         gap: 80px;
     }
 
@@ -413,7 +427,7 @@ footer a:hover {
 
 @media screen and (max-width: 644px) {
     body {
-        padding: 4.5rem 1.7rem 0px 1.7rem;
+        padding: 3.5rem 1.7rem 0px 1.7rem;
         gap: 80px;
     }
 
