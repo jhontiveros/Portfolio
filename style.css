@@ -1,6 +1,6 @@
 /* DESIGN SETTINGS */
 
-@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700&family=Wix+Madefor+Text:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700;800&family=Wix+Madefor+Text:wght@400;500;600;700&display=swap');
 
 * {
     margin: 0px;
@@ -79,7 +79,7 @@ p3 {
 }
 
 :hover, :after {
-    transition: .2s ease;
+    transition: .3s ease;
 }
 
 
@@ -110,8 +110,30 @@ body {
     align-items: center;
 }
 
-.topnav img {
-    max-height: 2.7em;
+.topnav .logo {
+    font-family: 'Epilogue', 'Inter', sans-serif;
+    font-size: 2.7em;
+    font-weight: 800;
+    letter-spacing: -0.6px;
+    text-decoration: none;
+
+    animation: move 12s ease infinite;
+	background-image: linear-gradient(-45deg, var(--tags-1), var(--tags-2), var(--tags-3), var(--tags-4), var(--tags-5), var(--tags-1), var(--tags-2), var(--tags-3), var(--tags-4), var(--tags-5));
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+@keyframes move {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
 }
 
 nav {
@@ -213,14 +235,24 @@ main {
 }
 
 .project:hover .link {
-    animation: move 3s linear infinite;
-	background-image: linear-gradient(to right, var(--tags-1), var(--tags-2), var(--tags-3), var(--tags-4), var(--tags-5));
-    background-size: 200% auto;
+    animation: move 12s ease infinite;
+	background-image: linear-gradient(-45deg, var(--tags-1), var(--tags-2), var(--tags-3), var(--tags-4), var(--tags-5), var(--tags-1), var(--tags-2), var(--tags-3), var(--tags-4), var(--tags-5));
+    background-size: 400% 400%;
     -webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
 
-@keyframes move { to { background-position: 200% center; } }
+@keyframes move {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
 
 .active:hover {
     transform: translateY(-12px);
@@ -306,12 +338,12 @@ main {
 }
 
 #inactive_title {
-    color: var(--dgrey-sub);
+    color: var(--dgrey-button);
 }
 
 .tags .grey {
-    border: solid 2px var(--dgrey-sub);
-    color: var(--dgrey-sub);
+    border: solid 2px var(--dgrey-button);
+    color: var(--dgrey-button);
 }
 
 
