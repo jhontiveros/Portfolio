@@ -100,6 +100,15 @@ body {
     margin: auto;
     max-width: 1500px;
     padding: 5.5rem clamp(6rem, 50vw, 9rem) 0px clamp(6rem, 50vw, 9rem);
+
+    color: var(--black-pri);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 120px;
 }
 
 
@@ -174,13 +183,13 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 32px;
+    gap:32px;
 }
 
 .project_hero .image {
     width: 100%;
     height: auto;
-    aspect-ratio: 2.35/1;
+    aspect-ratio: 3/1;
 
     background-color: var(--lgrey-container);
     border-radius: 30px;
@@ -196,7 +205,7 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 8px;
+    gap: 12px;
 }
 
 .tags {
@@ -245,5 +254,84 @@ nav a:hover {
 
 .title_container h1 {
     font-family: 'Epilogue', 'Inter', sans-serif;
-    color: var(--black-pri);
+    font-weight: var(--heading-bold);
+}
+
+
+
+
+/* CONTENT SECTION */
+
+.section_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 160px;
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 8.4vw;
+}
+
+section h3 {
+    font-family: 'Epilogue', 'Inter', sans-serif;
+    letter-spacing: 0.3px;
+    min-width: 150px;
+}
+
+.bubble {
+    background-color: var(--lgrey-container);
+    border-radius: 20px;
+    padding: 16px 24px;
+}
+
+.section_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 64px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.content p4 {
+    color: var(--dgrey-sub);
+    margin-bottom: 4px;
+}
+
+.content p1 {
+    font-weight: var(--paragraph-semi);
+    margin-bottom: 14px;
+}
+
+li {
+    margin-left: 32px;
+}
+
+.content_image {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 14px;
+}
+
+.content_image .image_format_1 {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+
+    background-color: var(--lgrey-container);
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.image_format_1 img {
+    width: 100%;
+    height: auto;
 }
