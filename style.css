@@ -67,7 +67,6 @@ h4 {
 
 p1 {
     font-size: var(--p1-size);
-    font-weight: var(--paragraph-reg);
 }
 
 p2 {
@@ -76,6 +75,11 @@ p2 {
 
 p3 {
     font-size: var(--tag-size);
+}
+
+p4 {
+    font-size: var(--sub-size);
+    font-weight: var(--sub-semi);
 }
 
 :hover, :after {
