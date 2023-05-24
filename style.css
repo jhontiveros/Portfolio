@@ -354,7 +354,7 @@ footer a:hover {
 
 @media screen and (min-width: 806px) and (max-width: 1150px) {
     body {
-        padding: 5.5rem 6rem 0px 6rem;
+        padding: 5.5rem clamp(1.7rem, 20vw, 9rem) 0px clamp(1.7rem, 20vw, 9rem);
     }
 
     .project_container {
