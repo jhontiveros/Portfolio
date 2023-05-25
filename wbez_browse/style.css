@@ -260,7 +260,7 @@ nav a:hover {
 
 
 
-/* CONTENT SECTION */
+/* CONTENT SECTION - UNIVERSAL */
 
 .section_container {
     display: flex;
@@ -273,7 +273,6 @@ section {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 8.4vw;
 }
 
 section h3 {
@@ -282,17 +281,15 @@ section h3 {
     min-width: 150px;
 }
 
-.bubble {
-    background-color: var(--lgrey-container);
-    border-radius: 20px;
-    padding: 16px 24px;
-}
-
 .section_content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     gap: 64px;
+}
+
+
+.content, .content_image, .bubble {
+    width: 910px;
 }
 
 .content {
@@ -326,6 +323,21 @@ li {
     gap: 14px;
 }
 
+.bubble {
+    background-color: var(--lgrey-container);
+    border-radius: 20px;
+    padding: 16px 24px;
+}
+
+#wide {
+    width: auto;
+}
+
+
+
+
+/* CONTENT SECTION - SPECIFIC */
+
 .content_image .image_format_1 {
     width: 100%;
     height: auto;
@@ -341,6 +353,6 @@ li {
     height: auto;
 }
 
-.format_2 .content_image {
+.content_image .format_2  {
     margin-top: -42px;
 }
