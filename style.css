@@ -390,8 +390,8 @@ footer a {
 }
 
 footer a:hover {
-    animation: move 3s linear infinite;
-	background-image: linear-gradient(to right, var(--tags-1), var(--tags-2), var(--tags-3), var(--tags-4), var(--tags-5));
+    animation: move 12s ease infinite;
+	background-image: linear-gradient(-45deg, var(--tags-1), var(--tags-2), var(--tags-3), var(--tags-4), var(--tags-5), var(--tags-1), var(--tags-2), var(--tags-3), var(--tags-4), var(--tags-5));
     background-size: 200% auto;
     -webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
