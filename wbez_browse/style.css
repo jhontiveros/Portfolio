@@ -21,7 +21,7 @@
     --p2-size: clamp(1rem, 2vw, 1.125rem);
     
     --nav-size: 0.875rem;
-    --sub-size: clamp(0.75rem, 2vw, 0.875rem);
+    --sub-size: clamp(0.8rem, 2vw, 0.875rem);
     --tag-size: clamp(0.75rem, 2vw, 0.875rem);
 
 
@@ -227,6 +227,7 @@ nav a:hover {
 }
 
 .tags .year {
+    font-weight: 700;
     border: solid 2px var(--black-pri);
     color: var(--black-pri);
 }
@@ -311,6 +312,10 @@ section h3 {
     margin-bottom: 14px;
 }
 
+.emphasis {
+    font-weight: var(--paragraph-semi);
+}
+
 ul {
     margin-top: 8px;
 }
@@ -334,6 +339,16 @@ li {
     padding: 16px 24px;
 }
 
+.bubble a {
+    color: var(--black-pri);
+    font-weight: var(--paragraph-semi);
+    font-style: italic;
+    text-decoration: none;
+}
+
+.bubble a:hover {
+    color: #ed0000;
+}
 
 .content_image .image_format_1 {
     width: 100%;
