@@ -566,11 +566,15 @@ footer a:hover {
     }
 
     .bubble {
-        padding: 12px 20px; 
+        padding: 10px 14px; 
     }
 
     .retrospective a {
-        padding: 12px 20px;
+        padding: 10px 14px;
+    }
+
+    .desc_container p1 {
+        margin-top: -4px;
     }
 
     .socials_container {
