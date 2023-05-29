@@ -515,8 +515,8 @@ footer a:hover {
         object-fit: cover;
 
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: flex-start;
+        align-items: flex-start;
     }
 
     .image img {
@@ -568,8 +568,8 @@ footer a:hover {
     .project_hero .image {
         aspect-ratio: 2/1;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: flex-start;
+        align-items: flex-start;
     }
 
     .image img {
