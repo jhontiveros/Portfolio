@@ -198,11 +198,13 @@ nav a:hover {
     background-color: var(--lgrey-container);
     border-radius: 30px;
     overflow: hidden;
+    object-fit: cover;
 }
 
 .image img {
     width: 100%;
     height: auto;
+    object-fit: cover;
 }
 
 .title_container {
@@ -497,6 +499,15 @@ footer a:hover {
 
     .project_hero .image {
         aspect-ratio: 2.5/1;
+        object-fit: cover;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image img {
+        object-fit: cover;
     }
 
     .section_container {
@@ -538,7 +549,14 @@ footer a:hover {
     }
 
     .project_hero .image {
-        aspect-ratio: 2.5/1;
+        aspect-ratio: 2/1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image img {
+        object-fit: cover;
     }
 
     .section_container {
