@@ -223,7 +223,7 @@ nav a:hover {
 }
 
 .bubble {
-    background-color: var(--lgrey-container);
+    background-color: rgb(255, 246, 240);
     border-radius: 20px;
     padding: 16px 24px;
 
@@ -317,17 +317,16 @@ footer a:hover {
 
 /* MEDIA QUERIES */
 
-@media screen and (min-width: 1275px) and (max-width: 1280px) {
+@media screen and (min-width: 1175px) and (max-width: 1280px) {
     body {
         padding: 5.5rem 12.5vw 0px 12.5vw;
     }
 }
 
-@media screen and (min-width: 1045px) and (max-width: 1274px) {
+@media screen and (min-width: 985px) and (max-width: 1174px) {
     body {
         padding: 3.5rem 1.7rem 0px 1.7rem;
         gap: 80px;
-        background-color: salmon;
     }
 
     main {
@@ -343,7 +342,7 @@ footer a:hover {
     }
 }
 
-@media screen and (max-width: 1044px) {
+@media screen and (max-width: 984px) {
     body {
         padding: 3.5rem 1.7rem 0px 1.7rem;
         gap: 80px;
@@ -359,6 +358,51 @@ footer a:hover {
         justify-content: space-between;
         align-items: center;
         gap: 16px;
+    }
+
+    .about_container {
+        gap: 88px;
+    }
+
+    #about {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 16px;
+    }
+
+    .bubble {
+        padding: 10px 14px; 
+    }
+
+    .pfp_container {
+        border-radius: 35px;
+        width: auto;
+        height: auto;
+    
+        aspect-ratio: 2.6/1;
+        overflow: hidden;
+        object-fit: cover;
+    
+        display: flex;
+        justify-content: center;
+    }
+    
+    .pfp_container img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    #about_2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 16px;
+    }
+
+    ul {
+        margin-left: 16px;
     }
 
     .socials_container {
