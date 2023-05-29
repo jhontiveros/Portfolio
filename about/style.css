@@ -181,10 +181,90 @@ nav a:hover {
 
 
 
-/* ABOUT SECTION */
+/* ABOUT SECTION(s) */
 
+.about_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 104px;
+}
 
+#about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
+}
 
+.pfp_container {
+    border-radius: 35px;
+    width: 140vw;
+    height: auto;
+
+    aspect-ratio: 16/9;
+    overflow: hidden;
+    object-fit: cover;
+
+    display: flex;
+    justify-content: center;
+}
+
+.pfp_container img {
+    width: auto;
+    height: 100%;
+}
+
+.about_content_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 16px;
+}
+
+.bubble {
+    background-color: var(--lgrey-container);
+    border-radius: 20px;
+    padding: 16px 24px;
+
+    margin-bottom: 24px;
+}
+
+.bubble a {
+    color: var(--black-pri);
+    font-weight: var(--paragraph-semi);
+    font-style: italic;
+    text-decoration: none;
+}
+
+.bubble a:hover {
+    animation: move 12s ease infinite;
+	background-image: linear-gradient(-45deg, var(--tags-1), var(--tags-2), var(--tags-3), var(--tags-4), var(--tags-5), var(--tags-1), var(--tags-2), var(--tags-3), var(--tags-4), var(--tags-5));
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+h2 {
+    font-family: 'Epilogue', 'Inter', sans-serif;
+    letter-spacing: 0.3px;
+    min-width: 320px;
+}
+
+#about_2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 40px;
+}
+
+li {
+    margin-bottom: 12px;
+}
+
+.emphasis {
+    font-weight: var(--paragraph-semi);
+}
 
 
 
