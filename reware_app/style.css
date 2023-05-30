@@ -367,6 +367,10 @@ li {
     align-items: center;
 }
 
+#small_image .image_format_1 {
+    aspect-ratio: 2.6/1;
+}
+
 
 
 
@@ -515,8 +519,8 @@ footer a:hover {
         object-fit: cover;
 
         display: flex;
-        justify-content: center;
-        align-items: center;
+        justify-content: flex-start;
+        align-items: flex-start;
     }
 
     .image img {
