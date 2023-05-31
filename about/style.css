@@ -317,7 +317,7 @@ footer a:hover {
 
 /* MEDIA QUERIES */
 
-@media screen and (min-width: 1125px) and (max-width: 1650px) {
+@media screen and (min-width: 1125px) and (max-width: 1150px) {
     body {
         padding: 5.5rem 12.5vw 0px 12.5vw;
     }
