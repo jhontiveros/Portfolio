@@ -317,15 +317,15 @@ footer a:hover {
 
 /* MEDIA QUERIES */
 
-@media screen and (min-width: 1175px) and (max-width: 1280px) {
+@media screen and (min-width: 1125px) and (max-width: 1650px) {
     body {
         padding: 5.5rem 12.5vw 0px 12.5vw;
     }
 }
 
-@media screen and (min-width: 985px) and (max-width: 1174px) {
+@media screen and (min-width: 806px) and (max-width: 1124px) {
     body {
-        padding: 3.5rem 1.7rem 0px 1.7rem;
+        padding: 5.5rem 12.5vw 0px 12.5vw;
         gap: 80px;
     }
 
@@ -333,16 +333,49 @@ footer a:hover {
         gap: 80px;
     }
 
-    .topnav {
+    .about_container {
+        gap: 88px;
+    }
+
+    #about {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        align-items: center;
         gap: 16px;
+    }
+
+    .pfp_container {
+        border-radius: 35px;
+        width: auto;
+        height: auto;
+    
+        aspect-ratio: 2.6/1;
+        overflow: hidden;
+        object-fit: cover;
+    
+        display: flex;
+        justify-content: center;
+    }
+    
+    .pfp_container img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    #about_2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 16px;
+    }
+
+    ul {
+        margin-left: 16px;
     }
 }
 
-@media screen and (max-width: 984px) {
+@media screen and (max-width: 805px) {
     body {
         padding: 3.5rem 1.7rem 0px 1.7rem;
         gap: 80px;
