@@ -492,22 +492,14 @@ footer a:hover {
     }
 }
 
-@media screen and (min-width: 645px) and (max-width: 965px) {
+@media screen and (min-width: 806px) and (max-width: 965px) {
     body {
-        padding: 3.5rem 1.7rem 0px 1.7rem;
+        padding: 5.5rem 12.5vw 0px 12.5vw;
         gap: 80px;
     }
 
     main {
         gap: 80px;
-    }
-
-    .topnav {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        gap: 16px;
     }
 
     .project_hero .image {
@@ -547,7 +539,7 @@ footer a:hover {
     }
 }
 
-@media screen and (max-width: 644px) {
+@media screen and (max-width: 805px) {
     body {
         padding: 3.5rem 1.7rem 0px 1.7rem;
         gap: 80px;
