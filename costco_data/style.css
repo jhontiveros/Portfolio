@@ -199,6 +199,10 @@ nav a:hover {
     border-radius: 30px;
     overflow: hidden;
     object-fit: cover;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .image img {
@@ -511,8 +515,8 @@ footer a:hover {
         object-fit: cover;
 
         display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
+        justify-content: center;
+        align-items: center;
     }
 
     .image img {
