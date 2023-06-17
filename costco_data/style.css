@@ -574,7 +574,9 @@ footer a:hover {
     }
 
     .project_hero .image {
-        aspect-ratio: 2/1;
+        aspect-ratio: 1.8/1;
+        border-radius: 24px;
+        
         display: flex;
         justify-content: center;
         align-items: center;
@@ -587,6 +589,10 @@ footer a:hover {
 
     .image img {
         object-fit: cover;
+    }
+
+    #small_image .image_format_1 {
+        aspect-ratio: 2.6/1;
     }
 
     #gif .image_format_1 img {

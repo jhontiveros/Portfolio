@@ -385,6 +385,10 @@ footer a:hover {
         gap: 80px;
     }
 
+    nav a {
+        font-weight: 600;
+    }
+
     .topnav {
         display: flex;
         flex-direction: column;
