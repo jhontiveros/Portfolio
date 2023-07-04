@@ -218,7 +218,7 @@ nav a:hover {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 8px;
+    gap: 6px;
 }
 
 .tags p3 {
@@ -612,6 +612,10 @@ footer a:hover {
     .section_content {
         gap: 48px;
         width: auto;
+    }
+
+    .project .tags {
+        gap: 4px;
     }
 
     .tags p3 {
