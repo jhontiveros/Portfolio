@@ -375,6 +375,10 @@ li {
     aspect-ratio: 3.2/1;
 }
 
+#small_image1 .image_format_1 {
+    aspect-ratio: 3.2/1;
+    margin-top: -40px;
+}
 
 
 
@@ -527,6 +531,10 @@ footer a:hover {
         border-radius: 3.4vw;
     }
 
+    #small_image1 .image_format_1 {
+        margin-top: -30px;
+    }
+
     .section_container {
         gap: 104px;
     }
@@ -593,6 +601,11 @@ footer a:hover {
 
     #small_image .image_format_1 {
         aspect-ratio: 2.6/1;
+    }
+
+    #small_image1 .image_format_1 {
+        aspect-ratio: 2.6/1;
+        margin-top: -30px;
     }
 
     #gif .image_format_1 img {
