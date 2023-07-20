@@ -1,6 +1,6 @@
 /* DESIGN SETTINGS */
 
-@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700;800&family=Wix+Madefor+Text:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&family=Wix+Madefor+Text:wght@400;500;600;700&display=swap');
 
 * {
     margin: 0px;
@@ -42,11 +42,7 @@
     --grey-active: #D9D9D9;
     --lgrey-container: #F5F5F5;
 
-    --tags-1: #f0807e;
-    --tags-2: #b29cc8;
-    --tags-3: #f6c053; 
-    --tags-4: #f39b73;
-    --tags-5: #d394a6;
+    --color: #3560dc;
 }
 
 h1 {
@@ -122,24 +118,12 @@ body {
     font-weight: 800;
     letter-spacing: -0.6px;
     text-decoration: none;
-
-    animation: move 12s ease infinite;
-	background-image: linear-gradient(-45deg, var(--tags-1), var(--tags-2), var(--tags-3), var(--tags-4), var(--tags-5), var(--tags-1), var(--tags-2), var(--tags-3), var(--tags-4), var(--tags-5));
-    background-size: 400% 400%;
-    -webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+    
+    color: var(--color);
 }
 
-@keyframes move {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
+.logo:hover {
+    letter-spacing: 3px;
 }
 
 nav {
@@ -213,7 +197,7 @@ main {
     content: 'Costco→';
     
     font-weight: 600;
-    color: #005DAA;
+    color: var(--color);
 }
 
 
@@ -239,24 +223,13 @@ main {
 }
 
 .project:hover .link {
-    animation: move 12s ease infinite;
-	background-image: linear-gradient(-45deg, var(--tags-1), var(--tags-2), var(--tags-3), var(--tags-4), var(--tags-5), var(--tags-1), var(--tags-2), var(--tags-3), var(--tags-4), var(--tags-5));
-    background-size: 400% 400%;
-    -webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+    color: var(--color);
 }
 
-@keyframes move {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
+.project:hover .color {
+    color: var(--color);
+    border: solid 2px var(--color);
+}
 
 .active:hover {
     transform: translateY(-12px);
@@ -287,46 +260,27 @@ main {
 }
 
 .tags p3 {
-    font-weight: var(--tag-semi);
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 700;
+    letter-spacing: .5px;
 
     border-radius: 20px;
-    padding: 6px 12px;
+    padding: 6px 10px;
 }
 
-.tags .year {
-    font-weight: 700;
+.tags .color {
     border: solid 2px var(--black-pri);
     color: var(--black-pri);
 }
 
-.tags .focus1 {
-    border: solid 2px var(--tags-1);
-    color: var(--tags-1);
-}
-
-.tags .focus2 {
-    border: solid 2px var(--tags-2);
-    color: var(--tags-2);
-}
-
-.tags .focus3 {
-    border: solid 2px var(--tags-4);
-    color: var(--tags-4);
-}
-
-.tags .exp1 {
-    border: solid 2px var(--tags-3);
-    color: var(--tags-3);
-}
-
-.tags .exp2 {
-    border: solid 2px var(--tags-5);
-    color: var(--tags-5);
+.tags .grey {
+    border: solid 2px var(--dgrey-button);
+    color: var(--dgrey-button);
 }
 
 .project a {
     font-family: 'Epilogue', 'Inter', sans-serif;
-    font-size: var(--h3-size);
+    font-size: var(--h2-size);
     font-weight: var(--paragraph-semi);
 
     text-decoration: none;
@@ -343,11 +297,6 @@ main {
 }
 
 #inactive_title {
-    color: var(--dgrey-button);
-}
-
-.tags .grey {
-    border: solid 2px var(--dgrey-button);
     color: var(--dgrey-button);
 }
 
@@ -391,11 +340,7 @@ footer a {
 }
 
 footer a:hover {
-    animation: move 12s ease infinite;
-	background-image: linear-gradient(-45deg, var(--tags-1), var(--tags-2), var(--tags-3), var(--tags-4), var(--tags-5), var(--tags-1), var(--tags-2), var(--tags-3), var(--tags-4), var(--tags-5));
-    background-size: 200% auto;
-    -webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+    color: var(--color);
 }
 
 
@@ -510,10 +455,7 @@ footer a:hover {
     }
 
     .tags p3 {
-        padding: 4px 8px;
-        letter-spacing: -0.5px;
-
-        font-weight: 700;
+        padding: 6px 12px;
     }
 
     .socials_container {
