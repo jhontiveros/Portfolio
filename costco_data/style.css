@@ -22,7 +22,7 @@
     
     --nav-size: 0.875rem;
     --sub-size: clamp(0.8rem, 2vw, 0.875rem);
-    --tag-size: clamp(0.75rem, 2vw, 0.875rem);
+    --tag-size: clamp(0.8rem, 2vw, 0.875rem);
 
 
     --heading-bold: 700;
@@ -205,6 +205,7 @@ nav a:hover {
 .tags {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     gap: 6px;
 }
