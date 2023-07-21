@@ -190,7 +190,7 @@ main {
 }
 
 #link:after {
-    content: 'Costco';
+    content: 'Costco.';
 }
 
 #link:hover:after {
