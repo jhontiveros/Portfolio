@@ -99,7 +99,7 @@ body {
 
     margin: auto;
     max-width: 1500px;
-    padding: 5.5rem clamp(6rem, 50vw, 9rem) 0px clamp(6rem, 50vw, 9rem);
+    padding: 4rem clamp(6rem, 50vw, 9rem) 0px clamp(6rem, 50vw, 9rem);
 
     color: var(--black-pri);
 }
@@ -125,7 +125,7 @@ main {
 
 .topnav .logo {
     font-family: 'Epilogue', 'Inter', sans-serif;
-    font-size: 2.7em;
+    font-size: 2em;
     font-weight: 800;
     letter-spacing: -0.6px;
     text-decoration: none;
@@ -134,7 +134,7 @@ main {
 }
 
 .logo:hover {
-    letter-spacing: 3px;
+    color: var(--black-pri);
 }
 
 nav {
@@ -295,13 +295,13 @@ footer a:hover {
 
 @media screen and (min-width: 1125px) and (max-width: 1150px) {
     body {
-        padding: 5.5rem 12.5vw 0px 12.5vw;
+        padding: 4rem 12.5vw 0px 12.5vw;
     }
 }
 
 @media screen and (min-width: 806px) and (max-width: 1124px) {
     body {
-        padding: 5.5rem 12.5vw 0px 12.5vw;
+        padding: 4rem 12.5vw 0px 12.5vw;
         gap: 80px;
     }
 
@@ -359,10 +359,6 @@ footer a:hover {
 
     main {
         gap: 80px;
-    }
-
-    nav a {
-        font-weight: 600;
     }
 
     .topnav {
