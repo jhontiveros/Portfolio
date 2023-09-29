@@ -20,7 +20,7 @@
     --black: #030303;
     --grey: #a3a3a3;
     --white: #FCFCFC;
-    --highlight: #3AA74F;
+    --highlight: #3560dc;
 
     --container: #f6f6f6;
 }
@@ -51,11 +51,15 @@ p2 {
     letter-spacing: 2px;
 }
 
+:hover, :after {
+    transition: .3s ease;
+}
+
 #black {
     color: var(--black);
 }
 
-#grey {
+.grey {
     color: var(--grey);
 }
 
@@ -99,6 +103,10 @@ body {
     color: var(--grey);
 }
 
+.nav a:hover {
+    color: var(--highlight);
+}
+
 
 
 main {
@@ -127,6 +135,23 @@ main {
     text-decoration: none;
 }
 
+#link {
+    text-decoration: none;
+    color: var(--black);
+}
+
+#link:after {
+    content: 'Costco.';
+}
+
+#link:hover:after {
+    content: 'Costco⤏';
+    color: var(--highlight);
+}
+
+
+
+
 
 .project_container {
     display: flex;
@@ -142,6 +167,15 @@ main {
     width: 100%;
 }
 
+.wide:hover img {
+    transform: scale(1.05);
+    transition: 0.3s ease;
+}
+
+.wide:hover #highlight {
+    color: var(--highlight);
+}
+
 .wide .image {
     display: flex;
     flex-direction: row;
@@ -152,6 +186,7 @@ main {
     height: auto;
     aspect-ratio: 3.2/1;
 
+    border: solid 2px var(--container);
     background-color: var(--container);
     overflow: hidden;
 }
@@ -167,6 +202,15 @@ main {
     gap: 16px;
 
     width: 100%;
+}
+
+.project:hover img {
+    transform: scale(1.05);
+    transition: 0.3s ease;
+}
+
+.project:hover #highlight {
+    color: var(--highlight);
 }
 
 .short .image {
@@ -218,6 +262,10 @@ img {
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: .25px;
+}
+
+.footer_container a:hover {
+    color: var(--highlight);
 }
 
 .left p, .socials a {
