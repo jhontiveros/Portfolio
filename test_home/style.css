@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200;9..40,300;9..40,400;9..40,500;9..40,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Lora:ital,wght@0,400;0,500;1,500&display=swap');
 
 * {
     margin: 0px;
@@ -10,43 +10,16 @@
 }
 
 :root {
-    --nav: 14px;
-    --title: 24px;
-    --heading-1: 20px;
-    --heading-2: 18px;
+    --heading-1: 38px;
+    --heading-2: 30px;
+    --heading-3: 24px;
+    --heading-4: 14px;
     --text: 16px;
-    --subtitle: 14px;
 
     --black: #111111;
     --grey: #909090;
     --white: #FFF6E3;
-    --highlight: #ED4714;
+    --highlight: #F1B806;
 
     --container: #191919;
-}
-
-h1 {
-    font-size: var(--title);
-    font-weight: 600;
-}
-
-h2 {
-    font-size: var(--heading-1);
-    font-weight: 600;
-}
-
-h3 {
-    font-size: var(--heading-2);
-    font-weight: 600;
-}
-
-p1 {
-    font-size: var(--text);
-    font-weight: 400;
-}
-
-p2 {
-    font-size: var(--subtitle);
-    font-weight: 600;
-    letter-spacing: 2px;
 }
