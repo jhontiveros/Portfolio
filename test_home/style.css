@@ -74,6 +74,8 @@ body {
 
     border: solid 2px green;
     background-color: var(--black);
+    max-width: 1500px;
+    margin: auto;
     padding: 64px 78px;
 }
 
