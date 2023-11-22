@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&family=Lora:ital,wght@0,400;0,500;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap');
 
 * {
     margin: 0px;
@@ -10,16 +10,130 @@
 }
 
 :root {
-    --heading-1: 38px;
+    --heading-1: 32px;
     --heading-2: 30px;
     --heading-3: 24px;
     --heading-4: 14px;
+    --heading-5: 12px;
     --text: 16px;
 
-    --black: #111111;
+    --black: #0D0D0D;
     --grey: #909090;
-    --white: #FFF6E3;
-    --highlight: #F1B806;
+    --white: #FFF0CE;
+    --color: #F1B806;
 
-    --container: #191919;
+    --container: #1D1D1D;
+}
+
+h1 {
+    font-size: var(--heading-1);
+    font-weight: 500;
+}
+
+h2 {
+    font-size: var(--heading-2);
+    font-weight: 500;
+}
+
+h3 {
+    font-size: var(--heading-3);
+    font-weight: 500;
+}
+
+h4 {
+    font-size: var(--heading-4);
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+h5 {
+    font-size: var(--heading-5);
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: var(--text);
+    font-weight: 400;
+}
+
+:hover, :after {
+    transition: .3s ease;
+}
+
+
+
+
+/* PAGE */
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 160px;
+
+    border: solid 2px green;
+    background-color: var(--container);
+    padding: 64px 78px;
+}
+
+
+
+
+/* NAV */
+
+header {
+    border: solid 2px royalblue;
+}
+
+.nav_container {
+    border: solid 2px salmon;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    color: var(--white);
+}
+
+.nav_container #logo {
+    font-size: var(--heading-4);
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    color: var(--white);
+}
+
+#logo:hover {
+    color: var(--color);
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+nav a {
+    font-size: var(--heading-5);
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    color: var(--white);
+
+    border: solid 1px var(--white);
+    border-radius: 30px;
+    padding: 4px 12px;
+}
+
+nav #current {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+nav a:hover {
+    background-color: var(--white);
+    color: var(--black);
 }
