@@ -153,6 +153,19 @@ main {
     justify-content: flex-start;
     align-items: center;
     gap: 160px;
+
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: backwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
 }
 
 .intro {
@@ -174,6 +187,17 @@ main {
     gap: 48px;
 
     width: 100%;
+
+    animation: transformUpAnimation ease 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: backwards;
+}
+
+@keyframes transformUpAnimation {
+    0% {
+        transform: translateY(48px);
+    }
+    100% {}
 }
 
 .project {
@@ -181,7 +205,7 @@ main {
 }
 
 .project:hover {
-    transform: translateY(-12px);
+    transform: translateY(-16px);
 }
 
 .project:hover .desc a {
