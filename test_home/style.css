@@ -59,7 +59,7 @@ p {
 }
 
 :hover, :after {
-    transition: .3s ease;
+    transition: 0.5s ease;
 }
 
 
@@ -104,7 +104,7 @@ body {
 }
 
 #logo {
-    transition: 0.3s ease-in-out;
+    transition: 0.5s ease;
 }
 
 #logo:hover {
@@ -129,7 +129,7 @@ nav a {
     border-radius: 30px;
     padding: 4px 12px;
 
-    transition: 0.3s ease-in-out;
+    transition: 0.5s ease;
 }
 
 nav #current {
@@ -201,7 +201,7 @@ main {
 }
 
 .project {
-    transition: 0.3s ease-in-out;
+    transition: 0.5s ease;
 }
 
 .project:hover {
@@ -284,7 +284,7 @@ img {
 }
 
 .footer_container a {
-    transition: 0.3s ease-in-out;
+    transition: 0.5s ease;
 }
 
 .footer_container a:hover {
