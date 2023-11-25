@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+    letter-spacing: .5px;
+
+    scroll-behavior: smooth;
+}
+
+:root {
+    --heading-1: 32px;
+    --heading-2: 30px;
+    --heading-3: 24px;
+    --heading-4: 14px;
+    --heading-5: 12px;
+    --text: 16px;
+
+    --black: #101010;
+    --grey: #909090;
+    --white: #f5eacd;
+    --color: #F1B806;
+
+    --container: #f5eacd09;
+    --container-2: #f1b60635;
+}
+
+h1 {
+    font-size: var(--heading-1);
+    font-weight: 400;
+}
+
+h2 {
+    font-size: var(--heading-2);
+    font-weight: 400;
+}
+
+h3 {
+    font-size: var(--heading-3);
+    font-weight: 400;
+}
+
+h4 {
+    font-size: var(--heading-4);
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+h5 {
+    font-size: var(--heading-5);
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: var(--text);
+    font-weight: 300;
+}
+
+:hover, :after {
+    transition: 0.5s ease;
+}
+
+
+
+
+/* PAGE */
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 104px;
+
+    background-color: var(--grey);
+    margin: auto;
+    padding: 64px 78px;
+
+    max-width: 1500px;
+}
+
+
+
+
+/* HEADER */
+
+.nav_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    color: var(--white);
+}
+
+.nav_container #logo {
+    font-size: var(--heading-4);
+    font-weight: 300;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    color: var(--white);
+}
+
+#logo {
+    transition: 0.5s ease;
+}
+
+#logo:hover {
+    color: var(--color);
+}
+
+#icon {
+    display: none;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+nav a {
+    font-size: var(--heading-5);
+    font-weight: 300;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    color: var(--white);
+
+    border: solid 1px var(--white);
+    border-radius: 30px;
+    padding: 4px 12px;
+
+    transition: 0.5s ease;
+}
+
+nav #current {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+nav a:hover {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+
+
+
+/* MAIN */
+
+main {
+    border: solid 2px green;
+    margin-bottom: 56px;
+}
+
+.about_container {
+    border: solid 2px blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 104px;
+}
+
+.top {
+    border: solid 2px salmon;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.pfp_container {
+    border: solid 2px yellow;
+    display: flex;
+    justify-content: center;
+
+    aspect-ratio: 2.8/2;
+    object-fit: cover;
+    overflow: hidden;
+
+    width: 160vw;
+    height: auto;
+}
+
+.pfp_container img {
+    width: auto;
+    height: 100%;
+}
+
+.desc {
+    border: solid 2px purple;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 24px;
+}
+
+.banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+
+    background-color: var(--container-2);
+    color: var(--black);
+
+    padding: 16px;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 8px;
+
+    color: var(--black);
+}
+
+
+
+
+/* FOOTER */
+
+.footer_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    gap: 8px;
+
+    width: 100%;
+}
+
+.footer_container a {
+    transition: 0.5s ease;
+}
+
+.footer_container a:hover {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.left, .right {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.left a, .right a {
+    font-size: var(--heading-5);
+    font-weight: 300;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    color: var(--white);
+
+    border: solid 1px var(--white);
+    border-radius: 30px;
+    padding: 4px 12px;
+}
+
+.left h5 {
+    font-size: var(--heading-5);
+    font-weight: 300;
+    text-transform: uppercase;
+
+    background-color: var(--color);
+    color: var(--black);
+
+    border: solid 1px var(--color);
+    border-radius: 30px;
+    padding: 4px 12px;
+}
+
+#small {
+    font-size: 10px;
+}
