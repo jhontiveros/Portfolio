@@ -79,25 +79,6 @@ body {
     padding: 64px 78px;
 
     max-width: 1500px;
-
-    animation: pageLoadAnimation ease 2s;
-    animation-iteration-count: 1;
-    animation-fill-mode: backwards;
-}
-
-@keyframes pageLoadAnimation {
-    0% {
-        background-color: var(--black);
-        opacity: 0;
-    }
-    40% {
-        background-color: var(--black);
-        opacity: 0;
-    }
-    100% {
-        background-color: var(--white);
-        opacity: 1;
-    }
 }
 
 
@@ -173,10 +154,9 @@ nav a:hover {
 
 main {
     margin-bottom: 56px;
-    animation: fadeInAnimation ease 2s;
+    animation: fadeInAnimation ease 1.8s;
     animation-iteration-count: 1;
     animation-fill-mode: backwards;
-    animation-delay: 1s;
 }
 
 @keyframes fadeInAnimation {
@@ -194,10 +174,9 @@ main {
     justify-content: flex-start;
     gap: 104px;
 
-    animation: transformUpAnimation ease 1.5s;
+    animation: transformUpAnimation ease 2s;
     animation-iteration-count: 1;
     animation-fill-mode: backwards;
-    animation-delay: 1s;
 }
 
 @keyframes transformUpAnimation {
