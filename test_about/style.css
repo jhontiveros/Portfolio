@@ -20,7 +20,7 @@
 
     --black: #101010;
     --grey: #909090;
-    --white: #FFFEFB;
+    --white: #fffcf7;
     --color: #F1B806;
 
     --container: #f5eacd09;
@@ -154,6 +154,7 @@ nav a:hover {
 
 main {
     margin-bottom: 56px;
+
     animation: fadeInAnimation ease 1.8s;
     animation-iteration-count: 1;
     animation-fill-mode: backwards;
@@ -167,6 +168,7 @@ main {
         opacity: 1;
      }
 }
+
 
 .about_container {
     display: flex;
@@ -197,16 +199,16 @@ main {
     display: flex;
     justify-content: center;
 
-    aspect-ratio: 3/2;
+    aspect-ratio: 16/9;
     overflow: hidden;
-    width: 140vw;
+    width: 100%;
 }
 
 .pfp_container img {
     object-fit: cover;
 
     height: auto;
-    max-width: 100%;
+    width: 100%;
 }
 
 .desc {
@@ -214,6 +216,8 @@ main {
     flex-direction: column;
     justify-content: flex-start;
     gap: 24px;
+
+    max-width: 56%;
 }
 
 .banner {
@@ -247,7 +251,6 @@ main {
     color: var(--black);
 }
 
-
 .bottom {
     display: flex;
     flex-direction: column;
@@ -269,6 +272,7 @@ main {
 .hobby {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     justify-content: flex-start;
     gap: 8px;
 
@@ -287,7 +291,7 @@ main {
     object-fit: cover;
 
     height: auto;
-    max-width: 100%;
+    width: 100%;
 }
 
 
@@ -349,4 +353,97 @@ main {
 
 #small {
     font-size: 10px;
+}
+
+
+
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 683px) and (max-width: 1025px) {
+    body {
+        background-color: var(--white);
+    }
+
+    .top {
+        flex-direction: column;
+    }
+
+    .pfp_container {
+        aspect-ratio: 2/1;
+    }
+
+    .desc {
+        max-width: 100%;
+    }
+
+    .hobby_container {
+        flex-wrap: wrap;
+    }
+
+    .hobby {
+        width: calc(50% - 12px);
+    }
+}
+
+@media screen and (max-width: 682px) {
+    body {
+        background-color: var(--white);
+        padding: 30px 22px;
+        gap: 104px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+
+    main {
+        margin-bottom: 0px;
+    }
+
+    .nav_container {
+        align-items: center;
+    }
+
+    #logo {
+        display: none;
+    }
+    
+    #icon {
+        display: block;
+    }
+
+    #icon img {
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        height: 24px;
+    }
+
+    .top {
+        flex-direction: column;
+    }
+
+    .pfp_container {
+        aspect-ratio: 2/1;
+    }
+
+    .desc {
+        max-width: 100%;
+    }
+
+    .hobby_container {
+        flex-direction: column;
+    }
+
+
+    .footer_container {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .left h5 {
+        display: none;
+    }
 }
