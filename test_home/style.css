@@ -111,6 +111,10 @@ body {
     color: var(--color);
 }
 
+#icon {
+    display: none;
+}
+
 nav {
     display: flex;
     flex-direction: row;
@@ -355,24 +359,40 @@ img {
 @media screen and (max-width: 682px) {
     body {
         background-color: rgb(4, 24, 41);
-        padding: 20px 20px;
+        padding: 30px 22px;
         gap: 104px;
     }
 
     h1 {
-        font-size: 28px;
+        font-size: 22px;
     }
 
-    .nav_container #logo {
-        font-size: var(--heading-5);
+
+    .nav_container {
+        align-items: center;
     }
 
-    #title {
+    #logo {
         display: none;
     }
+    
+    #icon {
+        display: block;
+    }
 
+    #icon img {
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        height: 24px;
+    }
+
+  
     main {
         gap: 104px;
+    }
+
+    #color {
+        display: none;
     }
 
     .desc {
@@ -392,6 +412,13 @@ img {
         flex-direction: column;
         justify-content: space-between;
         gap: 48px;
+    }
+
+
+    .footer_container {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 8px;
     }
 
     .left h5 {
