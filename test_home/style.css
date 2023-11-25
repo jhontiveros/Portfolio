@@ -18,7 +18,7 @@
     --heading-5: 12px;
     --text: 16px;
 
-    --black: #0D0D0D;
+    --black: #101010;
     --grey: #909090;
     --white: #f5eacd;
     --color: #F1B806;
@@ -345,7 +345,7 @@ img {
 
 @media screen and (min-width: 683px) and (max-width: 1025px) {
     body {
-        background-color: rgb(41, 4, 39);
+        background-color: var(--black);
     }
 
     .top, .bottom {
@@ -358,7 +358,7 @@ img {
 
 @media screen and (max-width: 682px) {
     body {
-        background-color: rgb(4, 24, 41);
+        background-color: var(--black);
         padding: 30px 22px;
         gap: 104px;
     }
