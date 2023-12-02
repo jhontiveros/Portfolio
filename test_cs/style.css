@@ -175,11 +175,22 @@ main {
     width: 100%;
 }
 
+.figma {
+    background-color: none;
+}
+
 img {
     object-fit: cover;
 
     height: 100%;
     max-width: 100%;
+}
+
+.short, .tall {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .short img {
@@ -196,6 +207,8 @@ img {
     justify-content: flex-start;
     align-items: flex-start;
     gap: 56px;
+
+    color: var(--white);
 }
 
 .title_container p{
@@ -223,9 +236,49 @@ img {
     width: 100%;
 }
 
-.base h3 {
+.base .section_title {
     border: solid 2px purple;
     width: 16vw;
+
+    color: var(--white);
+}
+
+.section_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 56px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 4px;
+}
+
+.content h5 {
+    color: var(--grey);
+}
+
+.content h3 {
+    margin-bottom: 12px;
+    color: var(--white);
+}
+
+.content p {
+    color: var(--white);
+}
+
+.image_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 16px;
+}
+
+.hide {
+    color: var(--white);
 }
 
 
