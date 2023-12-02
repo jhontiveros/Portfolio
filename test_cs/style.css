@@ -18,7 +18,7 @@
     --heading-5: 12px;
     --text: 16px;
 
-    --black: #727272;
+    --black: #101010;
     --grey: #909090;
     --white: #f5eacd;
     --color: #F1B806;
@@ -160,7 +160,6 @@ main {
 }
 
 .project_hero {
-    border: solid 2px orange;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -170,7 +169,7 @@ main {
 }
 
 .image {
-    background-color: var(--color);
+    background-color: var(--container);
 
     width: 100%;
 }
@@ -212,7 +211,6 @@ img {
 }
 
 .title_container p{
-    border: solid 2px purple;
     width: 16vw;
 }
 
@@ -226,7 +224,6 @@ img {
 }
 
 .base {
-    border: solid 2px goldenrod;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -237,7 +234,6 @@ img {
 }
 
 .base .section_title {
-    border: solid 2px purple;
     width: 16vw;
 
     color: var(--white);
@@ -248,6 +244,10 @@ img {
     flex-direction: column;
     justify-content: flex-start;
     gap: 56px;
+}
+
+.section_content a {
+    text-decoration: none;
 }
 
 .content {
@@ -279,6 +279,49 @@ img {
 
 .hide {
     color: var(--white);
+}
+
+.button {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: var(--container);
+    border: solid 1.5px transparent;
+    padding: 22px;
+
+    transition: 0.5s ease;
+}
+
+.button:hover {
+    border: solid 1.5px var(--white);
+}
+
+.button_desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 4px;
+}
+
+.button_desc h5 {
+    color: var(--grey);
+}
+
+.button_desc h3 {
+    color: var(--white);
+}
+
+.icon_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--container);
+    padding: 18px 14px;
+
 }
 
 
