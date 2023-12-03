@@ -344,10 +344,6 @@ img {
 /* MEDIA QUERIES */
 
 @media screen and (min-width: 683px) and (max-width: 1025px) {
-    body {
-        background-color: var(--black);
-    }
-
     .top, .bottom {
         display: flex;
         flex-direction: column;
@@ -358,7 +354,6 @@ img {
 
 @media screen and (max-width: 682px) {
     body {
-        background-color: var(--black);
         padding: 30px 22px;
         gap: 104px;
     }

@@ -218,7 +218,7 @@ img {
 }
 
 .short img {
-    aspect-ratio: 3/1;
+    aspect-ratio: 2.8/1;
 }
 
 .tall img {
@@ -236,14 +236,14 @@ img {
 }
 
 .title_container p{
-    width: 16vw;
+    min-width: 220px;
 }
 
 .section_container {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    gap: 160px;
+    gap: 104px;
 
     width: 100%;
 }
@@ -259,7 +259,7 @@ img {
 }
 
 .base .section_title {
-    width: 16vw;
+    min-width: 220px;
 
     color: var(--white);
 }
@@ -311,10 +311,11 @@ img {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    gap: 16px;
 
     background-color: var(--container);
     border: solid 1.5px transparent;
-    padding: 22px;
+    padding: 16px;
 
     transition: 0.5s ease;
 }
@@ -408,4 +409,89 @@ img {
 
 #small {
     font-size: 10px;
+}
+
+
+
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 683px) and (max-width: 1025px) {
+    body {
+        background-color: rgb(6, 26, 64);
+    }
+
+    .title_container p {
+        display: none;
+    }
+    
+    .short img {
+        aspect-ratio: 2.2/1;
+    }
+
+    .base {
+        flex-direction: column;
+        gap: 24px;
+    }
+}
+
+@media screen and (max-width: 682px) {
+    body {
+        background-color: rgb(53, 2, 53);
+        padding: 30px 22px;
+        gap: 104px;
+    }
+
+    h2 {
+        font-size: var(--heading-3);
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .nav_container {
+        align-items: center;
+    }
+
+    #logo {
+        display: none;
+    }
+    
+    #icon {
+        display: block;
+    }
+
+    #icon img {
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        height: 24px;
+    }
+
+    .project_hero {
+        margin-bottom: 0px;
+    }
+
+    .title_container p {
+        display: none;
+    }
+
+    .short img {
+        aspect-ratio: 2.2/1;
+    }
+    
+    .base {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .footer_container {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .left h5 {
+        display: none;
+    }
 }
