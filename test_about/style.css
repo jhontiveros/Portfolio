@@ -361,10 +361,6 @@ main {
 /* MEDIA QUERIES */
 
 @media screen and (min-width: 683px) and (max-width: 1025px) {
-    body {
-        background-color: var(--white);
-    }
-
     .top {
         flex-direction: column;
     }
@@ -388,7 +384,6 @@ main {
 
 @media screen and (max-width: 682px) {
     body {
-        background-color: var(--white);
         padding: 30px 22px;
         gap: 104px;
     }
