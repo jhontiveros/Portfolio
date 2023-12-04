@@ -218,10 +218,12 @@ img {
 
 .short img {
     aspect-ratio: 2.8/1;
+    width: 100%;
 }
 
 .tall img {
     aspect-ratio: 16/9;
+    width: 100%;
 }
 
 .title_container {
@@ -302,6 +304,7 @@ img {
 }
 
 .hide {
+    display: none;
     color: var(--white);
 }
 
