@@ -51,11 +51,13 @@ h5 {
     font-size: var(--heading-5);
     font-weight: 300;
     text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 p {
     font-size: var(--text);
     font-weight: 300;
+    line-height: 1.6rem;
 }
 
 :hover, :after {
@@ -244,7 +246,7 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    gap: 104px;
+    gap: 160px;
 
     width: 100%;
 }
@@ -269,7 +271,7 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    gap: 56px;
+    gap: 80px;
 }
 
 .section_content a {
@@ -303,9 +305,23 @@ img {
     gap: 16px;
 }
 
+.image_container p {
+    color: var(--white);
+}
+
+ul {
+    margin-left: 2rem;
+}
+
+li {
+    font-size: var(--text);
+    font-weight: 300;
+    color: var(--white);
+    margin-top: 8px;
+}
+
 .hide {
     display: none;
-    color: var(--white);
 }
 
 .button {
