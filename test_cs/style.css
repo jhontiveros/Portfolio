@@ -489,6 +489,10 @@ li {
         display: none;
     }
 
+    .section_content {
+        gap: 56px;
+    }
+
     .short img {
         aspect-ratio: 2.2/1;
     }
