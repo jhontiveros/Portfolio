@@ -11,7 +11,7 @@
 }
 
 :root {
-    --heading-1: 32px;
+    --heading-1: 48px;
     --heading-2: 30px;
     --heading-3: 24px;
     --heading-4: 14px;
@@ -177,6 +177,11 @@ main {
 
     color: var(--white);
     max-width: 750px;
+}
+
+#greeting {
+    font-size: var(--heading-3);
+    font-weight: 300;
 }
 
 #color {
