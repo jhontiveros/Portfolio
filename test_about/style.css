@@ -29,7 +29,7 @@
 
 h1 {
     font-size: var(--heading-1);
-    font-weight: 400;
+    font-weight: 500;
 }
 
 h2 {
@@ -343,8 +343,8 @@ main {
     font-weight: 300;
     text-transform: uppercase;
 
-    background-color: var(--container-2);
-    color: var(--black);
+    background-color: var(--color);
+    color: var(--white);
 
     border: solid 1px var(--container-2);
     border-radius: 30px;
