@@ -364,8 +364,9 @@ img {
         gap: 104px;
     }
 
-    h1 {
+    h1, #greeting {
         font-size: var(--heading-3);
+        font-weight: 500;
     }
 
 
