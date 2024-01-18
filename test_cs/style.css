@@ -23,7 +23,7 @@
     --white: #ffffff;
     --color: #F1B806;
 
-    --container: #d9d9d930;
+    --container: #d9d9d93a;
 }
 
 h1 {
@@ -33,12 +33,12 @@ h1 {
 
 h2 {
     font-size: var(--heading-2);
-    font-weight: 400;
+    font-weight: 500;
 }
 
 h3 {
     font-size: var(--heading-3);
-    font-weight: 400;
+    font-weight: 500;
 }
 
 h4 {
@@ -49,7 +49,7 @@ h4 {
 
 h5 {
     font-size: var(--heading-5);
-    font-weight: 300;
+    font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
