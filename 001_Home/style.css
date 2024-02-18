@@ -1,0 +1,114 @@
+/* DESIGN SETTINGS */
+
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Geologica", sans-serif;
+    font-weight: 200;
+
+    scroll-behavior: smooth;
+}
+
+:root {
+    --heading-1: 2.50rem; /* intro,contact */
+    --heading-2: 2rem; /* services, about */
+    --heading-3: 1.5rem; /* large subtitle */
+    --heading-4: 0.875rem; /* small subtitle */
+    --text: 1rem; /* nav bar, paragraph */
+
+    --black: #101010;
+    --grey: #909090;
+    --white: #FFFFFF;
+    --color: #F1B806;
+
+    --container: #FBFBFB;
+}
+
+h1, h2, h3 {
+    font-family: "Lora", serif;
+}
+
+h1 {
+    font-size: var(--heading-1);
+}
+
+h2 {
+    font-size: var(--heading-2);
+}
+
+h3 {
+    font-size: var(--heading-3);
+}
+
+.link a {
+    font-size: var(--text);
+    text-decoration: none;
+
+    color: var(--black);
+}
+
+p, li {
+    font-size: var(--text);
+}
+
+
+
+
+/* PAGE */
+
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 160px;
+
+    background-color: var(--white);
+    margin: auto;
+    padding: 3.5rem;
+
+    max-width: 1500px;
+}
+
+:hover, :after {
+    transition: 0.5s ease;
+}
+
+
+
+
+/* HEADER */
+
+.dot {
+    height: .75rem;
+    width: .75rem;
+    border-radius: 100%;
+
+    background-color: var(--color);
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 0.5rem;
+}
+
+.link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.link .dot {
+    background-color: var(--white);
+}
+
+.link:hover {
+    .dot {
+        background-color: var(--color);
+    }
+}
