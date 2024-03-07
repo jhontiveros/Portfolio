@@ -17,8 +17,8 @@ $text-style-large: 1.125rem;
 $text-style-medium: 1rem;
 $text-style-small: 0.875rem;
 
-$line-height-heading: 120%;
-$line-height-text: 130%;
+$line-height-heading: 128%;
+$line-height-text: 138%;
 
 
 $space-small-8: 0.5rem;
@@ -42,7 +42,7 @@ $space-xlarge-280: 17.5rem;
 $color-white: #FCFCFC;
 $color-container: #aaaaaa16;
 $color-grey: #5A5A5A;
-$color-black: #020202;
+$color-black: #101010;
 
 
 
@@ -62,6 +62,7 @@ $color-black: #020202;
     font-size: $size;
     font-weight: $weight;
     line-height: $line-height-heading;
+    letter-spacing: 0.2px;
 
     color: $color-black;
 }
@@ -98,9 +99,8 @@ body {
 .nav {
     position: fixed;
     left: calc(50% - 10rem);
-    bottom: 4rem;
+    bottom: 3rem;
     background-color: transparent;
-
 
     &__list {
         @include flex(row, space-between, center, $space-small-16);
@@ -114,7 +114,7 @@ body {
     &__link {
         text-decoration: none;
         background-color: transparent;
-        letter-spacing: .25px;
+        letter-spacing: 0.2px;
         color: $color-grey;
 
         transition: 0.5s ease;
@@ -136,3 +136,17 @@ body {
 
 /* INTRO */
 
+.intro {
+    @include flex(column, flex-start, flex-start, $space-small-16);
+    height: 100vh;
+    padding-top: 8rem;
+
+    &__logo {
+        height: 2rem;
+        width: auto;
+    }
+
+    &__desc {
+        @include heading($heading-size-1, 400);
+    }
+}

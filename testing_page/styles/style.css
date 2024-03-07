@@ -25,7 +25,7 @@ body {
 .nav {
   position: fixed;
   left: calc(50% - 10rem);
-  bottom: 4rem;
+  bottom: 3rem;
   background-color: transparent;
 }
 .nav__list {
@@ -44,17 +44,38 @@ body {
 .nav__link {
   text-decoration: none;
   background-color: transparent;
-  letter-spacing: 0.25px;
+  letter-spacing: 0.2px;
   color: #5A5A5A;
   transition: 0.5s ease;
 }
 .nav__link--active {
-  color: #020202;
+  color: #101010;
   text-decoration: underline;
   text-underline-offset: 4px;
 }
 .nav__link:hover {
-  color: #020202;
+  color: #101010;
 }
 
-/* INTRO *//*# sourceMappingURL=style.css.map */
+/* INTRO */
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+  height: 100vh;
+  padding-top: 8rem;
+}
+.intro__logo {
+  height: 2rem;
+  width: auto;
+}
+.intro__desc {
+  font-family: "Hedvig Letters Serif", serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 128%;
+  letter-spacing: 0.2px;
+  color: #101010;
+}/*# sourceMappingURL=style.css.map */
