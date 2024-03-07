@@ -40,7 +40,7 @@ $space-xlarge-280: 17.5rem;
 
 
 $color-white: #FCFCFC;
-$color-container: #aaaaaa20;
+$color-container: #aaaaaa16;
 $color-grey: #5A5A5A;
 $color-black: #020202;
 
@@ -86,25 +86,29 @@ body {
     padding: 0 10rem;
 }
 
+:hover, :after {
+    transition: 0.75s ease;
+}
+
 
 
 
 /* NAV */
 
 .nav {
-    @include flex(row, center, center, 0);
     position: fixed;
-    bottom: 2rem;
-    border: solid 2px orange;
+    left: calc(50% - 10rem);
+    bottom: 4rem;
+    background-color: transparent;
 
 
     &__list {
         @include flex(row, space-between, center, $space-small-16);
         padding: 20px 32px;
         border-radius: 50px;
+        border: solid 1px $color-container;
         background-color: $color-container;
-        backdrop-filter: blur(10px);
-        border: solid 2px $color-container;
+        backdrop-filter: blur(16px);
     }
 
     &__link {
@@ -113,9 +117,22 @@ body {
         letter-spacing: .25px;
         color: $color-grey;
 
+        transition: 0.5s ease;
+
         &--active {
-            font-weight: 500;
+            color: $color-black;
+            text-decoration: underline;
+            text-underline-offset: 4px;
+        }
+
+        &:hover {
             color: $color-black
         }
     }
 }
+
+
+
+
+/* INTRO */
+
