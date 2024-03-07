@@ -1,0 +1,121 @@
+/* VARIABLES */
+
+@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&display=swap');
+
+
+$heading-style-serif: 'Hedvig Letters Serif', serif;
+$heading-style-sans-serif: 'Helvetica Neue', sans-serif;
+$text-style: 'Helvetica Neue', sans-serif;
+
+$heading-size-1: 2.5rem;
+$heading-size-2: 2.25rem;
+$heading-size-3: 2rem;
+$heading-size-4: 1.5rem;
+$heading-size-5: 0.875rem;
+
+$text-style-large: 1.125rem;
+$text-style-medium: 1rem;
+$text-style-small: 0.875rem;
+
+$line-height-heading: 120%;
+$line-height-text: 130%;
+
+
+$space-small-8: 0.5rem;
+$space-small-16: 1rem;
+$space-small-24: 1.5rem;
+
+$space-medium-56: 3.5rem;
+$space-medium-64: 4rem;
+$space-medium-72: 4.5rem;
+
+$space-large-80: 5rem;
+$space-large-96: 6rem;
+$space-large-112: 7rem;
+$space-large-128: 8rem;
+
+$space-xlarge-216: 13.5rem;
+$space-xlarge-248: 15.5rem;
+$space-xlarge-280: 17.5rem;
+
+
+$color-white: #FCFCFC;
+$color-container: #aaaaaa20;
+$color-grey: #5A5A5A;
+$color-black: #020202;
+
+
+
+
+/* MIXINS */
+
+@mixin flex($direction, $position, $layout, $gap) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $position;
+    align-items: $layout;
+    gap: $gap;
+}
+
+@mixin heading($size, $weight) {
+    font-family: $heading-style-serif;
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $line-height-heading;
+
+    color: $color-black;
+}
+
+
+
+
+/* PAGE SETTINGS */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', sans-serif;
+    background-color: $color-white;
+    color: $color-grey;
+}
+
+body {
+    margin: auto;
+    max-width: 1440px;
+    padding: 0 10rem;
+}
+
+
+
+
+/* NAV */
+
+.nav {
+    @include flex(row, center, center, 0);
+    position: fixed;
+    bottom: 2rem;
+    border: solid 2px orange;
+
+
+    &__list {
+        @include flex(row, space-between, center, $space-small-16);
+        padding: 20px 32px;
+        border-radius: 50px;
+        background-color: $color-container;
+        backdrop-filter: blur(10px);
+        border: solid 2px $color-container;
+    }
+
+    &__link {
+        text-decoration: none;
+        background-color: transparent;
+        letter-spacing: .25px;
+        color: $color-grey;
+
+        &--active {
+            font-weight: 500;
+            color: $color-black
+        }
+    }
+}

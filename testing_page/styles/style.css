@@ -1,0 +1,53 @@
+/* VARIABLES */
+@import url("https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&display=swap");
+/* MIXINS */
+/* PAGE SETTINGS */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Helvetica Neue", sans-serif;
+  background-color: #FCFCFC;
+  color: #5A5A5A;
+}
+
+body {
+  margin: auto;
+  max-width: 1440px;
+  padding: 0 10rem;
+}
+
+/* NAV */
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  position: fixed;
+  bottom: 2rem;
+  border: solid 2px orange;
+}
+.nav__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 20px 32px;
+  border-radius: 50px;
+  background-color: rgba(170, 170, 170, 0.1254901961);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border: solid 2px rgba(170, 170, 170, 0.1254901961);
+}
+.nav__link {
+  text-decoration: none;
+  background-color: transparent;
+  letter-spacing: 0.25px;
+  color: #5A5A5A;
+}
+.nav__link--active {
+  font-weight: 500;
+  color: #020202;
+}/*# sourceMappingURL=style.css.map */
