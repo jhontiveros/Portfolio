@@ -109,7 +109,7 @@ body {
 
     &__list {
         @include flex(row, space-between, center, $space-small-16);
-        padding: 20px 32px;
+        padding: 18px 32px;
         border-radius: 50px;
         border: solid 1px $color-container;
         background-color: $color-container;
@@ -131,7 +131,8 @@ body {
         }
 
         &:hover {
-            color: $color-black
+            color: $color-black;
+            transform: translateY(-1px);
         }
     }
 }
@@ -164,6 +165,7 @@ body {
 .container {
     @include flex(column, flex-start, center, $space-xlarge-280);
     padding-top: $space-large-80;
+    padding-bottom: $space-xlarge-280;
     border: solid 2px salmon;
 }
 
@@ -260,4 +262,49 @@ ul {
         aspect-ratio: 1/1;
         object-fit: cover;
     }
+}
+
+
+
+
+/* CONTACT */
+
+.contact {
+    @include flex(column, flex-start, flex-start, $space-medium-56);
+
+    &__heading {
+        @include heading($heading-size-1, 400);
+    }
+
+    &__links {
+        @include flex(row, flex-start, flex-start, $space-small-16);
+    }
+
+    &__button {
+        font-size: $text-style-large;
+        text-decoration: none;
+        padding: 18px 32px;
+        transition: 0.5s ease;
+
+        &--email {
+            background-color: $color-black;
+            color: $color-white;
+            border-radius: 50px;
+            border: solid 1px $color-black;
+        }
+
+        &--copy {
+            background-color: $color-white;
+            color: $color-black;
+            border-radius: 50px;
+            border: solid 1px $color-black;
+        }
+
+        &:hover {
+            transform: translateY(-4px);
+        }
+    }
+
+
+
 }
