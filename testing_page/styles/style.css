@@ -91,15 +91,20 @@ body {
   align-items: center;
   gap: 17.5rem;
   padding-top: 5rem;
+  border: solid 2px salmon;
 }
 
+section {
+  width: 100%;
+}
+
+/* WORK */
 .work {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   gap: 7rem;
-  width: 100%;
 }
 .work__container {
   display: flex;
@@ -107,7 +112,6 @@ body {
   justify-content: flex-start;
   align-items: flex-start;
   gap: 3.5rem;
-  width: 100%;
 }
 
 .project {
@@ -136,21 +140,43 @@ body {
 .project__desc {
   font-size: 1.125rem;
 }
-.project__button {
-  text-decoration: none;
-  padding: 20px 32px;
-  border-radius: 50px;
-  border: solid 1px #5A5A5A;
-  transition: 0.5s ease;
-}
-.project__button:hover {
-  color: #FCFCFC;
-  background-color: #101010;
-}
 .project__image {
   width: 100%;
   height: 100%;
   aspect-ratio: 16/9;
   -o-object-fit: cover;
      object-fit: cover;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/* SERVICES */
+ul {
+  margin-left: 0.4rem;
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 3.5rem;
+}
+.services__heading, .services__skills, .services__item {
+  font-family: "Hedvig Letters Serif", serif;
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 128%;
+  letter-spacing: 0.2px;
+  color: #101010;
+}
+.services__desc {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 3.5rem;
+}
+.services__desc, .services__list {
+  width: 100%;
+}
+
+/* ABOUT *//*# sourceMappingURL=style.css.map */
