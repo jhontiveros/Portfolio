@@ -41,7 +41,7 @@ $space-xlarge-280: 17.5rem;
 
 $color-white: #FCFCFC;
 $color-container: #AAAAAA16;
-$color-grey: #5A5A5A;
+$color-grey: #555555;
 $color-black: #101010;
 
 
@@ -234,3 +234,30 @@ ul {
 
 
 /* ABOUT */
+
+.about {
+    @include flex(column, flex-start, flex-start, $space-medium-56);
+
+    &__content, &__snippet {
+        @include flex(column, flex-start, flex-start, $space-small-16);
+    }
+
+    &__heading {
+        @include heading($heading-size-3, 400);
+    }
+
+    &__desc {
+        font-size: $text-style-large;
+    }
+
+    &__gallery {
+        @include flex(row, flex-start, flex-start, $space-small-16);
+    }
+
+    &__image {
+        width: calc(33% - 0.42rem);
+        height: auto;
+        aspect-ratio: 1/1;
+        object-fit: cover;
+    }
+}
