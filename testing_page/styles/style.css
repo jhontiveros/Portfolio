@@ -1,6 +1,28 @@
 /* VARIABLES */
 @import url("https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&display=swap");
 /* MIXINS */
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes transformUpAnimation {
+  0% {
+    transform: translateY(48px);
+  }
+  40% {
+    transform: translateY(48px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
 /* PAGE SETTINGS */
 * {
   margin: 0px;
@@ -16,6 +38,9 @@
 }
 
 body {
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: backwards;
   margin: auto;
   max-width: 1440px;
   padding: 0 10rem;
@@ -73,6 +98,9 @@ body {
   padding-top: 8rem;
 }
 .intro__logo {
+  animation: transformUpAnimation ease 2.4s;
+  animation-iteration-count: 1;
+  animation-fill-mode: backwards;
   height: 2rem;
   width: auto;
 }
@@ -83,6 +111,9 @@ body {
   line-height: 128%;
   letter-spacing: 0.2px;
   color: #101010;
+  animation: transformUpAnimation ease 2.4s;
+  animation-iteration-count: 1;
+  animation-fill-mode: backwards;
 }
 
 /* MAIN CONTENT */
