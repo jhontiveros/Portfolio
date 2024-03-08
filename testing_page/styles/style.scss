@@ -36,7 +36,7 @@ $space-large-112: 7rem;
 $space-large-128: 8rem;
 
 $space-xlarge-216: 13.5rem;
-$space-xlare-232: 14.5rem;
+$space-xlarge-232: 14.5rem;
 $space-xlarge-248: 15.5rem;
 $space-xlarge-280: 17.5rem;
 
@@ -181,7 +181,7 @@ section {
 
 .work {
     @include flex(column, flex-start, center, $space-large-112);
-    border: solid 2px orange;
+    padding-top: $space-medium-48;
 
     &__container {
         @include flex(column, flex-start, flex-start, $space-medium-56);
@@ -222,6 +222,7 @@ ul {
 
 .services {
     @include flex(column, flex-start, flex-start, $space-medium-56);
+    padding-top: $space-medium-48;
 
     &__heading, &__skills, &__item {
         @include heading($heading-size-3, 400);
@@ -242,6 +243,7 @@ ul {
 
 .about {
     @include flex(column, flex-start, flex-start, $space-medium-56);
+    padding-top: $space-medium-48;
 
     &__content, &__snippet {
         @include flex(column, flex-start, flex-start, $space-small-16);
@@ -274,6 +276,7 @@ ul {
 
 .contact {
     @include flex(column, flex-start, flex-start, $space-medium-56);
+    padding-top: $space-medium-48;
 
     &__heading {
         @include heading($heading-size-1, 400);
@@ -316,6 +319,7 @@ ul {
 
 .footer {
     @include flex(row, space-between, center, none);
+    padding-top: $space-medium-48;
     padding-bottom: $space-medium-56;
 
     a {

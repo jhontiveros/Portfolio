@@ -91,9 +91,8 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  gap: 17.5rem;
-  padding-top: 3rem;
-  padding-bottom: 17.5rem;
+  gap: 14.5rem;
+  padding-bottom: 14.5rem;
 }
 
 section {
@@ -107,6 +106,7 @@ section {
   justify-content: flex-start;
   align-items: center;
   gap: 7rem;
+  padding-top: 3rem;
 }
 .work__container {
   display: flex;
@@ -161,6 +161,7 @@ ul {
   justify-content: flex-start;
   align-items: flex-start;
   gap: 3.5rem;
+  padding-top: 3rem;
 }
 .services__heading, .services__skills, .services__item {
   font-family: "Hedvig Letters Serif", serif;
@@ -188,6 +189,7 @@ ul {
   justify-content: flex-start;
   align-items: flex-start;
   gap: 3.5rem;
+  padding-top: 3rem;
 }
 .about__content, .about__snippet {
   display: flex;
@@ -229,6 +231,7 @@ ul {
   justify-content: flex-start;
   align-items: flex-start;
   gap: 3.5rem;
+  padding-top: 3rem;
 }
 .contact__heading {
   font-family: "Hedvig Letters Serif", serif;
@@ -274,6 +277,7 @@ ul {
   justify-content: space-between;
   align-items: center;
   gap: none;
+  padding-top: 3rem;
   padding-bottom: 3.5rem;
 }
 .footer a {
