@@ -53,7 +53,8 @@ body {
 /* NAV */
 .nav {
   position: fixed;
-  left: calc(50% - 10rem);
+  left: 50%;
+  transform: translateX(-50%);
   bottom: 3rem;
   background-color: transparent;
 }
@@ -321,4 +322,12 @@ ul {
 }
 .footer a:hover {
   color: #101010;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 680px) and (max-width: 1200px) {
+  body {
+    background-color: slateblue;
+    padding: 0 4rem;
+  }
 }/*# sourceMappingURL=style.css.map */
