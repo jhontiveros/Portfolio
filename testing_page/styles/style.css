@@ -57,6 +57,7 @@ body {
   transform: translateX(-50%);
   bottom: 3rem;
   background-color: transparent;
+  z-index: 100;
 }
 .nav__list {
   display: flex;
@@ -140,20 +141,19 @@ section {
   gap: 7rem;
   padding-top: 3rem;
 }
-.work__container {
+
+.project {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
   gap: 3.5rem;
+  text-decoration: none;
+  transition: 0.5s ease;
 }
-
-.project {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  gap: 3.5rem;
+.project:hover {
+  transform: translateY(-4px);
+  opacity: 0.8;
 }
 .project__content {
   display: flex;

@@ -148,6 +148,8 @@ body {
     bottom: 3rem;
     background-color: transparent;
 
+    z-index: 100;
+
     &__list {
         @include flex(row, space-between, center, $space-small-16);
         padding: 18px 32px;
@@ -221,14 +223,17 @@ section {
 .work {
     @include flex(column, flex-start, center, $space-large-112);
     padding-top: $space-medium-48;
-
-    &__container {
-        @include flex(column, flex-start, flex-start, $space-medium-56);
-    }
 }
 
 .project {
-    @include flex(row, space-between, center, $space-medium-56);
+    @include flex(column, flex-start, flex-start, $space-medium-56);
+    text-decoration: none;
+    transition: 0.5s ease;
+
+    &:hover {
+        transform: translateY(-4px);
+        opacity: 0.8;
+    }
 
     &__content {
         @include flex(column, flex-start, flex-start, $space-small-16);
