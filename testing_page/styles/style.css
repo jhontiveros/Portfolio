@@ -195,6 +195,20 @@ ul {
   gap: 3.5rem;
   padding-top: 3rem;
 }
+.services__desc {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 3.5rem;
+}
+.services__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 3.5rem;
+}
 .services__heading, .services__skills, .services__item {
   font-family: "Hedvig Letters Serif", serif;
   font-size: 2rem;
@@ -203,14 +217,7 @@ ul {
   letter-spacing: 0.2px;
   color: #101010;
 }
-.services__desc {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 3.5rem;
-}
-.services__desc, .services__list {
+.services__desc, .services__bullets, .services__list {
   width: 100%;
 }
 
@@ -325,9 +332,47 @@ ul {
 }
 
 /* MEDIA QUERIES */
-@media screen and (min-width: 680px) and (max-width: 1200px) {
+@media screen and (min-width: 1090px) and (max-width: 1260px) {
+  .project__content {
+    width: 70%;
+  }
+  .services__desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  .services__list {
+    padding-left: 1.25rem;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 1089px) {
   body {
-    background-color: slateblue;
+    background-color: salmon;
     padding: 0 4rem;
+  }
+  .intro__desc {
+    font-family: "Hedvig Letters Serif", serif;
+    font-size: 2.25rem;
+    font-weight: 400;
+    line-height: 128%;
+    letter-spacing: 0.2px;
+    color: #101010;
+  }
+  .project {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2.5rem;
+  }
+  .project__heading {
+    font-family: "Hedvig Letters Serif", serif;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 128%;
+    letter-spacing: 0.2px;
+    color: #101010;
   }
 }/*# sourceMappingURL=style.css.map */

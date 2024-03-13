@@ -24,6 +24,7 @@ $line-height-text: 138%;
 $space-small-8: 0.5rem;
 $space-small-16: 1rem;
 $space-small-24: 1.5rem;
+$space-small-40: 2.5rem;
 
 $space-medium-48: 3rem;
 $space-medium-56: 3.5rem;
@@ -268,15 +269,19 @@ ul {
     @include flex(column, flex-start, flex-start, $space-medium-56);
     padding-top: $space-medium-48;
 
-    &__heading, &__skills, &__item {
-        @include heading($heading-size-3, 400);
-    }
-
     &__desc {
         @include flex(row, flex-start, flex-start, $space-medium-56);
     }
 
-    &__desc, &__list {
+    &__list {
+        @include flex(row, flex-start, flex-start, $space-medium-56);
+    };
+
+    &__heading, &__skills, &__item {
+        @include heading($heading-size-3, 400);
+    }
+
+    &__desc, &__bullets, &__list {
         width: 100%;
     }
 }
@@ -386,9 +391,41 @@ ul {
 
 /* MEDIA QUERIES */
 
-@media screen and (min-width: 680px) and (max-width: 1200px) {
+@media screen and (min-width: 1090px) and (max-width: 1260px) {
+    .project {
+        &__content {
+            width: 70%;
+        }
+    }
+    
+    .services {
+        &__desc {
+            @include flex(column, flex-start, flex-start, $space-small-16);
+        }
+
+        &__list {
+            padding-left: 1.25rem;
+        }
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1089px) {
     body {
-        background-color: slateblue;
+        background-color: salmon;
         padding: 0 4rem;
+    }
+
+    .intro {
+        &__desc {
+            @include heading($heading-size-2, 400);
+        }
+    }
+
+    .project {
+        @include flex(column, flex-start, flex-start, $space-small-40);
+
+        &__heading {
+            @include heading($heading-size-3, 400);
+        }
     }
 }
