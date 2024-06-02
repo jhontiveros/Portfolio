@@ -484,7 +484,7 @@ main {
     background-color: #291712;
     z-index:1001;
 
-    padding: 64px;
+    padding: 48px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -522,6 +522,6 @@ main {
 
 @media screen and (max-width: 810px) {
     .blocker {
-        padding: 32px;
+        padding: 24px;
     }
 }
