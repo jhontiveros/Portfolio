@@ -1,0 +1,115 @@
+/* VARIABLES */
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300..700&display=swap');
+
+$font-style-mono: "Overpass Mono", monospace;
+$heading-style-sans-serif: 'Helvetica Neue', sans-serif;
+
+$h1-size: 24px;
+$h2-size: 22px;
+$h3-size: 18px;
+$h4-size: 14px;
+
+$p-size: 16px;
+$nav-size: 14px;
+
+$line-height-m: 150%;
+$line-height-l: 170%;
+
+$space-4: 4px;
+$space-8: 8px;
+$space-16: 16px;
+$space-24: 24px;
+$space-40: 40px;
+$space-80: 80px;
+
+$color-white: #FFFCFA;
+$color-container: #99979605;
+$color-grey: #999796;
+$color-black: #101010;
+
+
+
+
+/* MIXINS */
+
+@mixin flex($direction, $position, $layout, $gap) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $position;
+    align-items: $layout;
+    gap: $gap;
+}
+
+
+
+
+/* PAGE DEFAULT */
+
+* {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+
+    background-color: $color-white;
+    color: $color-black;
+
+    scroll-behavior: smooth;
+}
+
+body {
+    border: solid 2px green;
+    @include flex(row, flex-start, flex-start, $space-80);
+    max-width: 1600px;
+    padding: 60px;
+    margin: auto;
+}
+
+:hover {
+    transition: 0.75s ease;
+}
+
+
+
+
+/* NAV */
+
+header {
+    border: solid 2px blue;
+    @include flex(column, space-between, flex-start, $space-80);
+
+    height: calc(100vh - 120px);
+    max-width: 300px;
+}
+
+.nav {
+    border: solid 2px orange;
+    @include flex(column, flex-start, flex-start, $space-24);
+    font-family: $font-style-mono;
+    font-size: $nav-size;
+
+    text-transform: uppercase;
+
+    h4 {
+        font-weight: 400;
+    }
+
+    &__list {
+        @include flex(column, flex-start, flex-start, $space-8);
+    }
+
+    &__link {
+        font-weight: 400;
+        text-decoration: none;
+
+        &--active {
+            font-weight: 800;
+            text-decoration: underline;
+            text-underline-offset: 4px;
+        }
+
+        &hover {
+            
+        }
+    }
+}
