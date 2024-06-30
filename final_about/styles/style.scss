@@ -168,7 +168,6 @@ header {
 /* MAIN */
 
 main {
-    @include flex(column, flex-start, flex-start, $space-24);
     padding-bottom: 4px;
 
     h4 {
@@ -177,40 +176,39 @@ main {
         text-transform: uppercase;
     }
 
-    p {
+    p, li {
         font-family: $heading-style-sans-serif;
         font-size: $p-size;
         font-weight: 400;
     }
-
-    a {
-        text-decoration: none;
-    }
 }
 
-.work {
+.about {
     @include flex(column, flex-start, flex-start, $space-24);
 
-    .project {
+    img {
+        width: 100%;
+        height: auto;
+
+        aspect-ratio: 16/9;
+        object-fit: cover;
+    }
+
+    &__desc {
+        @include flex(column, flex-start, flex-start, $space-24);
+        
+        background-color: $color-container;
+        padding: $space-40;
+    }
+
+    &__content {
         @include flex(column, flex-start, flex-start, $space-16);
-        transition: 0.4s ease;
 
-        &__image {
-            width: 100%;
-            height: auto;
+        line-height: $line-height-l;
+    }
 
-            aspect-ratio: 16/9;
-            object-fit: cover;
-        }
-
-        &:hover {
-            transform: translateY(-8px);
-            transition: 0.4s ease;
-
-            h4, p {
-                color: $color-color;
-            }
-        }
+    &__list {
+        padding-left: $space-24;
     }
 }
 
@@ -252,5 +250,11 @@ main {
 @media screen and (max-width: 768px) {
     body {
         padding: $space-16;
+    }
+
+    .about {
+        &__desc {
+            padding: $space-24;
+        }
     }
 }
