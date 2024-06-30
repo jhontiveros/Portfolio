@@ -20,9 +20,6 @@
   background-color: #FFFEFC;
   color: #101010;
   scroll-behavior: smooth;
-  animation: fadeInAnimation ease 2s;
-  animation-iteration-count: 1;
-  animation-fill-mode: backwards;
 }
 
 body {
@@ -31,6 +28,9 @@ body {
   justify-content: flex-start;
   align-items: flex-start;
   gap: 80px;
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: backwards;
   max-width: 1600px;
   padding: 60px;
   margin: auto;

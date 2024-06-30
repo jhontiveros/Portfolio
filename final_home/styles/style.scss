@@ -73,11 +73,11 @@ $color-color: #482acc;
     color: $color-black;
 
     scroll-behavior: smooth;
-    @include fadeInAnimation();
 }
 
 body {
     @include flex(row, flex-start, flex-start, $space-80);
+    @include fadeInAnimation();
 
     max-width: 1600px;
     padding: 60px;
