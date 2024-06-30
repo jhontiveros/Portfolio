@@ -1,6 +1,17 @@
 /* VARIABLES */
-@import url("https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Overpass+Mono:wght@300..700&display=swap");
 /* MIXINS */
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 /* PAGE DEFAULT */
 * {
   margin: 0;
@@ -9,6 +20,9 @@
   background-color: #FFFEFC;
   color: #101010;
   scroll-behavior: smooth;
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: backwards;
 }
 
 body {
@@ -38,7 +52,7 @@ header {
   position: sticky;
   top: 60px;
   height: calc(100vh - 120px);
-  min-width: 300px;
+  min-width: 34ch;
   font-size: 14px;
   text-transform: uppercase;
 }
@@ -76,6 +90,7 @@ header h4 {
 .nav__link:hover {
   font-weight: 600;
   color: #482acc;
+  transform: translateY(-2px);
 }
 
 .credits h4 {
@@ -104,8 +119,8 @@ main h4 {
   font-weight: 600;
   text-transform: uppercase;
 }
-main h3 {
-  font-family: "Helvetica Neue", sans-serif;
+main p {
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 400;
 }
@@ -138,5 +153,38 @@ main a {
 .work .project:hover {
   transform: translateY(-8px);
   transition: 0.4s ease;
-  opacity: 80%;
+}
+.work .project:hover h4, .work .project:hover p {
+  color: #482acc;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1100px) {
+  body {
+    flex-direction: column;
+    gap: 40px;
+  }
+  header {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: auto;
+  }
+  header .intro, header .credits {
+    display: none;
+  }
+  header .nav {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  header .nav__list {
+    flex-direction: row;
+    gap: 16px;
+  }
+}
+@media screen and (max-width: 768px) {
+  body {
+    padding: 16px;
+  }
 }/*# sourceMappingURL=style.css.map */
