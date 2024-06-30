@@ -23,7 +23,7 @@ $space-24: 24px;
 $space-40: 40px;
 $space-80: 80px;
 
-$color-white: #FFFCFA;
+$color-white: #FFFEFC;
 $color-container: #99979605;
 $color-grey: #999796;
 $color-black: #101010;
@@ -59,13 +59,13 @@ $color-color: #482acc;
 }
 
 body {
-    border: solid 2px green;
     @include flex(row, flex-start, flex-start, $space-80);
 
     max-width: 1600px;
     padding: 60px;
     margin: auto;
 
+    font-family: $font-style-mono;
     line-height: $line-height-m;
 }
 
@@ -79,13 +79,14 @@ body {
 /* NAV */
 
 header {
-    border: solid 2px blue;
     @include flex(column, space-between, flex-start, $space-80);
 
-    height: calc(100vh - 120px);
-    max-width: 300px;
+    position: sticky;
+    top: 60px;
 
-    font-family: $font-style-mono;
+    height: calc(100vh - 120px);
+    min-width: 300px;
+
     font-size: $nav-size;
 
     text-transform: uppercase;
@@ -144,3 +145,48 @@ header {
 
 
 /* MAIN */
+
+main {
+    @include flex(column, flex-start, flex-start, $space-24);
+    padding-bottom: 6px;
+
+    h4 {
+        font-size: $h4-size;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    h3 {
+        font-family: 'Helvetica Neue', sans-serif;
+        font-size: $p-size;
+        font-weight: 400;
+    }
+
+    a {
+        text-decoration: none;
+    }
+}
+
+.work {
+    @include flex(column, flex-start, flex-start, $space-24);
+
+    .project {
+        @include flex(column, flex-start, flex-start, $space-16);
+        transition: 0.4s ease;
+
+        &__image {
+            width: 100%;
+            height: auto;
+
+            aspect-ratio: 16/9;
+            object-fit: cover;
+        }
+
+        &:hover {
+            transform: translateY(-8px);
+            transition: 0.4s ease;
+
+            opacity: 80%;
+        }
+    }
+}

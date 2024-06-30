@@ -6,13 +6,12 @@
   margin: 0;
   padding: 0px;
   box-sizing: border-box;
-  background-color: #FFFCFA;
+  background-color: #FFFEFC;
   color: #101010;
   scroll-behavior: smooth;
 }
 
 body {
-  border: solid 2px green;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -21,6 +20,7 @@ body {
   max-width: 1600px;
   padding: 60px;
   margin: auto;
+  font-family: "Overpass Mono", monospace;
   line-height: 130%;
 }
 
@@ -30,15 +30,15 @@ body {
 
 /* NAV */
 header {
-  border: solid 2px blue;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
   gap: 80px;
+  position: sticky;
+  top: 60px;
   height: calc(100vh - 120px);
-  max-width: 300px;
-  font-family: "Overpass Mono", monospace;
+  min-width: 300px;
   font-size: 14px;
   text-transform: uppercase;
 }
@@ -90,4 +90,53 @@ header h4 {
   color: #482acc;
 }
 
-/* MAIN *//*# sourceMappingURL=style.css.map */
+/* MAIN */
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 24px;
+  padding-bottom: 6px;
+}
+main h4 {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+main h3 {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+main a {
+  text-decoration: none;
+}
+
+.work {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 24px;
+}
+.work .project {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 16px;
+  transition: 0.4s ease;
+}
+.work .project__image {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.work .project:hover {
+  transform: translateY(-8px);
+  transition: 0.4s ease;
+  opacity: 80%;
+}/*# sourceMappingURL=style.css.map */
