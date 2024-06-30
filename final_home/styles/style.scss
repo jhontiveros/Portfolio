@@ -149,6 +149,7 @@ header {
 .credits {
     h4 {
         color: $color-grey;
+        font-weight: 300;
     }
 
     a {
@@ -186,6 +187,10 @@ main {
     a {
         text-decoration: none;
     }
+
+    .credits {
+        display: none;
+    }
 }
 
 .work {
@@ -201,6 +206,10 @@ main {
 
             aspect-ratio: 16/9;
             object-fit: cover;
+        }
+
+        h4, p {
+            color: $color-black;
         }
 
         &:hover {
@@ -247,10 +256,24 @@ main {
             }
         }
     }
+
+    main {
+        .credits {
+            display: block;
+            padding-top: $space-40;
+        }
+    }
 }
 
 @media screen and (max-width: 768px) {
     body {
         padding: $space-16;
+    }
+
+    main {
+        .credits {
+            display: block;
+            padding-top: $space-24;
+        }
     }
 }

@@ -149,6 +149,7 @@ header {
 .credits {
     h4 {
         color: $color-grey;
+        font-weight: 300;
     }
 
     a {
@@ -180,6 +181,10 @@ main {
         font-family: $heading-style-sans-serif;
         font-size: $p-size;
         font-weight: 400;
+    }
+
+    .credits {
+        display: none;
     }
 }
 
@@ -245,11 +250,25 @@ main {
             }
         }
     }
+
+    main {
+        .credits {
+            display: block;
+            padding-top: $space-40;
+        }
+    }
 }
 
 @media screen and (max-width: 768px) {
     body {
         padding: $space-16;
+    }
+
+    main {
+        .credits {
+            display: block;
+            padding-top: $space-24;
+        }
     }
 
     .about {

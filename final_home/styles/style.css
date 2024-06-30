@@ -96,6 +96,7 @@ header h4 {
 
 .credits h4 {
   color: #999796;
+  font-weight: 300;
 }
 .credits a {
   color: #999796;
@@ -128,6 +129,9 @@ main p {
 main a {
   text-decoration: none;
 }
+main .credits {
+  display: none;
+}
 
 .work {
   display: flex;
@@ -150,6 +154,9 @@ main a {
   aspect-ratio: 16/9;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.work .project h4, .work .project p {
+  color: #101010;
 }
 .work .project:hover {
   transform: translateY(-8px);
@@ -183,9 +190,17 @@ main a {
     flex-direction: row;
     gap: 16px;
   }
+  main .credits {
+    display: block;
+    padding-top: 40px;
+  }
 }
 @media screen and (max-width: 768px) {
   body {
     padding: 16px;
+  }
+  main .credits {
+    display: block;
+    padding-top: 24px;
   }
 }/*# sourceMappingURL=style.css.map */
