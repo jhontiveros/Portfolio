@@ -13,7 +13,7 @@ $h4-size: 14px;
 $p-size: 16px;
 $nav-size: 14px;
 
-$line-height-m: 150%;
+$line-height-m: 130%;
 $line-height-l: 170%;
 
 $space-4: 4px;
@@ -27,6 +27,7 @@ $color-white: #FFFCFA;
 $color-container: #99979605;
 $color-grey: #999796;
 $color-black: #101010;
+$color-color: #482acc;
 
 
 
@@ -60,13 +61,16 @@ $color-black: #101010;
 body {
     border: solid 2px green;
     @include flex(row, flex-start, flex-start, $space-80);
+
     max-width: 1600px;
     padding: 60px;
     margin: auto;
+
+    line-height: $line-height-m;
 }
 
 :hover {
-    transition: 0.75s ease;
+    transition: 0.4s ease;
 }
 
 
@@ -80,11 +84,7 @@ header {
 
     height: calc(100vh - 120px);
     max-width: 300px;
-}
 
-.nav {
-    border: solid 2px orange;
-    @include flex(column, flex-start, flex-start, $space-24);
     font-family: $font-style-mono;
     font-size: $nav-size;
 
@@ -92,6 +92,14 @@ header {
 
     h4 {
         font-weight: 400;
+    }
+}
+
+.nav {
+    @include flex(column, flex-start, flex-start, $space-24);
+
+    strong {
+        font-weight: 600;
     }
 
     &__list {
@@ -101,15 +109,38 @@ header {
     &__link {
         font-weight: 400;
         text-decoration: none;
+        transition: 0.4s ease;
 
         &--active {
-            font-weight: 800;
+            font-weight: 600;
             text-decoration: underline;
             text-underline-offset: 4px;
         }
 
-        &hover {
-            
+        &:hover {
+            font-weight: 600;
+            color: $color-color;
         }
     }
 }
+
+.credits {
+    h4 {
+        color: $color-grey;
+    }
+
+    a {
+        color: $color-grey;
+        text-decoration: none;
+        transition: 0.4s ease;
+
+        &:hover {
+            color: $color-color;
+        }
+    }
+}
+
+
+
+
+/* MAIN */
