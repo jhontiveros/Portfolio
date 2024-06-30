@@ -112,7 +112,7 @@ main {
   justify-content: flex-start;
   align-items: flex-start;
   gap: 24px;
-  padding-bottom: 6px;
+  padding-bottom: 4px;
 }
 main h4 {
   font-size: 14px;
