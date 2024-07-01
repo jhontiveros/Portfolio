@@ -193,6 +193,10 @@ main {
     }
 }
 
+.gallery {
+    @include flex(row, flex-start, flex-start, $space-24);
+}
+
 .work {
     @include flex(column, flex-start, flex-start, $space-24);
 
@@ -203,9 +207,6 @@ main {
         &__image {
             width: 100%;
             height: auto;
-
-            aspect-ratio: 16/9;
-            object-fit: cover;
         }
 
         h4, p {
@@ -277,5 +278,9 @@ main {
             display: block;
             padding-top: $space-24;
         }
+    }
+
+    .gallery {
+        @include flex(column, flex-start, flex-start, $space-24);
     }
 }

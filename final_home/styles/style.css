@@ -190,6 +190,9 @@ main .credits {
     flex-direction: row;
     gap: 16px;
   }
+  main {
+    padding-bottom: 0px;
+  }
   main .credits {
     display: block;
     padding-top: 40px;
