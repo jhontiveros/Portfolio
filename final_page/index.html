@@ -35,30 +35,155 @@
    </header>
 
    <main>
-        <div class="about">
-            <img src="https://images.unsplash.com/photo-1572252821143-035a024857ac?q=80&w=3086&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="#">
+        <div class="hero">
+            <div class="content__container">
+                <h1 class="content__heading">Costco Wholesale — Gasoline Sales Forecasting Report</h1>
 
-            <div class="about__desc">
-                <h4>Hi internet friend, I'm Jennica ◡̈</h4>
-                <div class="about__content">
-                    <p>After the pandemic scrambled my plans of pursuing a career in fashion merchandising, I, funnily enough, found UX design through a Codecademy sorting quiz while trying to figure out what I might enjoy—something between art, since I was always creative as a kid, and technology, as the go-to tech wizard in my family. I got into Columbia, enrolled in interaction design, gambled on maybe liking it, and ended up absolutely loving it. What started as a detour turned out to be the best redirection towards a career that I genuinely enjoy and four years later, I’m still wholeheartedly enjoying every pixel of it.<br><br>
-                        
-                    Outside of design I'm currently learning how to sew, brain dump journaling in the mornings, trying to drink more water, and baking desserts! I do also occasionally enjoy:</p>
+                <p class="content__text">The data science & analytics team at Costco had an existing report tracking gasoline sales volumes at all locations worldwide across different grades of fuel. However, the report lacked helpful visualizations, making it hard to understand and communicate user needs effectively.</p>
+            </div>
 
-                    <ul class="about__list">
-                        <li class="about__item">Eating out at pretty brunch spots</li>
-                        <li class="about__item">Going to coffee shops just to order matcha or chai</li>
-                        <li class="about__item">Bahn mi sandwiches with extra extra veggies</li>
-                        <li class="about__item">Farmers and flea markets</li>
-                        <li class="about__item">Endlessly scrolling through Ebay for vintage goodies</li>
-                    </ul>
+            <div class="details">
+                <div class="details__category">
+                    <h4>Timeline</h4>
+                    <p>Jan - Apr 2023</p>
+                </div>
+
+                <div class="details__category">
+                    <h4>Team</h4>
+                    <p>Sreedev Sidharthan<br>Yufan Guo<br>Vijay Singh</p>
+                </div>
+
+                <div class="details__category">
+                    <h4>Tools</h4>
+                    <p>Figma<br>Power BI<br>Google Suite</p>
+                </div>
+
+                <div class="details__category">
+                    <h4>Disciplines</h4>
+                    <p>UX Design & Research<br>Visual Design</p>
                 </div>
             </div>
 
-            <div class="credits">
-                <h4><a href="mailto:hello@jennica.design">Email</a> / <a href="https://www.linkedin.com/in/jhontiveros/"> Linkedin</a> <br>
-                ©2024 Jennica Hontiveros</h4>
+            <img src="https://images.unsplash.com/photo-1572252821143-035a024857ac?q=80&w=3086&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="#">
+        </div>
+
+        <section class="content box abstract">
+            <h4>Abstract</h4>
+
+            <div class="content__container">
+                <p class="content__text">During my internship at Costco, I was tasked with leading a project that aimed at improving the gasoline sales/forecasting dashboard, which lacked effective data visualizations and useful analysis tooling.<br><br>
+
+                Over 10 weeks, I worked with the data science team to create a dashboard that is not only easy to navigate, but works as a tool that can help support purchasing decisions and can generate performance summaries. I conducted thorough UX audits, interviews, and affinity diagrams to pinpoint user needs and pain points, worked within the constraints of Power BI, and iteratively crafted low, mid, and high fidelity wireframes that incorporated frequent feedback from stakeholders.<br><br>
+                    
+                The final designs successfully addressed key issues and introduced new features such as a designated page for location specific comparisons and analysis. Although the engineering team had to rework the designs in order to test in QA, this project initiated conversations on the potential benefits of a design guideline refresh to enhance the accessibility, usability, and functionality of future data reports.</p>
             </div>
+        </section>
+
+        <section class="content introduction">
+            <h4>Introduction</h4>
+
+            <div class="content__container">
+                <h2 class="content__heading">The abandoned data dashboard</h2>
+
+                <p class="content__text">Hosted on Power BI, the gasoline sales/forecasting dashboard was no longer being used and did not run current data. Although we don't know for which reasons, we can safely assume that visually, the dashboard lacked good design and clear usability.</p>
+            </div>
+
+            <img src="https://images.unsplash.com/photo-1572252821143-035a024857ac?q=80&w=3086&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="#">
+        </section>
+
+        <section class="content">
+            <div class="content__container">
+                <h2 class="content__heading">The purchasing team was manually computing data for further analysis</h2>
+
+                <p class="content__text">On a weekly basis, the data science team would send the gasoline purchasing team a CSV file that contained upper and lower forecasting threshold values for specific locations and fuel types. Using this file, they then would then make separate calculations for their analysis. This was a issue because:</p>
+
+                <ul class="content__list">
+                    <li class="content__item">Having too many csv files clutters real fast and can make it hard to reference older data reports</li>
+
+                    <li class="content__item">There are no visual indications of performance, only numerical values</li>
+
+                    <li class="content__item">It takes a lot of time sort through the data and create new functions</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="content research">
+            <h4>Research</h4>
+
+            <div class="content__container">
+                <h2 class="content__heading">Finding user experience and interface design gaps</h2>
+
+                <p class="content__text">Not knowing the goals and function for each page yet, I wanted to perform a ux audit based only on the ui and usability. By doing this, I was able to note current pain points, needs, and baseline questions for interview scripting.</p>
+            </div>
+
+            <img src="https://images.unsplash.com/photo-1572252821143-035a024857ac?q=80&w=3086&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="#">
+
+            <img src="https://images.unsplash.com/photo-1572252821143-035a024857ac?q=80&w=3086&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="#">
+        </section>
+
+        <section class="content">
+            <div class="content__container">
+                <h2 class="content__heading">Interviews: intended usage and behaviors</h2>
+
+                <p class="content__text">By speaking with 3 important individuals — the product owner, lead data scientist, and gasoline central director — each with distinct roles, I gained a comprehensive understanding of the product and current behaviors from varied user perspectives. Some questions I asked were:</p>
+
+                <ul class="content__list">
+                    <li class="content__item">Could you walk me through how you intended to use the forecasting report?</li>
+
+                    <li class="content__item">Are there specific metrics or data points you frequently refer to in the forecasting report? If so, how do you use them?</li>
+
+                    <li class="content__item">Using the forecasting data, what specific tasks or objectives are you typically trying to accomplish?</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="content">
+            <div class="content__container">
+                <h2 class="content__heading">Affinity diagram insights</h2>
+
+                <p class="content__text">I used the affinity diagram as a way to summarize my findings and draw connections from the interviews. This highlighted main problems and helped with which solutions should be prioritized.</p>
+            </div>
+            <img src="https://images.unsplash.com/photo-1572252821143-035a024857ac?q=80&w=3086&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="#">
+        </section>
+
+        <section class="content">
+            <div class="content__container">
+                <h2 class="content__heading">User stories: who is this for?</h2>
+
+                <p class="content__text">Writing out user stories helps us stay focused on the people who will use the dashboards. It makes sure that what we're designing meets their needs, makes their work easier, and leaves them with a good product experience.</p>
+            </div>
+            <img src="https://images.unsplash.com/photo-1572252821143-035a024857ac?q=80&w=3086&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="#">
+        </section>
+
+        <section class="content box">
+            <h4>Project definition</h4>
+
+            <div class="content__container">
+                <h2 class="content__heading">An intuitive data analysis tool with features that help make <mark>informed decisions</mark> while also serving as a <mark>resource</mark> for high-level performance overviews.</h2>
+            </div>
+        </section>
+
+        <section class="content dashboards">
+            <h4>Understanding dashboards</h4>
+
+            <div class="content__container">
+                <h2 class="content__heading">Learning from successful data dashboards</h2>
+
+                <p class="content__text">To gain a solid understanding in designing for data, I wanted to reference products that already have successful dashboards such as Google Analytics and Shopify. By studying these examples, I can pick up on common design decisions and best practices, giving me a good baseline for understanding how to craft effective data dashboards.</p>
+            </div>
+
+            <img src="https://images.unsplash.com/photo-1572252821143-035a024857ac?q=80&w=3086&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="#">
+        </section>
+
+
+
+
+
+
+
+        <div class="credits">
+            <h4><a href="mailto:hello@jennica.design">Email</a> / <a href="https://www.linkedin.com/in/jhontiveros/"> Linkedin</a> <br>
+            ©2024 Jennica Hontiveros</h4>
         </div>
    </main> 
 </body>

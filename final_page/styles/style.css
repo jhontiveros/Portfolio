@@ -123,12 +123,29 @@ header h4 {
 
 /* MAIN */
 main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 80px;
   padding-bottom: 4px;
 }
 main h4 {
   font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
+  color: #999796;
+}
+main h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+}
+main h2 {
+  font-family: "Inter", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 130%;
 }
 main p, main li {
   font-family: "Inter", sans-serif;
@@ -137,6 +154,81 @@ main p, main li {
 }
 main .credits {
   display: none;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 40px;
+}
+.hero img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding-top: 40px;
+}
+
+.details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0;
+  width: 100%;
+}
+.details__category {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+  line-height: 170%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 24px;
+}
+.content__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 16px;
+  line-height: 170%;
+}
+.content__heading mark {
+  background-color: rgba(255, 246, 34, 0.4);
+  padding: 0px 4px;
+}
+.content__list {
+  padding-left: 24px;
+}
+.content__item {
+  margin-bottom: 4px;
+}
+.content img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.box {
+  width: 100%;
+  background-color: rgba(153, 151, 150, 0.0705882353);
+  padding: 40px;
+}
+.box h4 {
+  color: #101010;
 }
 
 .about {
@@ -189,16 +281,6 @@ main .credits {
   header .intro, header .credits, header .nav__list {
     display: none;
   }
-  header .nav {
-    width: 100%;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: baseline;
-  }
-  header .nav__list {
-    flex-direction: row;
-    gap: 16px;
-  }
   main {
     padding-bottom: 0px;
   }
@@ -215,7 +297,17 @@ main .credits {
     display: block;
     padding-top: 24px;
   }
-  .about__desc {
+  .hero img {
+    padding-top: 0;
+  }
+  .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 24px;
+  }
+  .box {
     padding: 24px;
   }
 }/*# sourceMappingURL=style.css.map */

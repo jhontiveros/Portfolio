@@ -188,12 +188,28 @@ header {
 /* MAIN */
 
 main {
+    @include flex(column, flex-start, flex-start, $space-80);
     padding-bottom: 4px;
 
     h4 {
         font-size: $h4-size;
         font-weight: 600;
         text-transform: uppercase;
+
+        color: $color-grey;
+    }
+
+    h1 {
+        font-family: $heading-style-sans-serif;
+        font-size: $h1-size;
+        font-weight: 600;
+    }
+
+    h2 {
+        font-family: $heading-style-sans-serif;
+        font-size: $h2-size;
+        font-weight: 500;
+        line-height: $line-height-m;
     }
 
     p, li {
@@ -206,6 +222,82 @@ main {
         display: none;
     }
 }
+
+.hero {
+    @include flex(column, flex-start, flex-start, $space-40);
+
+    img {
+        width: 100%;
+        height: auto;
+
+        aspect-ratio: 16/9;
+        object-fit: cover;
+
+        padding-top: $space-40;
+    }
+}
+
+.details {
+    @include flex(row, space-between, flex-start, 0);
+    width: 100%;
+
+    &__category {
+        @include flex(column, flex-start, flex-start, $space-8);
+        line-height: $line-height-l;
+    }
+}
+
+.content {
+    @include flex(column, flex-start, flex-start, $space-24);
+
+    &__container {
+        @include flex(column, flex-start, flex-start, $space-16);
+        line-height: $line-height-l;
+    }
+
+    &__heading {
+        mark {
+            background-color: rgba(255, 246, 34, .4);
+            padding: 0px 4px;
+        }
+    }
+
+    &__list {
+        padding-left: $space-24;
+    }
+
+    &__item {
+        margin-bottom: $space-4;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+
+        aspect-ratio: 16/9;
+        object-fit: cover;
+    }    
+}
+
+.box {
+    width: 100%;
+
+    h4 {
+        color: $color-black;
+    }
+
+    background-color: $color-container;
+    padding: $space-40;
+}
+
+
+
+
+
+
+
+
+
 
 .about {
     @include flex(column, flex-start, flex-start, $space-24);
@@ -257,18 +349,6 @@ main {
         .intro, .credits, .nav__list {
             display: none;
         }
-
-        .nav {
-            width: 100%;
-            flex-direction: row;
-            justify-content: space-between;
-            align-items: baseline;
-
-            &__list {
-                flex-direction: row;
-                gap: $space-16;
-            }
-        }
     }
 
     main {
@@ -293,9 +373,17 @@ main {
         }
     }
 
-    .about {
-        &__desc {
-            padding: $space-24;
+    .hero {
+        img {
+            padding-top: 0;
         }
+    }
+
+    .details {
+        @include flex(column, flex-start, flex-start, $space-24);
+    }
+
+    .box {
+        padding: $space-24;
     }
 }
