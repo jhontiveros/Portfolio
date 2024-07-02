@@ -16,6 +16,7 @@ $line-height-m: 130%;
 $line-height-l: 170%;
 
 $space-4: 4px;
+$space-6: 6px;
 $space-8: 8px;
 $space-16: 16px;
 $space-24: 24px;
@@ -122,7 +123,7 @@ header {
     }
 
     &__list {
-        @include flex(column, flex-start, flex-start, $space-8);
+        @include flex(column, flex-start, flex-start, $space-6);
     }
 
     &__link {
