@@ -63,7 +63,10 @@ header h4 {
 .button {
   border: solid 1px #101010;
   color: #101010;
+  font-family: "Overpass Mono", monospace;
+  font-size: 14px;
   font-weight: 600;
+  text-transform: uppercase;
   text-decoration: none;
   padding: 8px 10px 4px 8px;
   transition: 0.4s ease;
@@ -128,27 +131,25 @@ main {
   justify-content: flex-start;
   align-items: flex-start;
   gap: 80px;
-  padding-bottom: 4px;
+  padding-bottom: 6px;
+  font-family: "Inter", sans-serif;
 }
 main h4 {
+  font-family: "Overpass Mono", monospace;
   font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
   color: #999796;
 }
 main h1 {
-  font-family: "Inter", sans-serif;
   font-size: 24px;
   font-weight: 600;
 }
 main h2 {
-  font-family: "Inter", sans-serif;
   font-size: 22px;
   font-weight: 500;
-  line-height: 130%;
 }
 main p, main li {
-  font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 400;
 }
@@ -196,19 +197,33 @@ main .credits {
   align-items: flex-start;
   gap: 24px;
 }
+.content a {
+  color: #101010;
+  text-underline-offset: 2px;
+  transition: 0.4s ease;
+}
+.content a:hover {
+  color: #482acc;
+}
 .content__container {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
   gap: 16px;
-  line-height: 170%;
+}
+.content__heading {
+  line-height: 150%;
 }
 .content__heading mark {
   background-color: rgba(255, 246, 34, 0.4);
   padding: 0px 4px;
 }
+.content__text {
+  line-height: 170%;
+}
 .content__list {
+  line-height: 150%;
   padding-left: 24px;
 }
 .content__item {
@@ -230,40 +245,8 @@ main .credits {
 .box h4 {
   color: #101010;
 }
-
-.about {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 24px;
-}
-.about img {
-  width: 100%;
-  height: auto;
-  aspect-ratio: 16/9;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.about__desc {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 24px;
-  background-color: rgba(153, 151, 150, 0.0705882353);
-  padding: 40px;
-}
-.about__content {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 16px;
-  line-height: 170%;
-}
-.about__list {
-  padding-left: 24px;
+.box h2 {
+  line-height: 130%;
 }
 
 /* MEDIA QUERIES */
@@ -284,18 +267,10 @@ main .credits {
   main {
     padding-bottom: 0px;
   }
-  main .credits {
-    display: block;
-    padding-top: 40px;
-  }
 }
 @media screen and (max-width: 768px) {
   body {
     padding: 16px;
-  }
-  main .credits {
-    display: block;
-    padding-top: 24px;
   }
   .hero img {
     padding-top: 0;

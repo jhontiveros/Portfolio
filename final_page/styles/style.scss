@@ -12,7 +12,8 @@ $h4-size: 14px;
 $p-size: 16px;
 $nav-size: 14px;
 
-$line-height-m: 130%;
+$line-height-s: 130%;
+$line-height-m: 150%;
 $line-height-l: 170%;
 
 $space-4: 4px;
@@ -85,7 +86,7 @@ body {
     margin: auto;
 
     font-family: $font-style-mono;
-    line-height: $line-height-m;
+    line-height: $line-height-s;
 }
 
 :hover {
@@ -119,7 +120,11 @@ header {
     border: solid 1px $color-black;
     color: $color-black;
 
+    font-family: $font-style-mono;
+    font-size: $nav-size;
     font-weight: 600;
+
+    text-transform: uppercase;
     text-decoration: none;
 
     padding: 8px 10px 4px 8px;
@@ -189,9 +194,12 @@ header {
 
 main {
     @include flex(column, flex-start, flex-start, $space-80);
-    padding-bottom: 4px;
+    padding-bottom: 6px;
+
+    font-family: $heading-style-sans-serif;
 
     h4 {
+        font-family: $font-style-mono;
         font-size: $h4-size;
         font-weight: 600;
         text-transform: uppercase;
@@ -200,20 +208,16 @@ main {
     }
 
     h1 {
-        font-family: $heading-style-sans-serif;
         font-size: $h1-size;
         font-weight: 600;
     }
 
     h2 {
-        font-family: $heading-style-sans-serif;
         font-size: $h2-size;
         font-weight: 500;
-        line-height: $line-height-m;
     }
 
     p, li {
-        font-family: $heading-style-sans-serif;
         font-size: $p-size;
         font-weight: 400;
     }
@@ -250,19 +254,36 @@ main {
 .content {
     @include flex(column, flex-start, flex-start, $space-24);
 
+    a {
+        color: $color-black;
+        text-underline-offset: 2px;
+
+        transition: 0.4s ease;
+
+        &:hover {
+            color: $color-color;
+        }
+    }
+
     &__container {
         @include flex(column, flex-start, flex-start, $space-16);
-        line-height: $line-height-l;
     }
 
     &__heading {
+        line-height: $line-height-m;
+
         mark {
             background-color: rgba(255, 246, 34, .4);
             padding: 0px 4px;
         }
     }
 
+    &__text {
+        line-height: $line-height-l;
+    }
+
     &__list {
+        line-height: $line-height-m;
         padding-left: $space-24;
     }
 
@@ -282,49 +303,15 @@ main {
 .box {
     width: 100%;
 
+    background-color: $color-container;
+    padding: $space-40;
+
     h4 {
         color: $color-black;
     }
 
-    background-color: $color-container;
-    padding: $space-40;
-}
-
-
-
-
-
-
-
-
-
-
-.about {
-    @include flex(column, flex-start, flex-start, $space-24);
-
-    img {
-        width: 100%;
-        height: auto;
-
-        aspect-ratio: 16/9;
-        object-fit: cover;
-    }
-
-    &__desc {
-        @include flex(column, flex-start, flex-start, $space-24);
-        
-        background-color: $color-container;
-        padding: $space-40;
-    }
-
-    &__content {
-        @include flex(column, flex-start, flex-start, $space-16);
-
-        line-height: $line-height-l;
-    }
-
-    &__list {
-        padding-left: $space-24;
+    h2 {
+        line-height: $line-height-s;
     }
 }
 
@@ -353,24 +340,12 @@ main {
 
     main {
         padding-bottom: 0px;
-
-        .credits {
-            display: block;
-            padding-top: $space-40;
-        }
     }
 }
 
 @media screen and (max-width: 768px) {
     body {
         padding: $space-16;
-    }
-
-    main {
-        .credits {
-            display: block;
-            padding-top: $space-24;
-        }
     }
 
     .hero {
