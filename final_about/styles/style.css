@@ -30,7 +30,7 @@ body {
   animation-iteration-count: 1;
   animation-fill-mode: backwards;
   background-color: #FFFEFC;
-  color: #101010;
+  color: #0412da;
   max-width: 1600px;
   padding: 60px;
   margin: auto;
@@ -81,7 +81,7 @@ header h4 {
   font-weight: 400;
   text-decoration: none;
   transition: 0.4s ease;
-  color: #101010;
+  color: #0412da;
 }
 .nav__link--active {
   font-weight: 600;
@@ -90,21 +90,21 @@ header h4 {
 }
 .nav__link:hover {
   font-weight: 600;
-  color: #482acc;
+  color: #0412da;
   transform: translateY(-2px);
 }
 
 .credits h4 {
-  color: #999796;
+  color: #0412da;
   font-weight: 300;
 }
 .credits a {
-  color: #999796;
+  color: #0412da;
   text-decoration: none;
   transition: 0.4s ease;
 }
 .credits a:hover {
-  color: #482acc;
+  font-weight: 600;
 }
 
 /* MAIN */
@@ -135,7 +135,6 @@ main .credits {
 .about img {
   width: 100%;
   height: auto;
-  aspect-ratio: 16/9;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -145,7 +144,7 @@ main .credits {
   justify-content: flex-start;
   align-items: flex-start;
   gap: 24px;
-  background-color: rgba(153, 151, 150, 0.0705882353);
+  border: solid 1px #0412da;
   padding: 40px;
 }
 .about__content {

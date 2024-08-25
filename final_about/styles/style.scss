@@ -27,7 +27,7 @@ $color-white: #FFFEFC;
 $color-container: #99979612;
 $color-grey: #999796;
 $color-black: #101010;
-$color-color: #482acc;
+$color-color: #0412da;
 
 
 
@@ -78,7 +78,7 @@ body {
     @include fadeInAnimation();
 
     background-color: $color-white;
-    color: $color-black;
+    color: $color-color;
 
     max-width: 1600px;
     padding: 60px;
@@ -131,7 +131,7 @@ header {
         text-decoration: none;
         transition: 0.4s ease;
 
-        color: $color-black;
+        color: $color-color;
 
         &--active {
             font-weight: 600;
@@ -149,17 +149,17 @@ header {
 
 .credits {
     h4 {
-        color: $color-grey;
+        color: $color-color;
         font-weight: 300;
     }
 
     a {
-        color: $color-grey;
+        color: $color-color;
         text-decoration: none;
         transition: 0.4s ease;
 
         &:hover {
-            color: $color-color;
+            font-weight: 600;
         }
     }
 }
@@ -196,14 +196,13 @@ main {
         width: 100%;
         height: auto;
 
-        aspect-ratio: 16/9;
         object-fit: cover;
     }
 
     &__desc {
         @include flex(column, flex-start, flex-start, $space-24);
         
-        background-color: $color-container;
+        border: solid 1px $color-color;
         padding: $space-40;
     }
 
