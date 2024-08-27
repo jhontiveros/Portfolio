@@ -249,7 +249,57 @@ main .credits {
   line-height: 130%;
 }
 
+.card__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+  width: 100%;
+  line-height: 170%;
+  background-color: rgba(153, 151, 150, 0.0705882353);
+  padding: 40px;
+}
+.card__heading {
+  font-weight: 500;
+}
+.card__desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.base {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 16px;
+}
+
+.numbered {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 16px;
+}
+.numbered__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 16px;
+}
+
 /* MEDIA QUERIES */
+@media screen and (min-width: 1100px) and (max-width: 1350px) {
+  .card {
+    flex-wrap: wrap;
+  }
+}
 @media screen and (max-width: 1100px) {
   body {
     flex-direction: column;
@@ -268,6 +318,14 @@ main .credits {
     padding-bottom: 0px;
   }
 }
+@media screen and (max-width: 975px) {
+  .card {
+    flex-wrap: wrap;
+  }
+  .numbered__container {
+    flex-direction: column;
+  }
+}
 @media screen and (max-width: 768px) {
   body {
     padding: 16px;
@@ -282,7 +340,7 @@ main .credits {
     align-items: flex-start;
     gap: 24px;
   }
-  .box {
+  .box, .card__item {
     padding: 24px;
   }
 }/*# sourceMappingURL=style.css.map */
