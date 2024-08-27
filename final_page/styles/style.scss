@@ -291,13 +291,20 @@ main {
         margin-bottom: $space-4;
     }
 
-    img {
+    img, video {
         width: 100%;
         height: auto;
 
         aspect-ratio: 16/9;
         object-fit: cover;
-    }    
+    } 
+
+    #actual {
+        aspect-ratio: unset;
+        object-fit: contain;
+
+        background-color: $color-container;
+    }
 }
 
 .box {
