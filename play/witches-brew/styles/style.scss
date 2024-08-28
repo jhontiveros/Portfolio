@@ -250,8 +250,8 @@ main {
         line-height: $line-height-l;
 
         a {
-            color: #D87331;
-            text-underline-offset: 4px;
+            text-decoration: none;
+            color: $color-black;
 
             transition: 0.4s ease;
         }

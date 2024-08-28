@@ -190,8 +190,8 @@ main .credits {
   line-height: 170%;
 }
 .details__category a {
-  color: #D87331;
-  text-underline-offset: 4px;
+  text-decoration: none;
+  color: #101010;
   transition: 0.4s ease;
 }
 .details__category a:hover {

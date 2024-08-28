@@ -90,7 +90,7 @@ header h4 {
 }
 .nav__link:hover {
   font-weight: 600;
-  color: #482acc;
+  color: #0412da;
   transform: translateY(-2px);
 }
 
@@ -104,7 +104,7 @@ header h4 {
   transition: 0.4s ease;
 }
 .credits a:hover {
-  color: #482acc;
+  color: #0412da;
 }
 
 /* MAIN */
@@ -147,6 +147,7 @@ main .credits {
   justify-content: flex-start;
   align-items: flex-start;
   gap: 24px;
+  width: 100%;
 }
 .work .project {
   display: flex;
@@ -155,6 +156,12 @@ main .credits {
   align-items: flex-start;
   gap: 16px;
   transition: 0.4s ease;
+}
+.work .project__heading {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: capitalize;
 }
 .work .project__image {
   width: 100%;
@@ -168,7 +175,7 @@ main .credits {
   transition: 0.4s ease;
 }
 .work .project:hover h4, .work .project:hover p {
-  color: #482acc;
+  color: #0412da;
 }
 
 /* MEDIA QUERIES */
