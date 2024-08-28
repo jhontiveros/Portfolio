@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Jennica Hontiveros — CPM Browse</title>
+</head>
+
+<body>
+   <header>
+        <div class="nav">
+            <a class="button" href="#">< Back home</a>
+
+            <h4 class="intro"><strong>Chicago Public Media</strong> — Improving browse content interaction<br><br>---</h4>
+
+            <nav class="nav__list">
+                <a class="nav__link nav__link--active" href="#" id="home-link">Start</a>
+                <a class="nav__link" href="#" id="about-link">Abstract</a>
+                <a class="nav__link" href="#" id="about-link">Introduction</a>
+                <a class="nav__link" href="#" id="about-link">Iterations</a>
+                <a class="nav__link" href="#" id="about-link">Proposed design</a>
+                <a class="nav__link" href="#" id="about-link">In development</a>
+                <a class="nav__link" href="#" id="about-link">Final design</a>
+                <a class="nav__link" href="#" id="about-link">Post launch data</a>
+                <a class="nav__link" href="#" id="about-link">Retrospective</a>
+            </nav>
+        </div>
+
+        <div class="credits">
+            <h4><a href="mailto:hello@jennica.design">Email</a> / <a href="https://www.linkedin.com/in/jhontiveros/"> Linkedin</a> <br>
+            ©2024 Jennica Hontiveros</h4>
+        </div>
+   </header>
+
+   <main>
+        <div class="hero">
+            <div class="content__container">
+                <h1 class="content__heading">Chicago Public Media — Browse Screen Redesign</h1>
+
+                <p class="content__text">The audience analytics team at Chicago Public Media recently conducted a heat mapping study on the WBEZ app, revealing that over half of user interactions were only going to live radio, which significantly overshadowed other forms of audio content available.</p>
+            </div>
+
+            <div class="details">
+                <div class="details__category">
+                    <h4>Timeline</h4>
+                    <p>Jan - Jun 2022</p>
+                </div>
+
+                <div class="details__category">
+                    <h4>Team</h4>
+                    <p>Nick DePrey<br>Shira Gersten<br>J. Kyle White-Sullivan<br>Oliver Holmberg<br>Dillon Kelley</p>
+                </div>
+
+                <div class="details__category">
+                    <h4>Tools</h4>
+                    <p>Figma<br>Zeplin</p>
+                </div>
+
+                <div class="details__category">
+                    <h4>Disciplines</h4>
+                    <p>Product Design<br>UX Research</p>
+                </div>
+            </div>
+
+            <img src="media/11-Final_2.png" alt="#">
+        </div>
+
+        <section class="content box abstract">
+            <h4>Abstract</h4>
+
+            <div class="content__container">
+                <p class="content__text">During my time at Chicago Public Media, working exclusively on WBEZ, Chicago's NPR news station, I led the app's browse screen redesign project, which aimed to increase engagement, particularly with audio content other than live radio.<br><br>
+
+                As the solo designer with the product team, in 6 months we created an updated browse screen that promoted featured stories, boosted exposure to new and changing content, and influenced user behaviors to eliminate redundant elements. My role involved analyzing existing engagement research, identifying pain points, iterating extensively based on feedback and usability, and working closely with engineers on development changes and QA testing.<br><br>
+                    
+                Following the implementation of consistent push notifications, the redesign led to a significant increase in overall user to content interaction, with the featured story experiencing a peak of 304% and 230% for top stories within a month.</p>
+            </div>
+        </section>
+
+        <section class="content introduction">
+            <h4>Introduction</h4>
+
+            <div class="content__container">
+                <h2 class="content__heading">Most users did not scroll or browse, leaving curated content unheard</h2>
+
+                <p class="content__text">WBEZ initially designed their app primarily for live radio listening and that's what most users did. Unfortunately, this pushed other types of content below the fold, garnering less than 6% of app traffic.</p>
+            </div>
+
+            <img src="media/1-Research.png" alt="#">
+        </section>
+
+        <section class="content">
+            <div class="content__container">
+                <h2 class="content__heading">The browse screen should highlight WBEZ's impactful journalism, not just function as a home for the live radio button</h2>
+
+                <p class="content__text">Based on the data and insights from this research, we were challenged to rethink how we could design a more engaging and seamless browsing experience.</p>
+            </div>
+
+            <div class="content card base">
+                <div class="card__item">
+                    <div class="card__desc">
+                        <p class="card__heading">
+                            Improve content hierarchy
+                        </p>
+
+                        <p>Identify the most important content types to highlight and restructure them, along with other content types.</p>
+                    </div>
+                </div>
+
+                <div class="card__item">
+                    <div class="card__desc">
+                        <p class="card__heading">
+                            Push hidden content up
+                        </p>
+
+                        <p>Properly introduce radio highlights by giving the section more screen real estate, enticing users to scroll for more content.</p>
+                    </div>
+                </div>
+
+                <div class="card__item">
+                    <div class="card__desc">
+                        <p class="card__heading">
+                            Remove redundancy
+                        </p>
+
+                        <p>Establish one, single element for the “listen live” feature and encourage new behaviors.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content">
+            <div class="content__container">
+                <h2 class="content__heading">Removing the most interacted element in order to promote a more unified experience.</h2>
+
+                <p class="content__text">The browse screen had two access points for live radio—a top card and a bottom live player—making up 60% of user interactions. Removing the top card frees up space for more content and reinforces the bottom live player as a permanent feature accessible on all pages.</p>
+            </div>
+        </section>
+
+        <section class="content iterations">
+            <h4>Iterations</h4>
+
+            <div class="content__container">
+                <h2 class="content__heading">Establishing content hierarchy</h2>
+
+                <p class="content__text">To simplify the design process, reorganizing the browse screen categories clarified element placements, while low-fidelity wireframes helped with structure explorations.</p>
+            </div>
+
+            <img src="media/2-Structure.png" alt="#">
+
+            <img src="media/3-Low fidelity.png" alt="#">
+        </section>
+
+        <section class="content">
+            <div class="content__container">
+                <h2 class="content__heading">Wireframing: A variety of molecules and organisms</h2>
+
+                <p class="content__text">High-fidelity wireframes then made it easier to visualize small tweaks/changes for featured stories, radio highlights, and the latest news, as well as their combinations.</p>
+            </div>
+
+            <img src="media/4-Featured.png" alt="#">
+
+            <img src="media/5-Highlights.png" alt="#">
+
+            <img src="media/6-Latest news.png" alt="#">
+
+            <img src="media/7-High fidelity.png" alt="#">
+        </section>
+
+        <section class="content proposed">
+            <h4>Proposed design</h4>
+
+            <div class="content__container">
+                <h2 class="content__heading">A new but familiar browse experience</h2>
+
+                <p class="content__text">After 10+ iterations and several design reviews with the product team, we unanimously agreed on a design that elevates content visibility and highlights curated journalism.</p>
+            </div>
+
+            <img src="media/8-Proposed.png" alt="#">
+
+            <div class="content card numbered">
+                <div class="numbered__container">
+                    <div class="card__item">
+                        <p class="card__heading" >
+                            1.
+                        </p>
+    
+                        <div class="card__desc">
+                            <p class="card__heading">
+                                Live radio access
+                            </p>
+                            <p>Eliminated redundancy by making live radio accessible through the player or the dedicated radio page.</p>
+                        </div>
+                    </div>
+    
+                    <div class="card__item">
+                        <p class="card__heading" >
+                            2.
+                        </p>
+    
+                        <div class="card__desc">
+                            <p class="card__heading">
+                                Compact newscasts
+                            </p>
+                            <p>Optimized screen space with row cards, giving newscasts a distinctive appearance.</p>
+                        </div>
+                    </div>    
+                </div>
+
+                <div class="numbered__container">
+                    <div class="card__item">
+                        <p class="card__heading" >
+                            3.
+                        </p>
+    
+                        <div class="card__desc">
+                            <p class="card__heading">
+                                Full bleed featured stories
+                            </p>
+                            <p>Enhanced visual appeal with a full-bleed design, pushing stories up to ensure they are prominently displayed.</p>
+                        </div>
+                    </div>
+    
+                    <div class="card__item">
+                        <p class="card__heading" >
+                            4.
+                        </p>
+    
+                        <div class="card__desc">
+                            <p class="card__heading">
+                                Radio highlights section
+                            </p>
+                            <p>Previously hidden content is now visible, allowing users to explore highlights from past broadcasts.</p>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </section>
+
+        <section class="content in-development">
+            <h4>In development</h4>
+
+            <div class="content__container">
+                <h2 class="content__heading">"Imperfect" lead images & design continuity issues</h2>
+
+                <p class="content__text">During development, we had to pivot and make some design changes after running into some issues.</p>
+            </div>
+
+            <img src="media/9-Problems.png" alt="#">
+
+            <div class="content card numbered">
+                <div class="numbered__container">
+                    <div class="card__item">
+                        <p class="card__heading" >
+                            1.
+                        </p>
+    
+                        <div class="card__desc">
+                            <p class="card__heading">
+                                Logo overlap and faces
+                            </p>
+                            <p>The logo overlapped with lead images featuring faces. We dismissed manual center-cropping due to complexity and instead opted for an opaque nav bar and adjusted aspect ratio.</p>
+                        </div>
+                    </div>
+    
+                    <div class="card__item">
+                        <p class="card__heading" >
+                            2.
+                        </p>
+    
+                        <div class="card__desc">
+                            <p class="card__heading">
+                                Button icon inconsistency
+                            </p>
+                            <p>Filled buttons were inconsistent with the app’s design. We corrected this by standardizing to outlined buttons, as used on the radio tab.</p>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </section>
+
+        <section class="content final-design">
+            <h4>Final design</h4>
+
+            <div class="content__container">
+                <h2 class="content__heading">A browse screen that keeps users engaged with fresh stories daily—Chicago's source for reliable journalism.</h2>
+
+                <p class="content__text">After some design tweaks, regression and QA testing, and renaming categories (e.g., "Top Stories" from "Radio Highlights"), the redesigned browse screen was finalized and shipped.</p>
+            </div>
+
+            <img src="media/11-Final_2.png" alt="#">
+
+            <img src="media/10-Final_1.png" alt="#">
+        </section>
+
+        <section class="content post-launch">
+            <h4>Post launch data</h4>
+
+            <div class="content__container">
+                <h2 class="content__heading">The impact of a redesign</h2>
+
+                <p class="content__text">With consistent push notifications, the redesign significantly boosted overall user engagement, particularly with the featured story experiencing a peak of 304% and 230% for top stories within a month.</p>
+            </div>
+
+            <img src="media/12-Stats.png" alt="#">
+        </section>
+
+        <section class="content retrospective">
+            <h4>Retrospective</h4>
+
+            <div class="content__container">
+                <h2 class="content__heading">To be confident in my design decisions</h2>
+
+                <p class="content__text">‍I learned to trust myself and my design decisions, especially in removing the "Listen Live" card, even though it was the most interacted with element. The change was good and needed—it helped create a more unified listening experience and ultimately led to an increase in overall engagement, which made me happy and justified that it all worked out. <br><br> 
+                
+                I'm forever grateful to the Chicago Public Media product team for trusting me and challenging me throughout this project, and I will always carry these learnings with me.</p>
+            </div>
+        </section>
+
+        <a class="button" href="#">Explore next: CPM — Push notifications ></a>
+   </main> 
+</body>
+</html>
