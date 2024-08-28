@@ -1,0 +1,351 @@
+/* VARIABLES */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Overpass+Mono:wght@300..700&display=swap");
+/* MIXINS */
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* PAGE DEFAULT */
+* {
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 80px;
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: backwards;
+  background-color: #FFFEFC;
+  color: #101010;
+  max-width: 1600px;
+  padding: 60px;
+  margin: auto;
+  font-family: "Overpass Mono", monospace;
+  line-height: 130%;
+}
+
+:hover {
+  transition: 0.4s ease;
+}
+
+/* NAV */
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 80px;
+  position: sticky;
+  top: 60px;
+  height: calc(100vh - 120px);
+  min-width: 34ch;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+header h4 {
+  font-weight: 400;
+}
+
+.button {
+  border: solid 1px #101010;
+  color: #101010;
+  font-family: "Overpass Mono", monospace;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 8px 10px 4px 8px;
+  transition: 0.4s ease;
+}
+.button:hover {
+  background-color: #0412da;
+  border: solid 1px #0412da;
+  color: #FFFEFC;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 24px;
+}
+.nav strong {
+  font-weight: 600;
+}
+.nav__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 6px;
+}
+.nav__link {
+  font-weight: 400;
+  text-decoration: none;
+  transition: 0.4s ease;
+  color: #101010;
+}
+.nav__link--active {
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.nav__link:hover {
+  font-weight: 600;
+  color: #0412da;
+  transform: translateY(-2px);
+}
+
+.credits h4 {
+  color: #999796;
+  font-weight: 300;
+}
+.credits a {
+  color: #999796;
+  text-decoration: none;
+  transition: 0.4s ease;
+}
+.credits a:hover {
+  color: #0412da;
+}
+
+/* MAIN */
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 80px;
+  padding-bottom: 6px;
+  font-family: "Inter", sans-serif;
+}
+main h4 {
+  font-family: "Overpass Mono", monospace;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #999796;
+}
+main h1 {
+  font-size: 24px;
+  font-weight: 600;
+}
+main h2 {
+  font-size: 22px;
+  font-weight: 500;
+}
+main p, main li {
+  font-size: 16px;
+  font-weight: 400;
+}
+main .credits {
+  display: none;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 40px;
+}
+.hero img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0;
+  width: 100%;
+}
+.details__category {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+  line-height: 170%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 24px;
+}
+.content a {
+  color: #101010;
+  text-underline-offset: 2px;
+  transition: 0.4s ease;
+}
+.content a:hover {
+  color: #0412da;
+}
+.content__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 16px;
+}
+.content__heading {
+  line-height: 150%;
+}
+.content__heading mark {
+  background-color: rgba(255, 246, 34, 0.4);
+  padding: 0px 4px;
+}
+.content__text {
+  line-height: 170%;
+}
+.content__list {
+  line-height: 150%;
+  padding-left: 16px;
+}
+.content__item {
+  margin-bottom: 4px;
+}
+.content img, .content video {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.content #actual {
+  aspect-ratio: unset;
+  -o-object-fit: contain;
+     object-fit: contain;
+  background-color: rgba(153, 151, 150, 0.0705882353);
+}
+
+.box {
+  width: 100%;
+  background-color: rgba(153, 151, 150, 0.0705882353);
+  padding: 40px;
+}
+.box h4 {
+  color: #101010;
+}
+.box h2 {
+  line-height: 130%;
+}
+
+.card__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+  width: 100%;
+  line-height: 170%;
+  background-color: rgba(153, 151, 150, 0.0705882353);
+  padding: 40px;
+}
+.card__heading {
+  font-weight: 500;
+}
+.card__desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.base {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 16px;
+}
+
+.numbered {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 16px;
+}
+.numbered__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 16px;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 1100px) and (max-width: 1350px) {
+  .card {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 1100px) {
+  body {
+    flex-direction: column;
+    gap: 40px;
+  }
+  header {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: auto;
+  }
+  header .intro, header .credits, header .nav__list {
+    display: none;
+  }
+  main {
+    padding-bottom: 0px;
+  }
+}
+@media screen and (max-width: 975px) {
+  .card {
+    flex-wrap: wrap;
+  }
+  .numbered__container {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 768px) {
+  body {
+    padding: 16px;
+  }
+  .hero img {
+    padding-top: 0;
+  }
+  .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 24px;
+  }
+  .box, .card__item {
+    padding: 24px;
+  }
+}/*# sourceMappingURL=style.css.map */

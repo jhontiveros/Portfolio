@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Jennica Hontiveros — CPM Push</title>
+</head>
+
+<body>
+   <header>
+        <div class="nav">
+            <a class="button" href="#">< Back home</a>
+
+            <h4 class="intro"><strong>Chicago Public Media</strong> — Growing subscription conversion rates<br><br>---</h4>
+
+            <nav class="nav__list">
+                <a class="nav__link nav__link--active" href="#" id="home-link">Start</a>
+                <a class="nav__link" href="#" id="about-link">Abstract</a>
+                <a class="nav__link" href="#" id="about-link">Introduction</a>
+                <a class="nav__link" href="#" id="about-link">Content Management</a>
+                <a class="nav__link" href="#" id="about-link">Push Experience</a>
+                <a class="nav__link" href="#" id="about-link">Launch #1</a>
+                <a class="nav__link" href="#" id="about-link">Updates</a>
+                <a class="nav__link" href="#" id="about-link">Launch #2</a>
+                <a class="nav__link" href="#" id="about-link">Retrospective</a>
+            </nav>
+        </div>
+
+        <div class="credits">
+            <h4><a href="mailto:hello@jennica.design">Email</a> / <a href="https://www.linkedin.com/in/jhontiveros/"> Linkedin</a> <br>
+            ©2024 Jennica Hontiveros</h4>
+        </div>
+   </header>
+
+   <main>
+        <div class="hero">
+            <div class="content__container">
+                <h1 class="content__heading">Chicago Public Media — Push Notifications</h1>
+
+                <p class="content__text">The product team at Chicago Public Media discovered that most users were using the WBEZ app primarily for live radio, with user engagement dropping after the initial download. Users were not frequently returning to the app, leading to minimal interaction with other types of audio content beyond live listening.</p>
+            </div>
+
+            <div class="details">
+                <div class="details__category">
+                    <h4>Timeline</h4>
+                    <p>Jan - Jun 2022</p>
+                </div>
+
+                <div class="details__category">
+                    <h4>Team</h4>
+                    <p>Nick DePrey<br>Shira Gersten<br>J. Kyle White-Sullivan<br>Oliver Holmberg<br>Tenaysia Fox</p>
+                </div>
+
+                <div class="details__category">
+                    <h4>Tools</h4>
+                    <p>Figma<br>Zeplin</p>
+                </div>
+
+                <div class="details__category">
+                    <h4>Disciplines</h4>
+                    <p>Product Design<br>Visual Design<br>Quality Assurance</p>
+                </div>
+            </div>
+
+            <img src="media/1-Hero.png" alt="#">
+        </div>
+
+        <section class="content box abstract">
+            <h4>Abstract</h4>
+
+            <div class="content__container">
+                <p class="content__text">During my time at Chicago Public Media, working exclusively on WBEZ, Chicago's NPR news station, I played a key role in developing push notifications aimed at enhancing app engagement, boosting retention, and keeping users well-informed.<br><br>
+
+                As the solo designer with the product team, in 6 months we shipped a push notification feature that introduced subscribed users to new content, ongoing broadcasts, and company wide sweepstakes. In this project, I was responsible for mapping out permission flows, designing backend content management system pages, and prototyping both system and stylized prompts for iOS and Android. Additionally, I created requisition campaigns and ran QA tests for feature intents and niche use cases.<br><br>
+                    
+                The initial version of the push notifications resulted in a lower-than-expected conversion rate of 2%-6%. This led me to spearhead a reacquisition campaign that focused on more visually appealing design elements, moving away from standard system prompts and reworking the user flow. As a result, the second version of the push notifications saw a significant improvement, with conversion rates increasing to 13%-17% in less than a month of implementation.</p>
+            </div>
+        </section>
+
+        <section class="content introduction">
+            <h4>Introduction</h4>
+
+            <div class="content__container">
+                <h2 class="content__heading">Why send push notifications?</h2>
+
+                <p class="content__text">Push notifications enhance user engagement and retention by sending timely, relevant content directly to users' devices. This helps keep them informed, encourages them to use the app more, and provides a direct way to communicate with users.</p>
+            </div>
+        </section>
+
+        <section class="content">
+            <div class="content__container">
+                <h2 class="content__heading">Push notification types</h2>
+
+                <p class="content__text">To start, the team wanted to send push notifications content already available on the app like live broadcasts, podcasts, and featured stories, and my task was to create content management system pages for these notifications.</p>
+
+                <p>**missing table here**</p>
+            </div>
+        </section>
+
+        <section class="content content-management">
+            <h4>Content management</h4>
+
+            <div class="content__container">
+                <h2 class="content__heading">Designing new CMS pages using existing design elements</h2>
+
+                <p class="content__text">Chicago Public Media uses an in-house content management system and I was tasked with designing system panes to simplify the content creation process. I focused on designing screens using familiar UI elements to make the transition easier for employees.</p>
+            </div>
+
+            <img src="media/2-CMS.png" alt="#">
+
+            <img src="media/3-CMS variations.png" alt="#">
+
+            <div class="content__container">
+                <p class="content__text">These pages were then prototyped to help identify and resolve flow and interaction inconsistencies, leading to clearer and simpler user paths for development.</p>
+            </div>
+        </section>
+
+        <section class="content push-exp">
+            <h4>Push experience</h4>
+
+            <div class="content__container">
+                <h2 class="content__heading">Understanding consent differences through permission flows</h2>
+
+                <p class="content__text">iOS and Android devices have different consent requirements for push notifications. Mapping out the system prompt flow helped reduce confusion by clarifying these differences.</p>
+            </div>
+
+            <img id="actual" src="media/IOS-Permissions.png" alt="#">
+
+            <img id="actual" src="media/Android-Permissions.png" alt="#">
+        </section>
+
+        <section class="content">
+            <div class="content__container">
+                <h2 class="content__heading">Housing notification settings in the app menu</h2>
+
+                <p class="content__text">Given time and development constraints, the team opted to add a simple notification settings panel to the app menu. This panel will be updated or expanded in the future as WBEZ plans to offer more notification customization options.</p>
+            </div>
+
+            <img src="media/4-Menu toggle.png" alt="#">
+
+            <div class="content__container">
+                <p class="content__text">Above also shows a planned app menu refresh, displaying how the notification settings panel would fit into the updated design.</p>
+            </div>
+        </section>
+
+        <section class="content">
+            <div class="content__container">
+                <h2 class="content__heading">QA testing: finding ways to break the feature</h2>
+
+                <p class="content__text">QA testing took up most of the project's time and involved several key tasks. This included testing the CMS tooling for overall functionality and accuracy, ensuring that each push intent triggered the correct app behavior, and performing regression testing. Testing scenario examples:</p>
+            </div>
+
+            <div class="content card base">
+                <div class="card__item">
+                    <div class="card__desc">
+                        <p class="card__heading">
+                            In-app interactions:
+                        </p>
+                        <ul class="content__list">
+                            <li class="content__item">Clicking on different notification types while using the WBEZ app</li>
+        
+                            <li class="content__item">Interacting with notifications while playing other content in the WBEZ app</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card__item">
+                    <div class="card__desc">
+                        <p class="card__heading">
+                            Background interactions:
+                        </p>
+                        <ul class="content__list">
+                            <li class="content__item">Clicking on notifications while media plays in another app</li>
+        
+                            <li class="content__item">Interacting with notifications while media plays in another app with the phone locked</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <video controls autoplay loop muted style="pointer-events: none;" src="media/Push-notifications.mp4"></video>
+
+            <div class="content__container">
+                <p class="content__text">We also tested how many app opens were optimal for each notification ask—whether initial or reacquisition—to determine if they were effective or overly intrusive.</p>
+            </div>
+        </section>
+
+        <section class="content launch-1">
+            <h4>Launch #1</h4>
+
+            <div class="content__container">
+                <h2 class="content__heading">People aren't subscribing to push notifications</h2>
+
+                <p class="content__text">After the initial build on May 2nd and the first push notification on May 5th, the team monitored performance over the following weeks. Conversion rates initially ranged from 2% to 6%, with some tracking issues affecting accuracy.</p>
+            </div>
+
+            <div class="content card numbered">
+                <div class="numbered__container">
+                    <div class="card__item">
+                        <p class="card__heading" >
+                            1.
+                        </p>
+    
+                        <div class="card__desc">
+                            <p class="card__heading">
+                                Banner blindness
+                            </p>
+                            <p>Habitually rejecting system prompts without reading them.</p>
+                        </div>
+                    </div>
+    
+                    <div class="card__item">
+                        <p class="card__heading" >
+                            2.
+                        </p>
+    
+                        <div class="card__desc">
+                            <p class="card__heading">
+                                Inefficient user flow
+                            </p>
+                            <p>Users could be opting out entirely due to the final step showing the option to toggle off.</p>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </section>
+
+        <section class="content">
+            <div class="content__container">
+                <h2 class="content__heading">So, what can we do to improve conversion rates?</h2>
+
+                <p class="content__text">To address the plausible issues stated above and increase push authorization numbers, the following changes were planned for the next major app update:</p>
+
+                <ul class="content__list">
+                    <li class="content__item">Design a more engaging push authorization screen that clearly explains notification frequency and types</li>
+
+                    <li class="content__item">Launch reacquisition campaigns for users who declined the initial system prompt (important for Apple users due to consent requirements)</li>
+
+                    <li class="content__item">Remove the final step directing users to the push notification settings panel</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="content updates">
+            <h4>Updates</h4>
+
+            <div class="content__container">
+                <h2 class="content__heading">Stylized primers and campaigns</h2>
+
+                <p class="content__text">The new push authorization screens offered a friendlier approach to boosting subscriptions for both initial asks and reacquisition campaigns. They were designed to combat banner blindness by clearly presenting push notification frequency options, removing the need for users to visit the settings menu.</p>
+            </div>
+
+            <img src="media/5-Primers.png" alt="#">
+
+            <img src="media/6-Stylized primers.png" alt="#">
+        </section>
+
+        <section class="content launch-2">
+            <h4>Launch #2</h4>
+
+            <div class="content__container">
+                <h2 class="content__heading">Informative, visually appealing requests = better conversion rates</h2>
+
+                <p class="content__text">From the release date on June 8th to my last day on June 27th, the push authorization conversion rate increased to 19%, representing a 13-17% improvement in less than a month.</p>
+            </div>
+
+            <video controls autoplay loop muted style="pointer-events: none;" src="media/Permissions.mp4"></video>
+        </section>
+
+        <section class="content retrospective">
+            <h4>Retrospective</h4>
+
+            <div class="content__container">
+                <h2 class="content__heading">To design considerably and empathetically</h2>
+
+                <p class="content__text">‍I learned how important it is to design with empathy, especially when it came to permission requests. I had to make sure I knew when to ask, how many times, and when to follow up, all without being intrusive. This project taught me how thoughtful design and respecting user autonomy can not only enhance the user experience, but also positively impact business metrics.</p>
+            </div>
+        </section>
+
+        <a class="button" href="#">Explore next: PBS39 — Donations ></a>
+   </main> 
+</body>
+</html>
