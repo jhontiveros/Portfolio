@@ -1,0 +1,430 @@
+/* VARIABLES */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Overpass+Mono:wght@300..700&display=swap');
+
+$font-style-mono: "Overpass Mono", monospace;
+$heading-style-sans-serif:  "Inter", sans-serif;
+
+$h1-size: 24px;
+$h2-size: 22px;
+$h4-size: 14px;
+
+$p-size: 16px;
+$nav-size: 14px;
+
+$line-height-s: 130%;
+$line-height-m: 150%;
+$line-height-l: 170%;
+
+$space-4: 4px;
+$space-6: 6px;
+$space-8: 8px;
+$space-16: 16px;
+$space-24: 24px;
+$space-40: 40px;
+$space-80: 80px;
+
+$color-white: #FFFEFC;
+$color-container: #99979612;
+$color-grey: #999796;
+$color-black: #101010;
+$color-color: #0412da;
+
+
+
+
+/* MIXINS */
+
+@mixin flex($direction, $position, $layout, $gap) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $position;
+    align-items: $layout;
+    gap: $gap;
+}
+
+@mixin fadeInAnimation {
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: backwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 0; 
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+
+
+
+/* PAGE DEFAULT */
+
+* {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+
+    scroll-behavior: smooth;
+}
+
+body {
+    @include flex(row, flex-start, flex-start, $space-80);
+    @include fadeInAnimation();
+
+    background-color: $color-white;
+    color: $color-black;
+
+    max-width: 1600px;
+    padding: 60px;
+    margin: auto;
+
+    font-family: $font-style-mono;
+    line-height: $line-height-s;
+}
+
+:hover {
+    transition: 0.4s ease;
+}
+
+
+
+
+/* NAV */
+
+header {
+    @include flex(column, space-between, flex-start, $space-80);
+
+    position: sticky;
+    top: 60px;
+
+    height: calc(100vh - 120px);
+    min-width: 34ch;
+
+    font-size: $nav-size;
+
+    text-transform: uppercase;
+
+    h4 {
+        font-weight: 400;
+    }
+}
+
+.button {
+    border: solid 1px $color-black;
+    color: $color-black;
+
+    font-family: $font-style-mono;
+    font-size: $nav-size;
+    font-weight: 600;
+
+    text-transform: uppercase;
+    text-decoration: none;
+
+    padding: 8px 10px 4px 8px;
+
+    transition: 0.4s ease;
+
+    &:hover {
+        background-color: $color-color;
+        border: solid 1px $color-color;
+        color: $color-white;
+    }
+}
+
+.nav {
+    @include flex(column, flex-start, flex-start, $space-24);
+
+    strong {
+        font-weight: 600;
+    }
+
+    &__list {
+        @include flex(column, flex-start, flex-start, $space-6);
+    }
+
+    &__link {
+        font-weight: 400;
+        text-decoration: none;
+        transition: 0.4s ease;
+
+        color: $color-black;
+
+        &--active {
+            font-weight: 600;
+            text-decoration: underline;
+            text-underline-offset: 2px;
+        }
+
+        &:hover {
+            font-weight: 600;
+            color: $color-color;
+            transform: translateY(-2px);
+        }
+    }
+}
+
+.credits {
+    h4 {
+        color: $color-grey;
+        font-weight: 300;
+    }
+
+    a {
+        color: $color-grey;
+        text-decoration: none;
+        transition: 0.4s ease;
+
+        &:hover {
+            color: $color-color;
+        }
+    }
+}
+
+
+
+
+/* MAIN */
+
+main {
+    @include flex(column, flex-start, flex-start, $space-80);
+    padding-bottom: 6px;
+
+    font-family: $heading-style-sans-serif;
+
+    h4 {
+        font-family: $font-style-mono;
+        font-size: $h4-size;
+        font-weight: 600;
+        text-transform: uppercase;
+
+        color: $color-grey;
+    }
+
+    h1 {
+        font-size: $h1-size;
+        font-weight: 600;
+    }
+
+    h2 {
+        font-size: $h2-size;
+        font-weight: 500;
+    }
+
+    p, li {
+        font-size: $p-size;
+        font-weight: 400;
+    }
+
+    .credits {
+        display: none;
+    }
+}
+
+.hero {
+    @include flex(column, flex-start, flex-start, $space-40);
+
+    img {
+        width: 100%;
+        height: auto;
+
+        aspect-ratio: 16/9;
+        object-fit: cover;
+
+        padding-top: $space-24;
+    }
+}
+
+.details {
+    @include flex(row, space-between, flex-start, 0);
+    width: 100%;
+
+    &__category {
+        @include flex(column, flex-start, flex-start, $space-8);
+        line-height: $line-height-l;
+
+        a {
+            color: #D87331;
+            text-underline-offset: 4px;
+
+            transition: 0.4s ease;
+        }
+
+        a:hover {
+            color: $color-color;
+        }
+    }
+}
+
+.content {
+    @include flex(column, flex-start, flex-start, $space-24);
+
+    a {
+        color: $color-black;
+        text-underline-offset: 2px;
+
+        transition: 0.4s ease;
+
+        &:hover {
+            color: $color-color;
+        }
+    }
+
+    &__container {
+        @include flex(column, flex-start, flex-start, $space-16);
+    }
+
+    &__heading {
+        line-height: $line-height-m;
+        letter-spacing: -0.5px;
+
+        mark {
+            background-color: rgba(255, 246, 34, .4);
+            padding: 0px 4px;
+        }
+    }
+
+    &__text {
+        line-height: $line-height-l;
+    }
+
+    &__list {
+        line-height: $line-height-m;
+        padding-left: $space-16;
+    }
+
+    &__item {
+        margin-bottom: $space-4;
+    }
+
+    img, video {
+        width: 100%;
+        height: auto;
+
+        object-fit: cover;
+    }
+
+    #actual {
+        aspect-ratio: unset;
+        object-fit: contain;
+
+        background-color: $color-container;
+    }
+}
+
+.box {
+    width: 100%;
+
+    background-color: $color-container;
+    padding: $space-40;
+
+    h4 {
+        color: $color-black;
+    }
+
+    h2 {
+        line-height: $line-height-s;
+    }
+}
+
+.card {
+    &__item {
+        @include flex(row, flex-start, flex-start, $space-8);
+        width: 100%;
+        line-height: $line-height-l;
+
+        background-color: $color-container;
+        padding: $space-40;
+
+    }
+
+    &__heading {
+        font-weight: 500;
+    }
+
+    &__desc {
+        @include flex(column, flex-start, flex-start, $space-8);
+    }
+}
+
+.base {
+    @include flex(row, flex-start, stretch, $space-16);
+}
+
+.numbered {
+    @include flex(column, flex-start, stretch, $space-16);
+
+    &__container {
+        @include flex(row, flex-start, stretch, $space-16);
+    }
+}
+
+
+
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 1100px) and (max-width: 1350px) {
+    .card {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    body {
+        flex-direction: column;
+        gap: $space-40;
+    }
+
+    header {
+        position: relative;
+        top: 0;
+
+        width: 100%;
+        height: auto;
+
+        .intro, .credits, .nav__list {
+            display: none;
+        }
+    }
+
+    main {
+        padding-bottom: 0px;
+    }
+}
+
+@media screen and (max-width: 975px) {
+    .card {
+        flex-wrap: wrap;
+    }
+
+    .numbered__container {
+       flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        padding: $space-16;
+    }
+
+    .hero {
+        img {
+            padding-top: 0;
+        }
+    }
+
+    .details {
+        @include flex(column, flex-start, flex-start, $space-24);
+    }
+
+    .box, .card__item {
+        padding: $space-24;
+    }
+}
