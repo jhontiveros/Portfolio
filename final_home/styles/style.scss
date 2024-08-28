@@ -27,7 +27,7 @@ $color-white: #FFFEFC;
 $color-container: #99979612;
 $color-grey: #999796;
 $color-black: #101010;
-$color-color: #482acc;
+$color-color: #0412da;
 
 
 
@@ -200,6 +200,14 @@ main {
     .project {
         @include flex(column, flex-start, flex-start, $space-16);
         transition: 0.4s ease;
+
+        &__heading {
+            font-family: $heading-style-sans-serif;
+            font-size: $p-size;
+            font-weight: 500;
+
+            text-transform: capitalize;
+        }
 
         &__image {
             width: 100%;
