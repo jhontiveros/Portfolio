@@ -161,7 +161,7 @@ main .credits {
   font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 500;
-  text-transform: capitalize;
+  text-transform: none;
 }
 .work .project__image {
   width: 100%;

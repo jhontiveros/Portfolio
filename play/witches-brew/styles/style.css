@@ -167,7 +167,6 @@ main .credits {
 .hero img {
   width: 100%;
   height: auto;
-  aspect-ratio: 16/9;
   -o-object-fit: cover;
      object-fit: cover;
   padding-top: 24px;
