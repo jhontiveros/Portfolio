@@ -74,6 +74,10 @@ $color-color: #0412da;
     scroll-behavior: smooth;
 }
 
+html {
+    scroll-padding-top: 60px;
+}
+
 body {
     @include flex(row, flex-start, flex-start, $space-80);
     @include fadeInAnimation();

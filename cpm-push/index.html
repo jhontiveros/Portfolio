@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./script.js"></script>
     <title>Jennica Hontiveros — CPM Push</title>
 </head>
 
@@ -15,15 +17,15 @@
             <h4 class="intro"><strong>Chicago Public Media</strong> — Growing subscription conversion rates<br><br>---</h4>
 
             <nav class="nav__list">
-                <a class="nav__link nav__link--active" href="#" id="home-link">Start</a>
-                <a class="nav__link" href="#" id="about-link">Abstract</a>
-                <a class="nav__link" href="#" id="about-link">Introduction</a>
-                <a class="nav__link" href="#" id="about-link">Content Management</a>
-                <a class="nav__link" href="#" id="about-link">Push Experience</a>
-                <a class="nav__link" href="#" id="about-link">Launch #1</a>
-                <a class="nav__link" href="#" id="about-link">Updates</a>
-                <a class="nav__link" href="#" id="about-link">Launch #2</a>
-                <a class="nav__link" href="#" id="about-link">Retrospective</a>
+                <a class="nav__link nav__link--active" href="#start" id="start-link">Start</a>
+                <a class="nav__link" href="#abstract" id="abstract-link">Abstract</a>
+                <a class="nav__link" href="#intro" id="intro-link">Introduction</a>
+                <a class="nav__link" href="#content-m" id="content-m-link">Content Management</a>
+                <a class="nav__link" href="#push-exp" id="push-exp-link">Push Experience</a>
+                <a class="nav__link" href="#launch-1" id="launch-1-link">Launch #1</a>
+                <a class="nav__link" href="#updates" id="updates-link">Updates</a>
+                <a class="nav__link" href="#launch-2" id="launch-2-link">Launch #2</a>
+                <a class="nav__link" href="#retro" id="retro-link">Retrospective</a>
             </nav>
         </div>
 
@@ -36,7 +38,7 @@
    <main>
         <div class="hero">
             <div class="content__container">
-                <h1 class="content__heading">Chicago Public Media — Push Notifications</h1>
+                <h1 class="content__heading" id="start">Chicago Public Media — Push Notifications</h1>
 
                 <p class="content__text">The product team at Chicago Public Media discovered that most users were using the WBEZ app primarily for live radio, with user engagement dropping after the initial download. Users were not frequently returning to the app, leading to minimal interaction with other types of audio content beyond live listening.</p>
             </div>
@@ -66,8 +68,8 @@
             <img src="media/1-Hero.png" alt="#">
         </div>
 
-        <section class="content box abstract">
-            <h4>Abstract</h4>
+        <section class="content box">
+            <h4  id="abstract">Abstract</h4>
 
             <div class="content__container">
                 <p class="content__text">During my time at Chicago Public Media, working exclusively on WBEZ, Chicago's NPR news station, I played a key role in developing push notifications aimed at enhancing app engagement, boosting retention, and keeping users well-informed.<br><br>
@@ -78,8 +80,8 @@
             </div>
         </section>
 
-        <section class="content introduction">
-            <h4>Introduction</h4>
+        <section class="content">
+            <h4 id="intro">Introduction</h4>
 
             <div class="content__container">
                 <h2 class="content__heading">Why send push notifications?</h2>
@@ -98,8 +100,8 @@
             </div>
         </section>
 
-        <section class="content content-management">
-            <h4>Content management</h4>
+        <section class="content">
+            <h4 id="content-m">Content management</h4>
 
             <div class="content__container">
                 <h2 class="content__heading">Designing new CMS pages using existing design elements</h2>
@@ -116,8 +118,8 @@
             </div>
         </section>
 
-        <section class="content push-exp">
-            <h4>Push experience</h4>
+        <section class="content">
+            <h4 id="push-exp">Push experience</h4>
 
             <div class="content__container">
                 <h2 class="content__heading">Understanding consent differences through permission flows</h2>
@@ -179,15 +181,15 @@
                 </div>
             </div>
 
-            <video controls autoplay loop muted style="pointer-events: none;" src="media/Push-notifications.mp4"></video>
+            <video controls autoplay loop muted style="pointer-events: none;" src="media/Push-notifications.mp4" id="push-notifs-video"></video>
 
             <div class="content__container">
                 <p class="content__text">We also tested how many app opens were optimal for each notification ask—whether initial or reacquisition—to determine if they were effective or overly intrusive.</p>
             </div>
         </section>
 
-        <section class="content launch-1">
-            <h4>Launch #1</h4>
+        <section class="content">
+            <h4 id="launch-1">Launch #1</h4>
 
             <div class="content__container">
                 <h2 class="content__heading">People aren't subscribing to push notifications</h2>
@@ -250,8 +252,8 @@
             </div>
         </section>
 
-        <section class="content updates">
-            <h4>Updates</h4>
+        <section class="content">
+            <h4 id="updates">Updates</h4>
 
             <div class="content__container">
                 <h2 class="content__heading">Stylized primers and campaigns</h2>
@@ -264,8 +266,8 @@
             <img src="media/6-Stylized primers.png" alt="#">
         </section>
 
-        <section class="content launch-2">
-            <h4>Launch #2</h4>
+        <section class="content">
+            <h4 id="launch-2">Launch #2</h4>
 
             <div class="content__container">
                 <h2 class="content__heading">Informative, visually appealing requests = better conversion rates</h2>
@@ -273,11 +275,11 @@
                 <p class="content__text">From the release date on June 8th to my last day on June 27th, the push authorization conversion rate increased to 19%, representing a 13-17% improvement in less than a month.</p>
             </div>
 
-            <video controls autoplay loop muted style="pointer-events: none;" src="media/Permissions.mp4"></video>
+            <video controls autoplay loop muted style="pointer-events: none;" src="media/Permissions.mp4" id="permissions-video"></video>
         </section>
 
-        <section class="content retrospective">
-            <h4>Retrospective</h4>
+        <section class="content">
+            <h4 id="retro">Retrospective</h4>
 
             <div class="content__container">
                 <h2 class="content__heading">To design considerably and empathetically</h2>

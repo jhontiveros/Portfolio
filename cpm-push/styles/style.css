@@ -20,6 +20,10 @@
   scroll-behavior: smooth;
 }
 
+html {
+  scroll-padding-top: 60px;
+}
+
 body {
   display: flex;
   flex-direction: row;
