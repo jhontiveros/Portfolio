@@ -1,7 +1,8 @@
-let callback = (entries, _) => {
+export const addScrollHooks = (ids) => {
+    let callback = (entries, _) => {
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
-                navIds.forEach((id) => {
+                ids.forEach((id) => {
                     $(`#${id}-link`).removeClass('nav__link--active');
                 });
                 const navTarget = entry.target.id + '-link';
@@ -18,15 +19,14 @@ let callback = (entries, _) => {
         });
     }
     
-let options = {
-    threshold: 1.0,
-};
-     
-let observer = new IntersectionObserver(callback, options);
+    let options = {
+        threshold: 1.0,
+    };
+        
+    let observer = new IntersectionObserver(callback, options);
 
-export const addScrollHooks = (ids) => {
     ids.forEach((id) => {
         const target = document.querySelector(`#${id}`);
-        observer.observe(target);
+        if (target) observer.observe(target);
     });
 }

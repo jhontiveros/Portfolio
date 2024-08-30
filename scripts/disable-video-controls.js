@@ -1,5 +1,6 @@
 export const disableVideoControls = (ids) => {
     ids.forEach((id) => {
-        document.getElementById(id).controls = false;
+        let element = document.getElementById(id)
+        if (element) element.controls = false;
     });
 }

@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="module" src="./script.js"></script>
     <title>Jennica Hontiveros — CPM Browse</title>
 </head>
 
@@ -15,15 +17,15 @@
             <h4 class="intro"><strong>Chicago Public Media</strong> — Improving browse content interaction<br><br>---</h4>
 
             <nav class="nav__list">
-                <a class="nav__link nav__link--active" href="#" id="home-link">Start</a>
-                <a class="nav__link" href="#" id="about-link">Abstract</a>
-                <a class="nav__link" href="#" id="about-link">Introduction</a>
-                <a class="nav__link" href="#" id="about-link">Iterations</a>
-                <a class="nav__link" href="#" id="about-link">Proposed design</a>
-                <a class="nav__link" href="#" id="about-link">In development</a>
-                <a class="nav__link" href="#" id="about-link">Final design</a>
-                <a class="nav__link" href="#" id="about-link">Post launch data</a>
-                <a class="nav__link" href="#" id="about-link">Retrospective</a>
+                <a class="nav__link nav__link--active" href="#start" id="start-link">Start</a>
+                <a class="nav__link" href="#abstract" id="abstract-link">Abstract</a>
+                <a class="nav__link" href="#intro" id="intro-link">Introduction</a>
+                <a class="nav__link" href="#iterations" id="iterations-link">Iterations</a>
+                <a class="nav__link" href="#proposed" id="proposed-link">Proposed design</a>
+                <a class="nav__link" href="#in-dev" id="in-dev-link">In development</a>
+                <a class="nav__link" href="#final" id="final-link">Final design</a>
+                <a class="nav__link" href="#post-launch" id="post-launch-link">Post launch data</a>
+                <a class="nav__link" href="#retro" id="retro-link">Retrospective</a>
             </nav>
         </div>
 
@@ -36,7 +38,7 @@
    <main>
         <div class="hero">
             <div class="content__container">
-                <h1 class="content__heading">Chicago Public Media — Browse Screen Redesign</h1>
+                <h1 class="content__heading" id="start">Chicago Public Media — Browse Screen Redesign</h1>
 
                 <p class="content__text">The audience analytics team at Chicago Public Media recently conducted a heat mapping study on the WBEZ app, revealing that over half of user interactions were only going to live radio, which significantly overshadowed other forms of audio content available.</p>
             </div>
@@ -66,8 +68,8 @@
             <img src="media/11-Final_2.png" alt="#">
         </div>
 
-        <section class="content box abstract">
-            <h4>Abstract</h4>
+        <section class="content box">
+            <h4 id="abstract">Abstract</h4>
 
             <div class="content__container">
                 <p class="content__text">During my time at Chicago Public Media, working exclusively on WBEZ, Chicago's NPR news station, I led the app's browse screen redesign project, which aimed to increase engagement, particularly with audio content other than live radio.<br><br>
@@ -78,8 +80,8 @@
             </div>
         </section>
 
-        <section class="content introduction">
-            <h4>Introduction</h4>
+        <section class="content">
+            <h4 id="intro">Introduction</h4>
 
             <div class="content__container">
                 <h2 class="content__heading">Most users did not scroll or browse, leaving curated content unheard</h2>
@@ -146,8 +148,8 @@
             </div>
         </section>
 
-        <section class="content iterations">
-            <h4>Iterations</h4>
+        <section class="content">
+            <h4 id="iterations">Iterations</h4>
 
             <div class="content__container">
                 <h2 class="content__heading">Establishing content hierarchy</h2>
@@ -176,8 +178,8 @@
             <img src="media/7-High fidelity.png" alt="#">
         </section>
 
-        <section class="content proposed">
-            <h4>Proposed design</h4>
+        <section class="content">
+            <h4 id="proposed">Proposed design</h4>
 
             <div class="content__container">
                 <h2 class="content__heading">A new but familiar browse experience</h2>
@@ -246,8 +248,8 @@
             </div>
         </section>
 
-        <section class="content in-development">
-            <h4>In development</h4>
+        <section class="content">
+            <h4 id="in-dev">In development</h4>
 
             <div class="content__container">
                 <h2 class="content__heading">"Imperfect" lead images & design continuity issues</h2>
@@ -288,8 +290,8 @@
             </div>
         </section>
 
-        <section class="content final-design">
-            <h4>Final design</h4>
+        <section class="content">
+            <h4 id="final">Final design</h4>
 
             <div class="content__container">
                 <h2 class="content__heading">A browse screen that keeps users engaged with fresh stories daily—Chicago's source for reliable journalism.</h2>
@@ -302,8 +304,8 @@
             <img src="media/10-Final_1.png" alt="#">
         </section>
 
-        <section class="content post-launch">
-            <h4>Post launch data</h4>
+        <section class="content">
+            <h4 id="post-launch">Post launch data</h4>
 
             <div class="content__container">
                 <h2 class="content__heading">The impact of a redesign</h2>
@@ -314,8 +316,8 @@
             <img src="media/12-Stats.png" alt="#">
         </section>
 
-        <section class="content retrospective">
-            <h4>Retrospective</h4>
+        <section class="content">
+            <h4 id="retro">Retrospective</h4>
 
             <div class="content__container">
                 <h2 class="content__heading">To be confident in my design decisions</h2>
