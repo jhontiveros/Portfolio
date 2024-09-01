@@ -197,6 +197,15 @@ main {
         object-fit: cover;
     }
 
+    &__heading {
+        font-family: $heading-style-sans-serif;
+        font-size: $h2-size;
+        font-weight: 500;
+
+        line-height: $line-height-m;
+        letter-spacing: -0.5px;
+    }
+
     &__desc {
         @include flex(column, flex-start, flex-start, $space-24);
         

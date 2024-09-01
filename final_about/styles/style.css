@@ -85,8 +85,6 @@ header h4 {
 }
 .nav__link--active {
   font-weight: 600;
-  text-decoration: underline;
-  text-underline-offset: 2px;
 }
 .nav__link:hover {
   font-weight: 600;
@@ -137,6 +135,13 @@ main .credits {
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.about__heading {
+  font-family: "Inter", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: -0.5px;
 }
 .about__desc {
   display: flex;

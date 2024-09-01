@@ -308,6 +308,24 @@ main {
 
         background-color: $color-container;
     }
+
+    &__table {
+        border-collapse: collapse;
+        width: 100%;
+
+        th {
+            background-color: $color-container;
+            font-weight: 600;
+        }
+
+        th, td {
+            border: 1px solid #99979628;
+            padding: 8px;
+            
+            text-align: left;
+            vertical-align: top;
+        }
+    }
 }
 
 .box {
