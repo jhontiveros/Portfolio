@@ -175,6 +175,9 @@ main .credits {
 .work .project:hover h4, .work .project:hover p {
   color: #0412da;
 }
+.work .hide {
+  display: none;
+}
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 1100px) {
