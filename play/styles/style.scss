@@ -135,8 +135,6 @@ header {
 
         &--active {
             font-weight: 600;
-            text-decoration: underline;
-            text-underline-offset: 2px;
         }
 
         &:hover {
@@ -215,7 +213,7 @@ main {
             text-transform: none;
         }
 
-        &__image {
+        img, video {
             width: 100%;
             height: auto;
         }
