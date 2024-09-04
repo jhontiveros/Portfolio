@@ -355,12 +355,12 @@ main {
 .notice {
     border: solid 1px $color-color;
     background-color: #482acc20;
-    padding: $space-32;
 
+    padding: $space-24;
     width: 100%;
 
     p {
-        font-weight: 500;
+        font-weight: 400;
         color: $color-color;
     }
 }

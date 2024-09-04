@@ -362,6 +362,20 @@ main {
     }
 }
 
+.notice {
+    border: solid 1px $color-color;
+    background-color: #0412da15;
+
+    padding: $space-24;
+    width: 100%;
+
+    p {
+        font-weight: 400;
+        color: $color-color;
+
+        line-height: $line-height-m;
+    }
+}
 
 
 
