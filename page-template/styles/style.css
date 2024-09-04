@@ -298,6 +298,17 @@ main .credits {
   gap: 16px;
 }
 
+.notice {
+  border: solid 1px #482acc;
+  background-color: rgba(72, 42, 204, 0.1254901961);
+  padding: 24px;
+  width: 100%;
+}
+.notice p {
+  font-weight: 500;
+  color: #482acc;
+}
+
 /* MEDIA QUERIES */
 @media screen and (min-width: 1100px) and (max-width: 1350px) {
   .card {
