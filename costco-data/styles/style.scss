@@ -74,6 +74,10 @@ $color-color: #0412da;
     scroll-behavior: smooth;
 }
 
+html {
+    scroll-padding-top: 60px;
+}
+
 body {
     @include flex(row, flex-start, flex-start, $space-80);
     @include fadeInAnimation();
@@ -232,8 +236,6 @@ main {
         width: 100%;
         height: auto;
 
-        object-fit: cover;
-
         padding-top: $space-24;
     }
 }
@@ -245,17 +247,6 @@ main {
     &__category {
         @include flex(column, flex-start, flex-start, $space-8);
         line-height: $line-height-l;
-
-        a {
-            text-decoration: none;
-            color: $color-black;
-
-            transition: 0.4s ease;
-        }
-
-        a:hover {
-            color: $color-color;
-        }
     }
 }
 
@@ -300,10 +291,16 @@ main {
         margin-bottom: $space-4;
     }
 
-    img, video {
+    img {
+        width: 100%;
+        height: auto;
+    } 
+
+    video {
         width: 100%;
         height: auto;
 
+        aspect-ratio: 16/9;
         object-fit: cover;
     }
 
@@ -313,6 +310,25 @@ main {
 
         background-color: $color-container;
     }
+
+
+    &__table {
+        border-collapse: collapse;
+        width: 100%;
+
+        th {
+            background-color: $color-container;
+            font-weight: 600;
+        }
+
+        th, td {
+            border: 1px solid #99979628;
+            padding: 8px;
+            
+            text-align: left;
+            vertical-align: top;
+        }
+    }
 }
 
 .box {
@@ -321,12 +337,16 @@ main {
     background-color: $color-container;
     padding: $space-40;
 
+    h2 {
+        line-height: $line-height-m;
+    }
+
     h4 {
         color: $color-black;
     }
 
-    h2 {
-        line-height: $line-height-s;
+    p {
+        line-height: $line-height-l;
     }
 }
 
@@ -362,20 +382,6 @@ main {
     }
 }
 
-.notice {
-    border: solid 1px $color-color;
-    background-color: #0412da15;
-
-    padding: $space-24;
-    width: 100%;
-
-    p {
-        font-weight: 400;
-        color: $color-color;
-
-        line-height: $line-height-m;
-    }
-}
 
 
 

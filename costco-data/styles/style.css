@@ -20,6 +20,10 @@
   scroll-behavior: smooth;
 }
 
+html {
+  scroll-padding-top: 60px;
+}
+
 body {
   display: flex;
   flex-direction: row;
@@ -165,8 +169,6 @@ main .credits {
 .hero img {
   width: 100%;
   height: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
   padding-top: 24px;
 }
 
@@ -185,14 +187,6 @@ main .credits {
   align-items: flex-start;
   gap: 8px;
   line-height: 170%;
-}
-.details__category a {
-  text-decoration: none;
-  color: #101010;
-  transition: 0.4s ease;
-}
-.details__category a:hover {
-  color: #0412da;
 }
 
 .content {
@@ -235,9 +229,14 @@ main .credits {
 .content__item {
   margin-bottom: 4px;
 }
-.content img, .content video {
+.content img {
   width: 100%;
   height: auto;
+}
+.content video {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -247,17 +246,34 @@ main .credits {
      object-fit: contain;
   background-color: rgba(153, 151, 150, 0.0705882353);
 }
+.content__table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.content__table th {
+  background-color: rgba(153, 151, 150, 0.0705882353);
+  font-weight: 600;
+}
+.content__table th, .content__table td {
+  border: 1px solid rgba(153, 151, 150, 0.1568627451);
+  padding: 8px;
+  text-align: left;
+  vertical-align: top;
+}
 
 .box {
   width: 100%;
   background-color: rgba(153, 151, 150, 0.0705882353);
   padding: 40px;
 }
+.box h2 {
+  line-height: 150%;
+}
 .box h4 {
   color: #101010;
 }
-.box h2 {
-  line-height: 130%;
+.box p {
+  line-height: 170%;
 }
 
 .card__item {
@@ -303,18 +319,6 @@ main .credits {
   justify-content: flex-start;
   align-items: stretch;
   gap: 16px;
-}
-
-.notice {
-  border: solid 1px #0412da;
-  background-color: rgba(4, 18, 218, 0.0823529412);
-  padding: 24px;
-  width: 100%;
-}
-.notice p {
-  font-weight: 400;
-  color: #0412da;
-  line-height: 150%;
 }
 
 /* MEDIA QUERIES */

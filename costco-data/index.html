@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="module" src="./script.js"></script>
     <title>Jennica Hontiveros — Costco Data</title>
-    <link rel="icon" type="image/x-icon" href="../../media/favi.png">
+    <link rel="icon" type="image/x-icon" href="../media/favi.png">
 </head>
 
 <!-- Google tag (gtag.js) -->
@@ -21,9 +23,21 @@
 <body>
    <header>
         <div class="nav">
-            <a class="button" href="../">< Back to home</a>
+            <a class="button" href="../">< Back home</a>
 
-            <h4 class="intro"><strong>Costco</strong> — Optimizing dashboard tooling</h4>
+            <h4 class="intro"><strong>Costco</strong> — Optimizing dashboard tooling<br><br>---</h4>
+
+            <nav class="nav__list">
+                <a class="nav__link nav__link--active" href="#start" id="start-link">Start</a>
+                <a class="nav__link" href="#abstract" id="abstract-link">Abstract</a>
+                <a class="nav__link" href="#intro" id="intro-link">Introduction</a>
+                <a class="nav__link" href="#research" id="research-link">Research</a>
+                <a class="nav__link" href="#dashboards" id="dashboards-link">Understanding dashboards</a>
+                <a class="nav__link" href="#iterations" id="iterations-link">Iterations</a>
+                <a class="nav__link" href="#pro-des" id="pro-des-link">Proposed designs</a>
+                <a class="nav__link" href="#in-dev" id="in-dev-link">In development</a>
+                <a class="nav__link" href="#retro" id="retro-link">Retrospective</a>
+            </nav>
         </div>
 
         <div class="credits">
@@ -35,15 +49,15 @@
    <main>
         <div class="hero">
             <div class="content__container">
-                <h1 class="content__heading">Costco Wholesale — Gasoline Sales Forecasting Report</h1>
+                <h1 class="content__heading" id="start">Costco Wholesale — Gasoline Sales Forecasting Report</h1>
 
                 <p class="content__text">The data science & analytics team at Costco had an existing report tracking gasoline sales volumes at all locations worldwide across different grades of fuel. However, the report lacked helpful visualizations, making it hard to understand and communicate user needs effectively.</p>
             </div>
 
             <div class="details">
                 <div class="details__category">
-                    <h4>Year</h4>
-                    <p>2023</p>
+                    <h4>Timeline</h4>
+                    <p>Jan - Apr 2023</p>
                 </div>
 
                 <div class="details__category">
@@ -58,42 +72,475 @@
 
                 <div class="details__category">
                     <h4>Disciplines</h4>
-                    <p>UX Design<br>User Research<br>Visual Design</p>
+                    <p>UX Design<br>UX Research</p>
                 </div>
             </div>
 
-            <div class="content notice">
-                <p>✴ I'm currently updating this case study, but in the meantime, check out some work snapshots below. Many thanks!</p>
-            </div>
-
-            <img src="media/1-Hero.png" alt="">
+            <img src="media/1-Hero.png" alt="#">
         </div>
 
+        <section class="content box">
+            <h4 id="abstract">Abstract</h4>
+
+            <div class="content__container">
+                <p class="content__text">During my internship at Costco, I was tasked with leading a project that aimed at improving the gasoline sales/forecasting dashboard, which lacked effective data visualizations and useful analysis tooling.<br><br>
+
+                Over 10 weeks, I worked with the data science team to create a dashboard that is not only easy to navigate, but works as a tool that can help support purchasing decisions and can generate performance summaries. I conducted thorough UX audits, interviews, and affinity diagrams to pinpoint user needs and pain points, worked within the constraints of Power BI, and iteratively crafted low, mid, and high fidelity wireframes that incorporated frequent feedback from stakeholders.<br><br>
+                    
+                The final designs successfully addressed key issues and introduced new features such as a designated page for location specific comparisons and analysis. Although the engineering team had to rework the designs in order to test in QA, this project initiated conversations on the potential benefits of a design guideline refresh to enhance the accessibility, usability, and functionality of future data reports.</p>
+            </div>
+        </section>
+
         <section class="content">
+            <h4 id="intro">Introduction</h4>
+
+            <div class="content__container">
+                <h2 class="content__heading">The abandoned sales forecasting dashboard</h2>
+
+                <p class="content__text">Push notifications enhance user engagement and retention by sending timely, relevant content directly to users' devices. This helps keep them informed, encourages them to use the app more, and provides a direct way to communicate with users.</p>
+            </div>
+
+            <img src="media/2-Intro.png" alt="#">
+        </section>
+
+        <section class="content">
+            <div class="content__container">
+                <h2 class="content__heading">The purchasing team was manually computing data for further analysis</h2>
+
+                <p class="content__text">Each week, the data science team sent the gasoline purchasing team a CSV file containing upper and lower forecast thresholds for different locations and fuel types. Using this file, the purchasing team then had to make manual calculations to analyze the data. This was a problem because:</p>
+
+                <ul class="content__list">
+                    <li class="content__item">Too many CSV files quickly create clutter, making it hard to find older reports</li>
+
+                    <li class="content__item">There were no visual performance indicators, just numbers</li>
+
+                    <li class="content__item">Sorting through data and creating new functions took a lot of time</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="content">
+            <h4 id="research">Research</h4>
+
+            <div class="content__container">
+                <h2 class="content__heading">A surface level ux audit of the existing pages</h2>
+
+                <p class="content__text">Without knowing the goals and purpose of each page yet, I conducted a UX audit focused only on the UI and usability. This helped me identify current pain points, needs, and key questions to include in interview scripts.</p>
+            </div>
+
+            <img src="media/3-Research.png" alt="#">
+
+            <div class="content card numbered">
+                <div class="numbered__container">
+                    <div class="card__item">
+                        <p class="card__heading" >
+                            1.
+                        </p>
+    
+                        <div class="card__desc">
+                            <p class="card__heading">
+                                Typography and labeling
+                            </p>
+                            <p>Lacks type hierarchy and clear labeling, making the graphs harder to understand.</p>
+                        </div>
+                    </div>
+    
+                    <div class="card__item">
+                        <p class="card__heading" >
+                            2.
+                        </p>
+    
+                        <div class="card__desc">
+                            <p class="card__heading">
+                                Filtering
+                            </p>
+                            <p>Takes up too much space and lacks useful features for effective analysis.</p>
+                        </div>
+                    </div>    
+                </div>
+
+                <div class="numbered__container">
+                    <div class="card__item">
+                        <p class="card__heading" >
+                            3.
+                        </p>
+    
+                        <div class="card__desc">
+                            <p class="card__heading">
+                                Background
+                            </p>
+                            <p>The busy background is distracting and takes focus away from the data.</p>
+                        </div>
+                    </div>
+    
+                    <div class="card__item">
+                        <p class="card__heading" >
+                            4.
+                        </p>
+    
+                        <div class="card__desc">
+                            <p class="card__heading">
+                                Space and separation
+                            </p>
+                            <p>Not enough white space or distinct separation, making everything look and feel cluttered.</p>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+        </section>
+
+        <section class="content">
+            <div class="content__container">
+                <h2 class="content__heading">Interviews: intended usage and behaviors</h2>
+
+                <p class="content__text">By talking to three key individuals — the product owner, lead data scientist, and gasoline central director — I gained a clear understanding of the product, goals, and current behaviors from each user.</p>
+            </div>
+        </section>
+
+        <section class="content">
+            <div class="content__container">
+                <h2 class="content__heading">Affinity diagram insights</h2>
+
+                <p class="content__text">Using an affinity diagram, I organized my findings and found key insights from the interviews. This process highlighted the core issues and which solutions should be prioritized.</p>
+            </div>
+
+            <img src="media/4-Affinity Diagram.png" alt="#">
+
+            <div class="content card base">
+                <div class="card__item">
+                    <div class="card__desc">
+                        <p class="card__heading">
+                            Data metrics
+                        </p>
+
+                        <p>Different visualizations, data customization, summarized metrics, and analysis tooling.</p>
+                    </div>
+                </div>
+
+                <div class="card__item">
+                    <div class="card__desc">
+                        <p class="card__heading">
+                            Decision support
+                        </p>
+
+                        <p>A resource that helps make purchasing decisions</p>
+                    </div>
+                </div>
+
+                <div class="card__item">
+                    <div class="card__desc">
+                        <p class="card__heading">
+                            Strategic reporting
+                        </p>
+
+                        <p>Summarized reports for executive purposes, regional filtering, fiscal/international views.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content">
+            <div class="content__container">
+                <h2 class="content__heading">Thinking of different ways to display data</h2>
+
+                <p class="content__text">Using the categories from the affinity diagram and the features available in Power BI, I brainstormed potential features and updates to include in the new dashboard.</p>
+            </div>
+
+            <table class="content__table">
+                <tr>
+                    <th>Category</th>
+                    <th>Features</th>
+                </tr>
+
+                <tr>
+                    <td>Data metrics</td>
+                    <td>- Date range filter<br>
+                        - Additional graphs (donut, multi line, bar and whisker)<br>
+                        - Heat map data table</td>
+                </tr>
+
+                <tr>
+                    <td>Decision support</td>
+                    <td>- Demand change filter<br>
+                        - Comparing multiple locations</td>
+                </tr>
+
+                <tr>
+                    <td>Strategic reporting</td>
+                    <td>- Forecast line chart with confidence intervals<br>
+                        - International map view<br>
+                        - Key performance indicators</td>
+                </tr>
+
+                <tr>
+                    <td>Dashboard updates</td>
+                    <td>- Minimal color palette<br>
+                        - Standardized fonts, spacing, and labeling</td>
+                </tr>
+            </table>
+        </section>
+
+
+        <section class="content">
+            <div class="content__container">
+                <h2 class="content__heading">De-cluttering the site map</h2>
+
+                <p class="content__text">We're dealing with large data and numerical values, so it can get overwhelming quick. By condensing, simplifying, and reorganizing the site map, we're making sure navigation is intuitive even to someone who may be accessing the report for the first time.</p>
+            </div>
+
+            <img src="media/5-Info Arch 1.png" alt="#">
+
             <img src="media/6-Info Arch 2.png" alt="#">
+
+            <div class="content__container">
+                <p class="content__text">An updated site map with suggested features highlighted in blue.</p>
+            </div>
+        </section>
+
+        <section class="content box">
+            <h4>Project definition</h4>
+
+            <div class="content__container">
+                <h2 class="content__heading">An intuitive data analysis tool with features that help make <mark>informed purchasing decisions</mark> while also serving as a <mark>resource</mark> for high-level performance overviews.</h2>
+            </div>
         </section>
 
         <section class="content">
+            <h4 id="dashboards">Understanding dashboards</h4>
+
+            <div class="content__container">
+                <h2 class="content__heading">Learning from successful data dashboards</h2>
+
+                <p class="content__text">To understand how to design effective data dashboards, I studied dashboards from Google Analytics and Shopify. This helped me learn common design decisions and best practices, giving me a solid baseline for this project.</p>
+            </div>
+
+            <img src="media/7-Comp Analysis.png" alt="#">
+        </section>
+
+        <section class="content">
+            <div class="content__container">
+                <h2 class="content__heading">Power BI limits customizations, sort of</h2>
+
+                <p class="content__text">Power BI has limited customizable options and some features require complex workarounds that are hard to replicate for future dashboards. For example, applying custom fonts requires updating a JSON file, but users can only see the font if it's already installed on their system.</p>
+            </div>
+
             <img src="media/8-Accessibility.png" alt="#">
+
+            <div class="content__container"></div>
+                <p class="content__text">To handle these limits, I learned more about Power BI through <a href="https://www.microsoft.com/en-us/power-platform/products/power-bi/diad">Dashboard in a Day</a>, planned for simple, yet accessible graphs and tested accessibility on native fonts and numbers.</p>
+            </div>
         </section>
 
         <section class="content">
+            <h4 id="iterations">Iterations</h4>
+
+            <div class="content__container">
+                <h2 class="content__heading">Drafting structure skeletons</h2>
+
+                <p class="content__text">These skeletons helped me test different formats before creating mid-fidelity wireframes, making it easier to plan section placements. I then reviewed them with my manager and got approval to proceed.</p>
+            </div>
+
+            <img src="media/9-Skeletons.png" alt="#">
+        </section>
+
+        <section class="content">
+            <div class="content__container">
+                <h2 class="content__heading">Page template, non negotiables, and molecules</h2>
+
+                <p class="content__text">To start off wireframing, I first created the base template and established the non-negotiable elements, then went on to develop various data visualizations (molecules), both small and large.</p>
+            </div>
+
             <img src="media/10-Midfi Base.png" alt="#">
-        </section>
 
-        <section class="content">
+            <img src="media/11-Midfi Req.png" alt="#">
+
             <img src="media/12-Midfi Small Sec.png" alt="#">
+
+            <img src="media/13-Midfi Large Sec.png" alt="#">
         </section>
 
         <section class="content">
+            <div class="content__container">
+                <h2 class="content__heading">Mid fidelity wireframes</h2>
+
+                <p class="content__text">Feeling confident with the structure skeletons and elements, I experimented with different combinations, created 14 variations, and compiled them into a document and sent out the first design review.</p>
+            </div>
+
+            <img src="media/14-Midfi Combos.png" alt="#">
+
+            <div class="content box">
+                <h4>Design review #1 feedback:</h4>
+    
+                <div class="content__container">
+                    <ul class="content__list">
+                        <li class="content__item">KPIs and map views are no longer feasible due to scope</li>
+
+                        <li class="content__item">Focus on features that can be quickly implemented without complex SQL functions (e.g., demand change slicer)</li>
+
+                        <li class="content__item">Start exploring color palettes</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="content">
+            <div class="content__container">
+                <h2 class="content__heading">High fidelity wireframes</h2>
+
+                <p class="content__text">I treated these high-fidelity wireframes as minimum viable products, including only necessary elements that could be shipped quickly. I explored colors, made the changes, and compiled them into another document for the second design review.</p>
+            </div>
+
             <img src="media/15-Highfi Combos.png" alt="#">
+
+            <div class="content box">
+                <h4>Design review #2 feedback:</h4>
+    
+                <p>To start development and stay on track, these designs were nearly final. The second design review mainly focused on finalizing the color palette, data visualization types, and small adjustments such as keeping the date range filter within the graph container.</p>
+            </div>
         </section>
 
         <section class="content">
-            <img src="media/19-BA Planning.png" alt="#">
+            <h4 id="pro-des">Proposed designs</h4>
+
+            <div class="content__container">
+                <h2 class="content__heading">Approved gasoline sales and forecasting dashboards</h2>
+
+                <p class="content__text">After a final review with my manager, we confirmed these designs and presented them at the third design review with the PM and engineer working on the Power BI implementation. A dashboard with data analysis tools that help make purchasing decisions and view high-level summaries.</p>
+            </div>
+
+            <img src="media/16-Proposed Dashboards.png" alt="#">
         </section>
 
-        <a class="button" href="/cpm-browse/">Explore next: CPM — Browse redesign ></a>
+        <section class="content">
+            <div class="content__container">
+                <h2 class="content__heading">Forecasting summary page:</h2>
+
+                <p class="content__text">The forecast summary page showcases a high level overview of gasoline sales and forecasts in comparison to last year's numbers.</p>
+            </div>
+
+            <img src="media/18-Proposed Summary.png" alt="#">
+
+            <img src="media/17-BA Summary.png" alt="#">
+
+            <table class="content__table">
+                <tr>
+                    <th>#</th>
+                    <th>Initial problem</th>
+                    <th>Solution</th>
+                </tr>
+
+                <tr>
+                    <td>1.</td>
+                    <td>Dashboard felt unorganized and the background is distracting</td>
+                    <td>A cleaner user interface with better labeling, separation, and a minimal color palette</td>
+                </tr>
+
+                <tr>
+                    <td>2.</td>
+                    <td>The filters tab was cluttered and took up too much space</td>
+                    <td>Sectioned dropdown slicers with better placement</td>
+                </tr>
+
+                <tr>
+                    <td>3.</td>
+                    <td>Unable to forecast for upcoming months</td>
+                    <td>Confidence interval that forcasts "x" months in advance, from 75%-99%</td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="content">
+            <div class="content__container">
+                <h2 class="content__heading">Planning page:</h2>
+
+                <p class="content__text">The planning page is a more granular display of sales performance by location, fuel type, and/or date range.</p>
+            </div>
+
+            <img src="media/20-Proposed Planning.png" alt="#">
+
+            <img src="media/19-BA Planning.png" alt="#">
+
+            <table class="content__table">
+                <tr>
+                    <th>#</th>
+                    <th>Initial problem</th>
+                    <th>Solution</th>
+                </tr>
+
+                <tr>
+                    <td>1.</td>
+                    <td>Cannot look at data in a specific time frame</td>
+                    <td>Relative date range slicer with the ability to analyze data given time frame</td>
+                </tr>
+
+                <tr>
+                    <td>2.</td>
+                    <td>The graphs are confusing</td>
+                    <td>Updated category labels, legends, data titles, and added more data visualizations</td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="content">
+            <div class="content__container">
+                <h2 class="content__heading">Analysis page:</h2>
+
+                <p class="content__text">The analysis page is specifically for comparing data between multiple locations. An example use case would be comparing the performance of a new gasoline station to others within a 5-mile radius.</p>
+            </div>
+
+            <img src="media/22-Proposed Analysis.png" alt="#">
+
+            <img src="media/21-A Analysis.png" alt="#">
+
+            <table class="content__table">
+                <tr>
+                    <th>#</th>
+                    <th>Initial problem</th>
+                    <th>Solution</th>
+                </tr>
+
+                <tr>
+                    <td>1.</td>
+                    <td>Unable to compare data between two locations</td>
+                    <td>A designated page just for analysis, ability to compare more than two locations</td>
+                </tr>
+
+                <tr>
+                    <td>2.</td>
+                    <td>Unable to adjust forecast data depending on outside factors</td>
+                    <td>Demand change slicer that can adjust data up or down "x" percentages</td>
+                </tr>
+            </table>
+        </section>
+
+        <section class="content">
+            <h4 id="in-dev">In development</h4>
+
+            <div class="content__container">
+                <h2 class="content__heading">Different look, same usability</h2>
+
+                <p class="content__text">For the dashboard to pass QA, the engineering team had to redesign it to fit Costco's current design guidelines. Despite some design changes, substitutions, and a fixed 16:9 aspect ratio, the usability and features of each page remained true to the initial proposals.</p>
+            </div>
+
+            <img src="media/23-Costcos Ver.png" alt="#">
+        </section>
+
+        <section class="content">
+            <h4 id="retro">Retrospective</h4>
+
+            <div class="content__container">
+                <h2 class="content__heading">‍Working with design constraints is doable and kind of fun</h2>
+
+                <p class="content__text">‍This was my first time designing within software limitations, and honestly, it wasn't as bad as I thought it was going to be. Although I had to scale back on ambitious designs, I learned so much more about designing for data, like tabular spacing or using different line styles for accessibility. Overall, this project challenged me to adapt, compromise, and continually learn, and I believe I became a better designer from it.
+
+                <br><br>
+
+                A huge shoutout and thanks to my team at Costco—I now have very high standards for what constitutes as good data design.
+                </p>
+            </div>
+        </section>
+
+        <a class="button" href="/cpm-browse/">Explore next: CPM — Browse Redesign ></a>
    </main> 
 </body>
 </html>
