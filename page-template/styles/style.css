@@ -20,6 +20,10 @@
   scroll-behavior: smooth;
 }
 
+html {
+  scroll-padding-top: 60px;
+}
+
 body {
   display: flex;
   flex-direction: row;
@@ -72,8 +76,8 @@ header h4 {
   transition: 0.4s ease;
 }
 .button:hover {
-  background-color: #482acc;
-  border: solid 1px #482acc;
+  background-color: #0412da;
+  border: solid 1px #0412da;
   color: #FFFEFC;
 }
 
@@ -105,7 +109,7 @@ header h4 {
 }
 .nav__link:hover {
   font-weight: 600;
-  color: #482acc;
+  color: #0412da;
   transform: translateY(-2px);
 }
 
@@ -119,7 +123,7 @@ header h4 {
   transition: 0.4s ease;
 }
 .credits a:hover {
-  color: #482acc;
+  color: #0412da;
 }
 
 /* MAIN */
@@ -165,9 +169,6 @@ main .credits {
 .hero img {
   width: 100%;
   height: auto;
-  aspect-ratio: 16/9;
-  -o-object-fit: cover;
-     object-fit: cover;
   padding-top: 24px;
 }
 
@@ -201,7 +202,7 @@ main .credits {
   transition: 0.4s ease;
 }
 .content a:hover {
-  color: #482acc;
+  color: #0412da;
 }
 .content__container {
   display: flex;
@@ -212,6 +213,7 @@ main .credits {
 }
 .content__heading {
   line-height: 150%;
+  letter-spacing: -0.5px;
 }
 .content__heading mark {
   background-color: rgba(255, 246, 34, 0.4);
@@ -222,12 +224,16 @@ main .credits {
 }
 .content__list {
   line-height: 150%;
-  padding-left: 24px;
+  padding-left: 16px;
 }
 .content__item {
   margin-bottom: 4px;
 }
-.content img, .content video {
+.content img {
+  width: 100%;
+  height: auto;
+}
+.content video {
   width: 100%;
   height: auto;
   aspect-ratio: 16/9;
@@ -239,6 +245,20 @@ main .credits {
   -o-object-fit: contain;
      object-fit: contain;
   background-color: rgba(153, 151, 150, 0.0705882353);
+}
+.content__table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.content__table th {
+  background-color: rgba(153, 151, 150, 0.0705882353);
+  font-weight: 600;
+}
+.content__table th, .content__table td {
+  border: 1px solid rgba(153, 151, 150, 0.1568627451);
+  padding: 8px;
+  text-align: left;
+  vertical-align: top;
 }
 
 .box {
@@ -302,14 +322,14 @@ main .credits {
 }
 
 .notice {
-  border: solid 1px #482acc;
+  border: solid 1px #0412da;
   background-color: rgba(72, 42, 204, 0.1254901961);
   padding: 24px;
   width: 100%;
 }
 .notice p {
   font-weight: 400;
-  color: #482acc;
+  color: #0412da;
 }
 
 /* MEDIA QUERIES */

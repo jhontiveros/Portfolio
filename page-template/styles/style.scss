@@ -28,7 +28,7 @@ $color-white: #FFFEFC;
 $color-container: #99979612;
 $color-grey: #999796;
 $color-black: #101010;
-$color-color: #482acc;
+$color-color: #0412da;
 
 
 
@@ -72,6 +72,10 @@ $color-color: #482acc;
     box-sizing: border-box;
 
     scroll-behavior: smooth;
+}
+
+html {
+    scroll-padding-top: 60px;
 }
 
 body {
@@ -232,9 +236,6 @@ main {
         width: 100%;
         height: auto;
 
-        aspect-ratio: 16/9;
-        object-fit: cover;
-
         padding-top: $space-24;
     }
 }
@@ -269,6 +270,7 @@ main {
 
     &__heading {
         line-height: $line-height-m;
+        letter-spacing: -0.5px;
 
         mark {
             background-color: rgba(255, 246, 34, .4);
@@ -282,26 +284,50 @@ main {
 
     &__list {
         line-height: $line-height-m;
-        padding-left: $space-24;
+        padding-left: $space-16;
     }
 
     &__item {
         margin-bottom: $space-4;
     }
 
-    img, video {
+    img {
+        width: 100%;
+        height: auto;
+    } 
+
+    video {
         width: 100%;
         height: auto;
 
         aspect-ratio: 16/9;
         object-fit: cover;
-    } 
+    }
 
     #actual {
         aspect-ratio: unset;
         object-fit: contain;
 
         background-color: $color-container;
+    }
+
+
+    &__table {
+        border-collapse: collapse;
+        width: 100%;
+
+        th {
+            background-color: $color-container;
+            font-weight: 600;
+        }
+
+        th, td {
+            border: 1px solid #99979628;
+            padding: 8px;
+            
+            text-align: left;
+            vertical-align: top;
+        }
     }
 }
 

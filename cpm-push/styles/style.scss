@@ -236,9 +236,6 @@ main {
         width: 100%;
         height: auto;
 
-        aspect-ratio: 16/9;
-        object-fit: cover;
-
         padding-top: $space-24;
     }
 }
@@ -294,13 +291,18 @@ main {
         margin-bottom: $space-4;
     }
 
-    img, video {
+    img {
+        width: 100%;
+        height: auto;
+    } 
+
+    video {
         width: 100%;
         height: auto;
 
         aspect-ratio: 16/9;
         object-fit: cover;
-    } 
+    }
 
     #actual {
         aspect-ratio: unset;
@@ -308,6 +310,7 @@ main {
 
         background-color: $color-container;
     }
+
 
     &__table {
         border-collapse: collapse;

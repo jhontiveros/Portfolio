@@ -236,9 +236,6 @@ main {
         width: 100%;
         height: auto;
 
-        aspect-ratio: 16/9;
-        object-fit: cover;
-
         padding-top: $space-24;
     }
 }
@@ -294,19 +291,43 @@ main {
         margin-bottom: $space-4;
     }
 
-    img, video {
+    img {
+        width: 100%;
+        height: auto;
+    } 
+
+    video {
         width: 100%;
         height: auto;
 
         aspect-ratio: 16/9;
         object-fit: cover;
-    } 
+    }
 
     #actual {
         aspect-ratio: unset;
         object-fit: contain;
 
         background-color: $color-container;
+    }
+
+
+    &__table {
+        border-collapse: collapse;
+        width: 100%;
+
+        th {
+            background-color: $color-container;
+            font-weight: 600;
+        }
+
+        th, td {
+            border: 1px solid #99979628;
+            padding: 8px;
+            
+            text-align: left;
+            vertical-align: top;
+        }
     }
 }
 
