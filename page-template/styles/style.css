@@ -246,11 +246,14 @@ main .credits {
   background-color: rgba(153, 151, 150, 0.0705882353);
   padding: 40px;
 }
+.box h2 {
+  line-height: 150%;
+}
 .box h4 {
   color: #101010;
 }
-.box h2 {
-  line-height: 130%;
+.box p {
+  line-height: 170%;
 }
 
 .card__item {

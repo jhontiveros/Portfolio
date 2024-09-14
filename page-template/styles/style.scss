@@ -311,12 +311,16 @@ main {
     background-color: $color-container;
     padding: $space-40;
 
+    h2 {
+        line-height: $line-height-m;
+    }
+
     h4 {
         color: $color-black;
     }
 
-    h2 {
-        line-height: $line-height-s;
+    p {
+        line-height: $line-height-l;
     }
 }
 
