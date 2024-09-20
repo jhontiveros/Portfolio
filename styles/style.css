@@ -136,7 +136,7 @@ main .credits {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: 24px;
+  gap: 40px;
 }
 .work .project {
   display: flex;
@@ -205,6 +205,9 @@ main .credits {
 @media screen and (max-width: 768px) {
   body {
     padding: 16px;
+  }
+  main .work {
+    gap: 24px;
   }
   main .credits {
     display: block;

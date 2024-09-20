@@ -193,7 +193,7 @@ main {
 }
 
 .work {
-    @include flex(column, flex-start, flex-start, $space-24);
+    @include flex(column, flex-start, flex-start, $space-40);
 
     .project {
         @include flex(column, flex-start, flex-start, $space-16);
@@ -280,6 +280,10 @@ main {
     }
 
     main {
+        .work {
+            gap: $space-24;
+        }
+
         .credits {
             display: block;
             padding-top: $space-24;
