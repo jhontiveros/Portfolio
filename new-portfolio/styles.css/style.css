@@ -75,4 +75,77 @@ header {
 }
 .nav__link--inactive {
   color: #FAF9F5;
+}
+
+/* MAIN */
+main {
+  border: solid 1px greenyellow;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 24px;
+  width: 100%;
+}
+
+.work {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 24px;
+  width: 100%;
+}
+.work a {
+  text-decoration: none;
+  color: #121212;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 16px;
+  transition: 0.4s ease;
+}
+.project__image {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4/3;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.project__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0px;
+}
+.project__heading {
+  font-weight: 500;
+}
+.project__tags {
+  color: #8C8C8C;
+}
+
+/*FOOTER*/
+footer {
+  width: 100%;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 24px;
+}
+.footer p {
+  width: 100%;
+}
+.footer a {
+  color: #121212;
+  text-decoration: none;
 }/*# sourceMappingURL=style.css.map */
