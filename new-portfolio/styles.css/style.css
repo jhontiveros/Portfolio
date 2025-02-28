@@ -9,7 +9,6 @@
 }
 
 body {
-  border: solid 1px salmon;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -69,17 +68,19 @@ header {
   justify-content: flex-start;
   align-items: flex-start;
   gap: 4px;
+  transition: 0.4s ease;
 }
 .nav__link--active {
   font-weight: 500;
+  transition: 0.4s ease;
 }
 .nav__link--inactive {
   color: #FAF9F5;
+  transition: 0.4s ease;
 }
 
 /* MAIN */
 main {
-  border: solid 1px greenyellow;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -125,9 +126,21 @@ main {
 }
 .project__heading {
   font-weight: 500;
+  transition: 0.4s ease;
 }
 .project__tags {
   color: #8C8C8C;
+  transition: 0.4s ease;
+}
+.project:hover {
+  transform: translateY(-8px);
+  transition: 0.4s ease;
+}
+.project:hover .project__heading {
+  color: orange;
+}
+.project:hover .project__tags {
+  color: orange;
 }
 
 /*FOOTER*/

@@ -52,7 +52,6 @@ $color-blue: #E1EBED;
 }
 
 body {
-    border: solid 1px salmon;
     @include flex(column, flex-start, flex-start, $spacing-48);
 
     background-color: $color-white;
@@ -103,13 +102,16 @@ header {
 
     &__link {
         @include flex(row, flex-start, flex-start, $spacing-4);
+        transition: 0.4s ease;
 
         &--active {
             font-weight: $font-weight-semi;
+            transition: 0.4s ease;
         }
 
         &--inactive {
             color: $color-white;
+            transition: 0.4s ease;
         }
     }
 }
@@ -120,7 +122,6 @@ header {
 /* MAIN */
 
 main {
-    border: solid 1px greenyellow;
     @include flex(column, flex-start, flex-start, $spacing-24);
     width: 100%;
 }
@@ -153,10 +154,25 @@ main {
 
     &__heading {
         font-weight: $font-weight-semi;
+        transition: 0.4s ease;
     }
 
     &__tags {
         color: $color-grey;
+        transition: 0.4s ease;
+    }
+
+    &:hover {
+        transform: translateY(-8px);
+        transition: 0.4s ease;
+
+        .project__heading {
+            color: orange;
+        }
+
+        .project__tags {
+            color: orange;
+        }
     }
 }
 
