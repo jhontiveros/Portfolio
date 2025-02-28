@@ -1,3 +1,113 @@
+/*VARIABLES*/
+
+$font-style: 'Helvetica Neue', sans-serif;
+
+$h1-size: 24px;
+$p-size: 16px;
+
+$line-height: 160%;
+$line-height-p: 180%;
+
+$font-weight: 400;
+$font-weight-semi: 500;
+
+$spacing-24: 24px;
+$spacing-48: 48px;
+$spacing-8: 8px;
+$spacing-4: 4px;
+
+$color-black: #121212;
+$color-white: #FAF9F5;
+$color-grey: #8C8C8C;
+
+$color-green: #245520;
+$color-blue: #E1EBED;
+
+
+
+
+/* MIXINS */
+
+@mixin flex($direction, $position, $layout, $gap) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $position;
+    align-items: $layout;
+    gap: $gap;
+}
+
+
+
+
+/*PAGE DEFAULT*/
+
+* {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+
+    scroll-behavior: smooth;
+}
+
 body {
-    background-color: aqua;
+    border: solid 1px salmon;
+    @include flex(column, flex-start, flex-start, $spacing-48);
+
+    background-color: $color-white;
+    color: $color-black;
+
+    max-width: 1600px;
+    padding: $spacing-48;
+    margin: auto;
+
+    font-family: $font-style;
+    line-height: $line-height;
+}
+
+:hover {
+    transition: 0.4s ease;
+}
+
+
+
+
+/*NAVIGATION*/
+
+header {
+    width: 100%;
+}
+
+.nav {
+    @include flex(row, flex-start, center, $spacing-24);
+
+    a {
+        color: $color-black;
+        text-decoration: none;
+    }
+
+    &__title {
+        @include flex(column, flex-start, flex-start, 0px);
+        width: 100%;
+
+        a {
+            font-weight: $font-weight-semi;
+        }
+    }
+
+    &__list {
+        @include flex(column, flex-start, flex-start, 0px);
+        width: 100%;
+    }
+
+    &__link {
+        @include flex(row, flex-start, flex-start, $spacing-4);
+
+        &--active {
+            font-weight: $font-weight-semi;
+        }
+
+        &--inactive {
+            color: $color-white;
+        }
+    }
 }

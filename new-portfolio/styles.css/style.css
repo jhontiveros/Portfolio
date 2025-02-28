@@ -1,3 +1,78 @@
+/*VARIABLES*/
+/* MIXINS */
+/*PAGE DEFAULT*/
+* {
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
 body {
-  background-color: aqua;
+  border: solid 1px salmon;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 48px;
+  background-color: #FAF9F5;
+  color: #121212;
+  max-width: 1600px;
+  padding: 48px;
+  margin: auto;
+  font-family: "Helvetica Neue", sans-serif;
+  line-height: 160%;
+}
+
+:hover {
+  transition: 0.4s ease;
+}
+
+/*NAVIGATION*/
+header {
+  width: 100%;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 24px;
+}
+.nav a {
+  color: #121212;
+  text-decoration: none;
+}
+.nav__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0px;
+  width: 100%;
+}
+.nav__title a {
+  font-weight: 500;
+}
+.nav__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0px;
+  width: 100%;
+}
+.nav__link {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 4px;
+}
+.nav__link--active {
+  font-weight: 500;
+}
+.nav__link--inactive {
+  color: #FAF9F5;
 }/*# sourceMappingURL=style.css.map */
