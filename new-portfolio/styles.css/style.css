@@ -14,7 +14,7 @@ body {
   justify-content: flex-start;
   align-items: flex-start;
   gap: 48px;
-  background-color: #FAF9F5;
+  background-color: #FFFFFF;
   color: #121212;
   max-width: 1500px;
   padding: 48px;
@@ -81,7 +81,7 @@ header {
   transition: 0.4s ease;
 }
 .nav__link--inactive {
-  color: #FAF9F5;
+  color: #FFFFFF;
   transition: 0.4s ease;
 }
 .nav__link:hover {
