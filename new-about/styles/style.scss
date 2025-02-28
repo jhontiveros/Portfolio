@@ -1,0 +1,165 @@
+/*VARIABLES*/
+
+$font-style: 'Helvetica Neue', sans-serif;
+
+$h1-size: 24px;
+$p-size: 16px;
+
+$line-height: 160%;
+$line-height-p: 180%;
+
+$font-weight: 400;
+$font-weight-semi: 500;
+
+
+$spacing-48: 48px;
+$spacing-24: 24px;
+$spacing-16: 16px;
+$spacing-8: 8px;
+$spacing-4: 4px;
+
+$color-black: #121212;
+$color-white: #FFFFFF;
+$color-grey: #737373;
+
+$color-green: #4c6f49;
+$color-blue: #E1EBED;
+
+
+
+
+/* MIXINS */
+
+@mixin flex($direction, $position, $layout, $gap) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $position;
+    align-items: $layout;
+    gap: $gap;
+}
+
+
+
+
+/*PAGE DEFAULT*/
+
+* {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+
+    scroll-behavior: smooth;
+}
+
+body {
+    @include flex(column, flex-start, flex-start, $spacing-48);
+
+    background-color: $color-blue;
+    color: $color-green;
+
+    max-width: 1500px;
+    padding: $spacing-48;
+    margin: auto;
+
+    font-family: $font-style;
+    line-height: $line-height;
+}
+
+:hover {
+    transition: 0.4s ease;
+}
+
+
+
+
+/*NAVIGATION*/
+
+header {
+    width: 100%;
+}
+
+.nav {
+    @include flex(row, flex-start, center, $spacing-24);
+
+    a {
+        color: $color-green;
+        text-decoration: none;
+    }
+
+    &__title {
+        @include flex(column, flex-start, flex-start, 0px);
+        width: 100%;
+
+        a {
+            font-weight: $font-weight-semi;
+            transition: 0.4s ease;
+
+            &:hover {
+                transform: translateY(-2px);
+                transition: 0.4s ease;
+        
+                opacity: 50%;
+            }
+        }
+    }
+
+    &__list {
+        @include flex(column, flex-start, flex-start, 0px);
+        width: 100%;
+    }
+
+    &__link {
+        @include flex(row, flex-start, flex-start, $spacing-4);
+        transition: 0.4s ease;
+
+        &--active {
+            font-weight: $font-weight-semi;
+            transition: 0.4s ease;
+        }
+
+        &--inactive {
+            color: $color-blue;
+            transition: 0.4s ease;
+        }
+
+        &:hover {
+            transform: translateY(-2px);
+            transition: 0.4s ease;
+
+            opacity: 50%;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+/*FOOTER*/
+
+footer {
+    width: 100%;
+}
+
+.footer {
+    @include flex(row, flex-start, center, $spacing-24);
+
+    a {
+        color: $color-green;
+        text-decoration: none;
+        
+        transition: 0.4s ease;
+
+        &:hover {
+            transition: 0.4s ease;
+            opacity: 50%;
+        }
+    }
+
+    p {
+        width: 100%;
+    }
+}
