@@ -16,7 +16,7 @@ body {
   gap: 48px;
   background-color: #FAF9F5;
   color: #121212;
-  max-width: 1600px;
+  max-width: 1500px;
   padding: 48px;
   margin: auto;
   font-family: "Helvetica Neue", sans-serif;
@@ -124,7 +124,7 @@ main {
 .project__image {
   width: 100%;
   height: auto;
-  aspect-ratio: 4/3;
+  aspect-ratio: 16/9;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -140,11 +140,11 @@ main {
   transition: 0.4s ease;
 }
 .project__tags {
-  color: #8C8C8C;
+  color: #737373;
   transition: 0.4s ease;
 }
 .project:hover {
-  transform: translateY(-8px);
+  transform: translateY(-6px);
   transition: 0.4s ease;
 }
 .project:hover .project__heading, .project:hover .project__tags {
@@ -163,9 +163,6 @@ footer {
   align-items: center;
   gap: 24px;
 }
-.footer p {
-  width: 100%;
-}
 .footer a {
   color: #121212;
   text-decoration: none;
@@ -174,4 +171,31 @@ footer {
 .footer a:hover {
   transition: 0.4s ease;
   opacity: 50%;
+}
+.footer p {
+  width: 100%;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 900px) {
+  body {
+    padding: 16px;
+  }
+  .nav__title p {
+    display: none;
+  }
+  .nav__list {
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 8px;
+  }
+  .work {
+    flex-direction: column;
+  }
+  .footer {
+    justify-content: space-between;
+  }
+  .footer p {
+    width: auto;
+  }
 }/*# sourceMappingURL=style.css.map */
