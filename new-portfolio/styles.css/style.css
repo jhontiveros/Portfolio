@@ -53,6 +53,12 @@ header {
 }
 .nav__title a {
   font-weight: 500;
+  transition: 0.4s ease;
+}
+.nav__title a:hover {
+  transform: translateY(-2px);
+  transition: 0.4s ease;
+  opacity: 50%;
 }
 .nav__list {
   display: flex;
@@ -77,6 +83,11 @@ header {
 .nav__link--inactive {
   color: #FAF9F5;
   transition: 0.4s ease;
+}
+.nav__link:hover {
+  transform: translateY(-2px);
+  transition: 0.4s ease;
+  opacity: 50%;
 }
 
 /* MAIN */
@@ -136,11 +147,8 @@ main {
   transform: translateY(-8px);
   transition: 0.4s ease;
 }
-.project:hover .project__heading {
-  color: orange;
-}
-.project:hover .project__tags {
-  color: orange;
+.project:hover .project__heading, .project:hover .project__tags {
+  opacity: 50%;
 }
 
 /*FOOTER*/
@@ -161,4 +169,9 @@ footer {
 .footer a {
   color: #121212;
   text-decoration: none;
+  transition: 0.4s ease;
+}
+.footer a:hover {
+  transition: 0.4s ease;
+  opacity: 50%;
 }/*# sourceMappingURL=style.css.map */

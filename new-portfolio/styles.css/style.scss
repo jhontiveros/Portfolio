@@ -92,6 +92,14 @@ header {
 
         a {
             font-weight: $font-weight-semi;
+            transition: 0.4s ease;
+
+            &:hover {
+                transform: translateY(-2px);
+                transition: 0.4s ease;
+        
+                opacity: 50%;
+            }
         }
     }
 
@@ -112,6 +120,13 @@ header {
         &--inactive {
             color: $color-white;
             transition: 0.4s ease;
+        }
+
+        &:hover {
+            transform: translateY(-2px);
+            transition: 0.4s ease;
+
+            opacity: 50%;
         }
     }
 }
@@ -166,12 +181,8 @@ main {
         transform: translateY(-8px);
         transition: 0.4s ease;
 
-        .project__heading {
-            color: orange;
-        }
-
-        .project__tags {
-            color: orange;
+        .project__heading, .project__tags {
+            opacity: 50%;
         }
     }
 }
@@ -195,5 +206,12 @@ footer {
     a {
         color: $color-black;
         text-decoration: none;
+        
+        transition: 0.4s ease;
+
+        &:hover {
+            transition: 0.4s ease;
+            opacity: 50%;
+        }
     }
 }
