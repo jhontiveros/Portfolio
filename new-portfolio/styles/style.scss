@@ -62,7 +62,7 @@ body {
     color: $color-black;
 
     max-width: 1500px;
-    padding: $spacing-48;
+    padding: $spacing-24;
     margin: auto;
 }
 
@@ -160,7 +160,7 @@ main {
         width: 100%;
         height: auto;
 
-        aspect-ratio: 4/3;
+        aspect-ratio: 16/9;
         object-fit: cover;
     }
 

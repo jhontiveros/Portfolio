@@ -55,7 +55,7 @@ $color-blue: #E1EBED;
 }
 
 body {
-    @include flex(column, flex-start, flex-start, $spacing-48);
+    @include flex(column, flex-start, flex-start, $spacing-24);
 
     background-color: $color-blue;
     color: $color-green;
@@ -170,7 +170,7 @@ main {
         width: 100%;
         height: auto;
 
-        aspect-ratio: 4/3;
+        aspect-ratio: 16/9;
         object-fit: cover;
     }
 }
