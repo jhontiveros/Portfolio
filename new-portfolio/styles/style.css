@@ -164,8 +164,9 @@ footer {
   .nav, .footer {
     justify-content: space-between;
   }
-  .nav p, .footer p {
-    width: auto;
+  .nav a, .nav p, .footer a, .footer p {
+    width: -moz-fit-content;
+    width: fit-content;
   }
   section h1 {
     font-size: 38px;

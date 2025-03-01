@@ -120,6 +120,11 @@ section {
 
     h1 {
         font-family: $font-style-heading;
+        font-weight: $font-weight;
+        font-size: $h1-size;
+
+        line-height: $line-height-h1;
+        letter-spacing: -2px;
     }
 }
 
@@ -143,11 +148,6 @@ main {
     @include flex(column, flex-start, flex-start, $spacing-24);
 
     width: 100%;
-
-    &__heading {
-        font-size: $h1-size;
-        font-weight: $font-weight-semi;
-    }
 
     &__text {
         line-height: $line-height-p;
@@ -206,17 +206,17 @@ footer {
         padding: $spacing-16;
     }
 
-    .nav {
-        &__title {
-            p {
-                display: none;
-            }
-        }
+    .nav, .footer {
+        justify-content: space-between;
 
-        &__list {
-            flex-direction: row;
-            justify-content: flex-end;
-            gap: $spacing-8;
+        a, p {
+            width: fit-content;
+        }
+    }
+
+    section {
+        h1 {
+            font-size: $h2-size;
         }
     }
 
@@ -226,13 +226,5 @@ footer {
 
     .empty {
         display: none;
-    }
-
-    .footer {
-        justify-content: space-between;
-
-        p {
-            width: auto;
-        }
     }
 }

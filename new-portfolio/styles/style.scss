@@ -226,8 +226,8 @@ footer {
     .nav, .footer {
         justify-content: space-between;
 
-        p {
-            width: auto;
+        a, p {
+            width: fit-content;
         }
     }
 

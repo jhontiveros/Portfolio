@@ -63,6 +63,13 @@ header {
 section {
   width: 100%;
 }
+section h1 {
+  font-family: "Montagu Slab", serif;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 140%;
+  letter-spacing: -2px;
+}
 
 /* MAIN */
 main {
@@ -90,10 +97,6 @@ main {
   align-items: flex-start;
   gap: 24px;
   width: 100%;
-}
-.intro__heading {
-  font-size: 64px;
-  font-weight: 500;
 }
 .intro__text {
   line-height: 180%;
@@ -145,24 +148,20 @@ footer {
   body {
     padding: 16px;
   }
-  .nav__title p {
-    display: none;
+  .nav, .footer {
+    justify-content: space-between;
   }
-  .nav__list {
-    flex-direction: row;
-    justify-content: flex-end;
-    gap: 8px;
+  .nav a, .nav p, .footer a, .footer p {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  section h1 {
+    font-size: 38px;
   }
   .about {
     flex-direction: column;
   }
   .empty {
     display: none;
-  }
-  .footer {
-    justify-content: space-between;
-  }
-  .footer p {
-    width: auto;
   }
 }/*# sourceMappingURL=style.css.map */
