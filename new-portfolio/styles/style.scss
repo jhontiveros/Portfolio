@@ -49,6 +49,10 @@ $color-blue: #E1EBED;
     box-sizing: border-box;
 
     scroll-behavior: smooth;
+
+
+    font-family: $font-style;
+    line-height: $line-height;
 }
 
 body {
@@ -60,9 +64,6 @@ body {
     max-width: 1500px;
     padding: $spacing-48;
     margin: auto;
-
-    font-family: $font-style;
-    line-height: $line-height;
 }
 
 :hover {

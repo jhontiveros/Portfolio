@@ -6,6 +6,8 @@
   padding: 0px;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  font-family: "Helvetica Neue", sans-serif;
+  line-height: 160%;
 }
 
 body {
@@ -19,8 +21,6 @@ body {
   max-width: 1500px;
   padding: 48px;
   margin: auto;
-  font-family: "Helvetica Neue", sans-serif;
-  line-height: 160%;
 }
 
 :hover {
