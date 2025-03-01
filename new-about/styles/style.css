@@ -6,6 +6,8 @@
   padding: 0px;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  font-family: "Helvetica Neue", sans-serif;
+  line-height: 160%;
 }
 
 body {
@@ -19,8 +21,6 @@ body {
   max-width: 1500px;
   padding: 48px;
   margin: auto;
-  font-family: "Helvetica Neue", sans-serif;
-  line-height: 160%;
 }
 
 :hover {
@@ -61,6 +61,7 @@ header {
   opacity: 50%;
 }
 .nav__list {
+  border: solid 1px orange;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -88,6 +89,57 @@ header {
   transform: translateY(-2px);
   transition: 0.4s ease;
   opacity: 50%;
+}
+
+/* MAIN */
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 48px;
+  width: 100%;
+}
+
+.about {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 24px;
+  width: 100%;
+}
+
+.intro {
+  border: solid 1px orange;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 24px;
+  width: 100%;
+}
+.intro__heading {
+  font-size: 24px;
+  font-weight: 500;
+}
+.intro__text {
+  line-height: 180%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 16px;
+}
+.content__image {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /*FOOTER*/
