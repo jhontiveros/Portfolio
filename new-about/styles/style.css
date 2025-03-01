@@ -167,7 +167,7 @@ footer {
 }
 
 /* MEDIA QUERIES */
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1020px) {
   body {
     padding: 16px;
   }
