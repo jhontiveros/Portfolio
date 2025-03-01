@@ -1,4 +1,5 @@
 /*VARIABLES*/
+@import url("https://fonts.googleapis.com/css2?family=Montagu+Slab:opsz,wght@16..144,100..700&display=swap");
 /* MIXINS */
 /*PAGE DEFAULT*/
 * {
@@ -40,54 +41,27 @@ header {
   gap: 24px;
 }
 .nav a {
+  width: 100%;
   color: #4c6f49;
   text-decoration: none;
-}
-.nav__title {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 0px;
-  width: 100%;
-}
-.nav__title a {
-  font-weight: 500;
   transition: 0.4s ease;
 }
-.nav__title a:hover {
-  transform: translateY(-2px);
+.nav a:hover {
   transition: 0.4s ease;
   opacity: 50%;
 }
-.nav__list {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 0px;
+.nav p {
   width: 100%;
 }
-.nav__link {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 4px;
+.nav .active {
+  text-decoration: underline;
+  text-underline-offset: 2px;
   transition: 0.4s ease;
 }
-.nav__link--active {
-  font-weight: 500;
-  transition: 0.4s ease;
-}
-.nav__link--inactive {
-  color: #d2e5e9;
-  transition: 0.4s ease;
-}
-.nav__link:hover {
-  transform: translateY(-2px);
-  transition: 0.4s ease;
-  opacity: 50%;
+
+/* TITLE */
+section {
+  width: 100%;
 }
 
 /* MAIN */
@@ -118,7 +92,7 @@ main {
   width: 100%;
 }
 .intro__heading {
-  font-size: 26px;
+  font-size: 64px;
   font-weight: 500;
 }
 .intro__text {

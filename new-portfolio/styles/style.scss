@@ -26,7 +26,7 @@ $color-white: #FFFFFF;
 $color-grey: #757575;
 
 $color-green: #4c6f49;
-$color-blue: #E1EBED;
+$color-blue: #d2e5e9;
 
 
 
@@ -86,6 +86,8 @@ header {
     @include flex(row, flex-start, center, $spacing-24);
 
     a {
+        width: 100%;
+
         color: $color-black;
         text-decoration: none;
         

@@ -1,16 +1,19 @@
 /*VARIABLES*/
 
-$font-style: 'Helvetica Neue', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Montagu+Slab:opsz,wght@16..144,100..700&display=swap');
 
-$h1-size: 26px;
+$font-style: 'Helvetica Neue', sans-serif;
+$font-style-heading: "Montagu Slab", serif;
+
+$h1-size: 64px;
+$h2-size: 38px;
 $p-size: 16px;
 
 $line-height: 160%;
+$line-height-h1: 140%;
 $line-height-p: 180%;
 
 $font-weight: 400;
-$font-weight-semi: 500;
-
 
 $spacing-48: 48px;
 $spacing-24: 24px;
@@ -18,9 +21,9 @@ $spacing-16: 16px;
 $spacing-8: 8px;
 $spacing-4: 4px;
 
-$color-black: #121212;
+$color-black: #0e0e0e;
 $color-white: #FFFFFF;
-$color-grey: #737373;
+$color-grey: #757575;
 
 $color-green: #4c6f49;
 $color-blue: #d2e5e9;
@@ -82,52 +85,41 @@ header {
     @include flex(row, flex-start, center, $spacing-24);
 
     a {
+        width: 100%;
+
         color: $color-green;
         text-decoration: none;
-    }
 
-    &__title {
-        @include flex(column, flex-start, flex-start, 0px);
-        width: 100%;
-
-        a {
-            font-weight: $font-weight-semi;
-            transition: 0.4s ease;
-
-            &:hover {
-                transform: translateY(-2px);
-                transition: 0.4s ease;
-        
-                opacity: 50%;
-            }
-        }
-    }
-
-    &__list {
-        @include flex(column, flex-start, flex-start, 0px);
-        width: 100%;
-    }
-
-    &__link {
-        @include flex(row, flex-start, flex-start, $spacing-4);
-        transition: 0.4s ease;
-
-        &--active {
-            font-weight: $font-weight-semi;
-            transition: 0.4s ease;
-        }
-
-        &--inactive {
-            color: $color-blue;
-            transition: 0.4s ease;
-        }
+        transition:  0.4s ease;
 
         &:hover {
-            transform: translateY(-2px);
             transition: 0.4s ease;
-
             opacity: 50%;
         }
+    }
+
+    p {
+        width: 100%;
+    }
+
+    .active {
+        text-decoration: underline;
+        text-underline-offset: 2px;
+
+        transition: 0.4s ease;
+    }
+}
+
+
+
+
+/* TITLE */
+
+section {
+    width: 100%;
+
+    h1 {
+        font-family: $font-style-heading;
     }
 }
 

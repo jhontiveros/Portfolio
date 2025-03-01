@@ -41,6 +41,7 @@ header {
   gap: 24px;
 }
 .nav a {
+  width: 100%;
   color: #0e0e0e;
   text-decoration: none;
   transition: 0.4s ease;
