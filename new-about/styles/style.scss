@@ -55,13 +55,13 @@ $color-blue: #E1EBED;
 }
 
 body {
-    @include flex(column, flex-start, flex-start, $spacing-24);
+    @include flex(column, flex-start, flex-start, $spacing-48);
 
     background-color: $color-blue;
     color: $color-green;
 
     max-width: 1500px;
-    padding: $spacing-48;
+    padding: $spacing-24;
     margin: auto;
 }
 

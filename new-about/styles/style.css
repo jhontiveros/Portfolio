@@ -15,11 +15,11 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: 24px;
+  gap: 48px;
   background-color: #E1EBED;
   color: #4c6f49;
   max-width: 1500px;
-  padding: 48px;
+  padding: 24px;
   margin: auto;
 }
 
