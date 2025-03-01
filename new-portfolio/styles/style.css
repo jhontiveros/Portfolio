@@ -105,7 +105,7 @@ main {
 .project__image {
   width: 100%;
   height: auto;
-  aspect-ratio: 16/9;
+  aspect-ratio: 7/5;
   -o-object-fit: cover;
      object-fit: cover;
 }
