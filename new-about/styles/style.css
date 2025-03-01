@@ -16,7 +16,7 @@ body {
   justify-content: flex-start;
   align-items: flex-start;
   gap: 48px;
-  background-color: #E1EBED;
+  background-color: #d2e5e9;
   color: #4c6f49;
   max-width: 1500px;
   padding: 24px;
@@ -81,7 +81,7 @@ header {
   transition: 0.4s ease;
 }
 .nav__link--inactive {
-  color: #E1EBED;
+  color: #d2e5e9;
   transition: 0.4s ease;
 }
 .nav__link:hover {
@@ -130,7 +130,7 @@ main {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: 16px;
+  gap: 8px;
   width: 100%;
 }
 .content__image {

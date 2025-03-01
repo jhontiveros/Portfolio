@@ -23,7 +23,7 @@ $color-white: #FFFFFF;
 $color-grey: #737373;
 
 $color-green: #4c6f49;
-$color-blue: #E1EBED;
+$color-blue: #d2e5e9;
 
 
 
@@ -163,7 +163,7 @@ main {
 }
 
 .content {
-    @include flex(column, flex-start, flex-start, $spacing-16);
+    @include flex(column, flex-start, flex-start, $spacing-8);
     width: 100%;
     
     &__image {
