@@ -1,4 +1,5 @@
 /*VARIABLES*/
+@import url("https://fonts.googleapis.com/css2?family=Montagu+Slab:opsz,wght@16..144,100..700&display=swap");
 /* MIXINS */
 /*PAGE DEFAULT*/
 * {
@@ -17,7 +18,7 @@ body {
   align-items: flex-start;
   gap: 48px;
   background-color: #FFFFFF;
-  color: #121212;
+  color: #0e0e0e;
   max-width: 1500px;
   padding: 24px;
   margin: auto;
@@ -40,54 +41,33 @@ header {
   gap: 24px;
 }
 .nav a {
-  color: #121212;
+  color: #0e0e0e;
   text-decoration: none;
-}
-.nav__title {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 0px;
-  width: 100%;
-}
-.nav__title a {
-  font-weight: 500;
   transition: 0.4s ease;
 }
-.nav__title a:hover {
-  transform: translateY(-2px);
+.nav a:hover {
   transition: 0.4s ease;
   opacity: 50%;
 }
-.nav__list {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 0px;
+.nav p {
   width: 100%;
 }
-.nav__link {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 4px;
+.nav .active {
+  text-decoration: underline;
+  text-underline-offset: 2px;
   transition: 0.4s ease;
 }
-.nav__link--active {
-  font-weight: 500;
-  transition: 0.4s ease;
+
+/* TITLE */
+section {
+  width: 100%;
 }
-.nav__link--inactive {
-  color: #FFFFFF;
-  transition: 0.4s ease;
-}
-.nav__link:hover {
-  transform: translateY(-2px);
-  transition: 0.4s ease;
-  opacity: 50%;
+section h1 {
+  font-family: "Montagu Slab", serif;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 140%;
+  letter-spacing: -2px;
 }
 
 /* MAIN */
@@ -110,7 +90,7 @@ main {
 }
 .work a {
   text-decoration: none;
-  color: #121212;
+  color: #0e0e0e;
 }
 
 .project {
@@ -136,15 +116,14 @@ main {
   gap: 0px;
 }
 .project__heading {
-  font-weight: 500;
   transition: 0.4s ease;
 }
 .project__tags {
-  color: #737373;
+  color: #757575;
   transition: 0.4s ease;
 }
 .project:hover {
-  transform: translateY(-6px);
+  transform: skew(-2deg);
   transition: 0.4s ease;
 }
 .project:hover .project__heading, .project:hover .project__tags {
@@ -164,7 +143,7 @@ footer {
   gap: 24px;
 }
 .footer a {
-  color: #121212;
+  color: #0e0e0e;
   text-decoration: none;
   transition: 0.4s ease;
 }
@@ -181,21 +160,16 @@ footer {
   body {
     padding: 16px;
   }
-  .nav__title p {
-    display: none;
+  .nav, .footer {
+    justify-content: space-between;
   }
-  .nav__list {
-    flex-direction: row;
-    justify-content: flex-end;
-    gap: 8px;
+  .nav p, .footer p {
+    width: auto;
+  }
+  section h1 {
+    font-size: 38px;
   }
   .work {
     flex-direction: column;
-  }
-  .footer {
-    justify-content: space-between;
-  }
-  .footer p {
-    width: auto;
   }
 }/*# sourceMappingURL=style.css.map */
