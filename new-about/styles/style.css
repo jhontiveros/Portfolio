@@ -131,6 +131,7 @@ main {
   justify-content: flex-start;
   align-items: flex-start;
   gap: 16px;
+  width: 100%;
 }
 .content__image {
   width: 100%;
@@ -166,7 +167,7 @@ footer {
 }
 
 /* MEDIA QUERIES */
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1050px) {
   body {
     padding: 16px;
   }
