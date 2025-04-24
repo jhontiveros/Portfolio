@@ -25,8 +25,7 @@ $color-black: #0e0e0e;
 $color-white: #FFFFFF;
 $color-grey: #757575;
 
-$color-green: #4c6f49;
-$color-blue: #d2e5e9;
+$color-green: #DDDF52;
 
 
 
@@ -60,11 +59,11 @@ $color-blue: #d2e5e9;
 body {
     @include flex(column, flex-start, flex-start, $spacing-48);
 
-    background-color: $color-blue;
-    color: $color-green;
+    background-color: $color-green;
+    color: $color-black;
 
     max-width: 1500px;
-    padding: $spacing-24;
+    padding: $spacing-24 $spacing-48 $spacing-24 $spacing-48;
     margin: auto;
 }
 
@@ -87,7 +86,7 @@ header {
     a {
         width: 100%;
 
-        color: $color-green;
+        color: $color-black;
         text-decoration: none;
 
         transition:  0.4s ease;
@@ -152,6 +151,18 @@ main {
     &__text {
         line-height: $line-height-p;
     }
+
+    .link {
+        color: $color-black;
+        text-underline-offset: 2px;
+    
+        transition: 0.4s ease;
+
+        &:hover {
+            transition: 0.4s ease;
+            opacity: 50%;
+        }
+    }
 }
 
 .content {
@@ -162,8 +173,10 @@ main {
         width: 100%;
         height: auto;
 
-        aspect-ratio: 7/5;
+        aspect-ratio: 4/3;
         object-fit: cover;
+
+        border: solid 2px $color-black;
     }
 }
 
@@ -180,7 +193,7 @@ footer {
     @include flex(row, flex-start, center, $spacing-24);
 
     a {
-        color: $color-green;
+        color: $color-black;
         text-decoration: none;
         
         transition: 0.4s ease;

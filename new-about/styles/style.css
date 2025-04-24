@@ -17,10 +17,10 @@ body {
   justify-content: flex-start;
   align-items: flex-start;
   gap: 48px;
-  background-color: #d2e5e9;
-  color: #4c6f49;
+  background-color: #DDDF52;
+  color: #0e0e0e;
   max-width: 1500px;
-  padding: 24px;
+  padding: 24px 48px 24px 48px;
   margin: auto;
 }
 
@@ -42,7 +42,7 @@ header {
 }
 .nav a {
   width: 100%;
-  color: #4c6f49;
+  color: #0e0e0e;
   text-decoration: none;
   transition: 0.4s ease;
 }
@@ -101,6 +101,15 @@ main {
 .intro__text {
   line-height: 180%;
 }
+.intro .link {
+  color: #0e0e0e;
+  text-underline-offset: 2px;
+  transition: 0.4s ease;
+}
+.intro .link:hover {
+  transition: 0.4s ease;
+  opacity: 50%;
+}
 
 .content {
   display: flex;
@@ -113,9 +122,10 @@ main {
 .content__image {
   width: 100%;
   height: auto;
-  aspect-ratio: 7/5;
+  aspect-ratio: 4/3;
   -o-object-fit: cover;
      object-fit: cover;
+  border: solid 2px #0e0e0e;
 }
 
 /*FOOTER*/
@@ -131,7 +141,7 @@ footer {
   gap: 24px;
 }
 .footer a {
-  color: #4c6f49;
+  color: #0e0e0e;
   text-decoration: none;
   transition: 0.4s ease;
 }
