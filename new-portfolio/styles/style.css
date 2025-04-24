@@ -20,7 +20,7 @@ body {
   background-color: #FFFFFF;
   color: #0e0e0e;
   max-width: 1500px;
-  padding: 24px;
+  padding: 24px 48px 24px 48px;
   margin: auto;
 }
 
@@ -105,7 +105,7 @@ main {
 .project__image {
   width: 100%;
   height: auto;
-  aspect-ratio: 7/5;
+  aspect-ratio: 4/3;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -124,7 +124,7 @@ main {
   transition: 0.4s ease;
 }
 .project:hover {
-  transform: skew(-2deg);
+  transform: skew(-1.25deg);
   transition: 0.4s ease;
 }
 .project:hover .project__heading, .project:hover .project__tags {
