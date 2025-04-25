@@ -1,0 +1,240 @@
+/*VARIABLES*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montagu+Slab:opsz,wght@16..144,100..700&display=swap');
+
+$font-style: 'Helvetica Neue', sans-serif;
+$font-style-heading: "Montagu Slab", serif;
+
+$h1-size: 64px;
+$h2-size: 38px;
+$p-size: 16px;
+
+$line-height: 160%;
+$line-height-h1: 140%;
+$line-height-p: 180%;
+
+$font-weight: 400;
+
+$spacing-48: 48px;
+$spacing-24: 24px;
+$spacing-16: 16px;
+$spacing-8: 8px;
+$spacing-4: 4px;
+
+$color-black: #0e0e0e;
+$color-white: #FFFFFF;
+$color-grey: #757575;
+
+$color-green: #DDDF52;
+
+
+
+
+/* MIXINS */
+
+@mixin flex($direction, $position, $layout, $gap) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $position;
+    align-items: $layout;
+    gap: $gap;
+}
+
+
+
+
+/*PAGE DEFAULT*/
+
+* {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+
+    scroll-behavior: smooth;
+
+    font-family: $font-style;
+    line-height: $line-height;
+}
+
+body {
+    @include flex(column, flex-start, flex-start, $spacing-48);
+
+    background-color: $color-white;
+    color: $color-black;
+
+    max-width: 1500px;
+    padding: $spacing-24 $spacing-48 $spacing-24 $spacing-48;
+    margin: auto;
+}
+
+:hover {
+    transition: 0.4s ease;
+}
+
+
+
+
+/*NAVIGATION*/
+
+header {
+    width: 100%;
+}
+
+.nav {
+    @include flex(row, flex-start, center, $spacing-24);
+
+    a {
+        width: 100%;
+
+        color: $color-black;
+        text-decoration: none;
+
+        transition:  0.4s ease;
+
+        &:hover {
+            transition: 0.4s ease;
+            opacity: 50%;
+        }
+    }
+
+    p {
+        width: 100%;
+    }
+
+    .active {
+        text-decoration: underline;
+        text-underline-offset: 2px;
+
+        transition: 0.4s ease;
+    }
+}
+
+
+
+
+/* MAIN */
+
+main {
+    @include flex(column, flex-start, flex-start, $spacing-48);
+    width: 100%;
+}
+
+section {
+    width: 100%;
+
+    h1 {
+        font-family: $font-style-heading;
+        font-weight: $font-weight;
+        font-size: $h1-size;
+
+        line-height: $line-height-h1;
+        letter-spacing: -2px;
+    }
+
+    p {
+        line-height: $line-height-p;
+    }
+}
+
+
+
+
+/* HERO */
+
+.hero {
+    @include flex(column, flex-start, flex-start, $spacing-48);
+}
+
+.title, .desc, .tags {
+    width: 100%;
+    border: solid 2px orange;
+}
+
+.desc, .tags {
+    @include flex(row, flex-start, flex-start, $spacing-24);
+}
+
+.details {
+    @include flex(column, flex-start, flex-start, $spacing-24);
+
+    width: 100%;
+
+    .bold {
+        font-weight: 500;
+    }
+}
+
+.tags {
+    &__container {
+        @include flex(row, space-between, flex-start, $spacing-24);
+
+        width: 100%;
+    }
+
+    &__info {
+        width: 100%;
+    }
+
+    &__cat {
+        color: $color-grey;
+    }
+}
+
+
+
+
+/* PROJECT */
+
+.project {
+    @include flex(column, flex-start, flex-start, $spacing-48);
+
+    width: 100%;
+}
+
+.content {
+    width: 100%;
+    
+
+    &__image {
+        width: 100%;
+        height: auto;
+
+        aspect-ratio: 4/3;
+        object-fit: cover;
+
+        border: solid 2px $color-black;
+    }
+}
+
+.multiple-image {
+    @include flex(row, flex-start, flex-start, $spacing-24);
+    width: 100%;
+}
+
+
+
+/*FOOTER*/
+
+footer {
+    width: 100%;
+}
+
+.footer {
+    @include flex(row, flex-start, center, $spacing-24);
+
+    a {
+        color: $color-black;
+        text-decoration: none;
+        
+        transition: 0.4s ease;
+
+        &:hover {
+            transition: 0.4s ease;
+            opacity: 50%;
+        }
+    }
+
+    p {
+        width: 100%;
+    }
+}
