@@ -94,7 +94,6 @@ section p {
 
 .title, .desc, .tags {
   width: 100%;
-  border: solid 2px orange;
 }
 
 .desc, .tags {
@@ -143,18 +142,22 @@ section p {
 }
 
 .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 48px;
   width: 100%;
 }
-.content__image {
+.content img {
   width: 100%;
   height: auto;
   aspect-ratio: 4/3;
   -o-object-fit: cover;
      object-fit: cover;
-  border: solid 2px #0e0e0e;
 }
 
-.multiple-image {
+#gallery {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
