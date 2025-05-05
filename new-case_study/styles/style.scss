@@ -204,9 +204,28 @@ section {
     }
 }
 
+.bullets {
+    @include flex(column, flex-start, flex-start, $spacing-8);
+
+    &__list {
+        padding-left: $spacing-48;
+    }
+}
+
 #gallery {
     @include flex(row, flex-start, flex-start, $spacing-24);
     width: 100%;
+}
+
+.button {
+    border: solid 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 24px 0 24px 0;
+
 }
 
 
